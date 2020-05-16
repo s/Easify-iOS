@@ -68,6 +68,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B3DD9B262470B4C600C6C780 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B3E427C22470696300CB4186 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		B3E427B22470696200CB4186 = {
 			isa = PBXGroup;
 			children = (
@@ -90,12 +98,12 @@
 			isa = PBXGroup;
 			children = (
 				B3E427BE2470696300CB4186 /* AppDelegate.swift */,
-				B3E427C22470696300CB4186 /* ContentView.swift */,
 				B3E427C02470696300CB4186 /* SceneDelegate.swift */,
 				B3E427C62470696400CB4186 /* Preview Content */,
 				B3E427E7247071BF00CB4186 /* Services */,
 				B3E427E424706F7C00CB4186 /* Supporting Files */,
 				B3E427E124706E6400CB4186 /* Vendor */,
+				B3DD9B262470B4C600C6C780 /* Views */,
 			);
 			path = Easify;
 			sourceTree = "<group>";
