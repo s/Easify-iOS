@@ -46,6 +46,7 @@
 		B3E427E8247071DB00CB4186 /* PlistReaderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistReaderService.swift; sourceTree = "<group>"; };
 		B3E427ED2470798500CB4186 /* PlistReaderServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistReaderServiceTests.swift; sourceTree = "<group>"; };
 		B3E427F0247079E000CB4186 /* PlistReaderServiceTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PlistReaderServiceTests.plist; sourceTree = "<group>"; };
+		B3E427F424708BC400CB4186 /* Easify-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Easify-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +133,7 @@
 				B3E427CC2470696400CB4186 /* Info.plist */,
 				B3E427C92470696400CB4186 /* LaunchScreen.storyboard */,
 				B3E427E52470711000CB4186 /* SpotifyCredentials.plist */,
+				B3E427F424708BC400CB4186 /* Easify-Bridging-Header.h */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -472,8 +474,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = nl.saidozcan.Easify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Easify/Supporting Files/Easify-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -496,8 +500,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = nl.saidozcan.Easify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Easify/Supporting Files/Easify-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
