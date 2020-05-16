@@ -14,6 +14,7 @@
 		B3E427C82470696400CB4186 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3E427C72470696400CB4186 /* Preview Assets.xcassets */; };
 		B3E427CB2470696400CB4186 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3E427C92470696400CB4186 /* LaunchScreen.storyboard */; };
 		B3E427D62470696400CB4186 /* EasifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E427D52470696400CB4186 /* EasifyTests.swift */; };
+		B3E427E324706E7400CB4186 /* SpotifyiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3E427E224706E7400CB4186 /* SpotifyiOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		B3E427D12470696400CB4186 /* EasifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E427D52470696400CB4186 /* EasifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasifyTests.swift; sourceTree = "<group>"; };
 		B3E427D72470696400CB4186 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3E427E224706E7400CB4186 /* SpotifyiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyiOS.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3E427E324706E7400CB4186 /* SpotifyiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,12 +83,11 @@
 			isa = PBXGroup;
 			children = (
 				B3E427BE2470696300CB4186 /* AppDelegate.swift */,
-				B3E427C02470696300CB4186 /* SceneDelegate.swift */,
 				B3E427C22470696300CB4186 /* ContentView.swift */,
-				B3E427C42470696400CB4186 /* Assets.xcassets */,
-				B3E427C92470696400CB4186 /* LaunchScreen.storyboard */,
-				B3E427CC2470696400CB4186 /* Info.plist */,
+				B3E427C02470696300CB4186 /* SceneDelegate.swift */,
 				B3E427C62470696400CB4186 /* Preview Content */,
+				B3E427E424706F7C00CB4186 /* Supporting Files */,
+				B3E427E124706E6400CB4186 /* Vendor */,
 			);
 			path = Easify;
 			sourceTree = "<group>";
@@ -105,6 +107,24 @@
 				B3E427D72470696400CB4186 /* Info.plist */,
 			);
 			path = EasifyTests;
+			sourceTree = "<group>";
+		};
+		B3E427E124706E6400CB4186 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				B3E427E224706E7400CB4186 /* SpotifyiOS.framework */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		B3E427E424706F7C00CB4186 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B3E427C42470696400CB4186 /* Assets.xcassets */,
+				B3E427CC2470696400CB4186 /* Info.plist */,
+				B3E427C92470696400CB4186 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,6 +386,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Easify/Preview Content\"";
 				DEVELOPMENT_TEAM = Z2EVZ5Y6JY;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Easify/Vendor",
+				);
 				INFOPLIST_FILE = Easify/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -386,6 +410,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Easify/Preview Content\"";
 				DEVELOPMENT_TEAM = Z2EVZ5Y6JY;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Easify/Vendor",
+				);
 				INFOPLIST_FILE = Easify/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
