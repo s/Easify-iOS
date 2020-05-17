@@ -14,7 +14,7 @@ jobs:
     - name: GitHub Action for SwiftLint
       uses: norio-nomura/action-swiftlint@3.0.1
 
-  Build & Test:
+  Workflow:
     name: Build & Test
     runs-on: macOS-latest
     strategy:
