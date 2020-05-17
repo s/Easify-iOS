@@ -19,6 +19,7 @@
 		B3DD9B3B2470DF2C00C6C780 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DD9B3A2470DF2C00C6C780 /* LoginViewModel.swift */; };
 		B3DD9B442471943F00C6C780 /* ButtonWithLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DD9B432471943F00C6C780 /* ButtonWithLinkView.swift */; };
 		B3DD9B472471991700C6C780 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DD9B462471991700C6C780 /* SafariView.swift */; };
+		B3DD9B4C2471F25800C6C780 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DD9B4B2471F25800C6C780 /* LoginViewController.swift */; };
 		B3E427BF2470696300CB4186 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E427BE2470696300CB4186 /* AppDelegate.swift */; };
 		B3E427C12470696300CB4186 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E427C02470696300CB4186 /* SceneDelegate.swift */; };
 		B3E427C52470696400CB4186 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3E427C42470696400CB4186 /* Assets.xcassets */; };
@@ -59,6 +60,7 @@
 		B3DD9B3A2470DF2C00C6C780 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		B3DD9B432471943F00C6C780 /* ButtonWithLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithLinkView.swift; sourceTree = "<group>"; };
 		B3DD9B462471991700C6C780 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		B3DD9B4B2471F25800C6C780 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B3E427BB2470696300CB4186 /* Easify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Easify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E427BE2470696300CB4186 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3E427C02470696300CB4186 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 				B3DD9B302470D97400C6C780 /* ConnectButtonView.swift */,
 				B3DD9B372470DD1800C6C780 /* DescriptionTextView.swift */,
 				B3DD9B272470BCA700C6C780 /* LoginView.swift */,
+				B3DD9B4B2471F25800C6C780 /* LoginViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -463,6 +466,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3DD9B4C2471F25800C6C780 /* LoginViewController.swift in Sources */,
 				B3E427F32470863B00CB4186 /* SpotifyService.swift in Sources */,
 				B3E427BF2470696300CB4186 /* AppDelegate.swift in Sources */,
 				B3DD9B362470DA7200C6C780 /* BackgroundView.swift in Sources */,
