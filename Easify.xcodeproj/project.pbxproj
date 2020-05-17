@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,9 +17,12 @@
 		B3DD9B362470DA7200C6C780 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DD9B352470DA7200C6C780 /* BackgroundView.swift */; };
 		B3DD9B382470DD1800C6C780 /* DescriptionTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DD9B372470DD1800C6C780 /* DescriptionTextView.swift */; };
 		B3DD9B3B2470DF2C00C6C780 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DD9B3A2470DF2C00C6C780 /* LoginViewModel.swift */; };
+		B3DD9B442471943F00C6C780 /* ButtonWithLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DD9B432471943F00C6C780 /* ButtonWithLinkView.swift */; };
+		B3DD9B472471991700C6C780 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DD9B462471991700C6C780 /* SafariView.swift */; };
+		B3DD9B4A2471EF4300C6C780 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DD9B492471EF4300C6C780 /* HomeView.swift */; };
+		B3DD9B4C2471F25800C6C780 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DD9B4B2471F25800C6C780 /* LoginViewController.swift */; };
 		B3E427BF2470696300CB4186 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E427BE2470696300CB4186 /* AppDelegate.swift */; };
 		B3E427C12470696300CB4186 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E427C02470696300CB4186 /* SceneDelegate.swift */; };
-		B3E427C32470696300CB4186 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E427C22470696300CB4186 /* ContentView.swift */; };
 		B3E427C52470696400CB4186 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3E427C42470696400CB4186 /* Assets.xcassets */; };
 		B3E427C82470696400CB4186 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3E427C72470696400CB4186 /* Preview Assets.xcassets */; };
 		B3E427CB2470696400CB4186 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3E427C92470696400CB4186 /* LaunchScreen.storyboard */; };
@@ -29,6 +32,7 @@
 		B3E427EE2470798500CB4186 /* PlistReaderServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E427ED2470798500CB4186 /* PlistReaderServiceTests.swift */; };
 		B3E427F1247079E000CB4186 /* PlistReaderServiceTests.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3E427F0247079E000CB4186 /* PlistReaderServiceTests.plist */; };
 		B3E427F32470863B00CB4186 /* SpotifyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E427F22470863B00CB4186 /* SpotifyService.swift */; };
+		C89F51A6D2D46AF607AA00F4 /* Pods_Easify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE19AEEF565DFC888B27A038 /* Pods_Easify.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +46,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6B9D7950A9553988FBD7F8E3 /* Pods-Easify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easify.debug.xcconfig"; path = "Target Support Files/Pods-Easify/Pods-Easify.debug.xcconfig"; sourceTree = "<group>"; };
+		A3ED5E81F9FE4A4FF39F4121 /* Pods-Easify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easify.release.xcconfig"; path = "Target Support Files/Pods-Easify/Pods-Easify.release.xcconfig"; sourceTree = "<group>"; };
+		AE19AEEF565DFC888B27A038 /* Pods_Easify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Easify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B38F8F872470A6EA00024200 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		B38F8F8E2470AA8200024200 /* ServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
 		B3DD9B272470BCA700C6C780 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -52,10 +59,13 @@
 		B3DD9B352470DA7200C6C780 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		B3DD9B372470DD1800C6C780 /* DescriptionTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionTextView.swift; sourceTree = "<group>"; };
 		B3DD9B3A2470DF2C00C6C780 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		B3DD9B432471943F00C6C780 /* ButtonWithLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithLinkView.swift; sourceTree = "<group>"; };
+		B3DD9B462471991700C6C780 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
+		B3DD9B492471EF4300C6C780 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		B3DD9B4B2471F25800C6C780 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B3E427BB2470696300CB4186 /* Easify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Easify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E427BE2470696300CB4186 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3E427C02470696300CB4186 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B3E427C22470696300CB4186 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B3E427C42470696400CB4186 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3E427C72470696400CB4186 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B3E427CA2470696400CB4186 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -77,6 +87,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3E427E324706E7400CB4186 /* SpotifyiOS.framework in Frameworks */,
+				C89F51A6D2D46AF607AA00F4 /* Pods_Easify.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +101,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		85849CE0620D52993ACD9EB2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE19AEEF565DFC888B27A038 /* Pods_Easify.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B38F8F862470A6D000024200 /* Defines */ = {
 			isa = PBXGroup;
 			children = (
@@ -101,8 +120,9 @@
 		B3DD9B262470B4C600C6C780 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B3DD9B452471990E00C6C780 /* Common */,
+				B3DD9B482471EBE700C6C780 /* Home */,
 				B3DD9B342470DA6600C6C780 /* Login */,
-				B3E427C22470696300CB4186 /* ContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -130,9 +150,11 @@
 			children = (
 				B3DD9B322470DA1600C6C780 /* AppNameView.swift */,
 				B3DD9B352470DA7200C6C780 /* BackgroundView.swift */,
+				B3DD9B432471943F00C6C780 /* ButtonWithLinkView.swift */,
 				B3DD9B302470D97400C6C780 /* ConnectButtonView.swift */,
 				B3DD9B372470DD1800C6C780 /* DescriptionTextView.swift */,
 				B3DD9B272470BCA700C6C780 /* LoginView.swift */,
+				B3DD9B4B2471F25800C6C780 /* LoginViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -145,12 +167,30 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		B3DD9B452471990E00C6C780 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B3DD9B462471991700C6C780 /* SafariView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B3DD9B482471EBE700C6C780 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B3DD9B492471EF4300C6C780 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		B3E427B22470696200CB4186 = {
 			isa = PBXGroup;
 			children = (
 				B3E427BD2470696300CB4186 /* Easify */,
 				B3E427D42470696400CB4186 /* EasifyTests */,
 				B3E427BC2470696300CB4186 /* Products */,
+				FE4D1E89FDE30EB8CE3116F4 /* Pods */,
+				85849CE0620D52993ACD9EB2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -243,6 +283,15 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		FE4D1E89FDE30EB8CE3116F4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B9D7950A9553988FBD7F8E3 /* Pods-Easify.debug.xcconfig */,
+				A3ED5E81F9FE4A4FF39F4121 /* Pods-Easify.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -250,11 +299,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B3E427DA2470696400CB4186 /* Build configuration list for PBXNativeTarget "Easify" */;
 			buildPhases = (
+				03836725E2138A28A9F91E96 /* [CP] Check Pods Manifest.lock */,
 				B3E427B72470696300CB4186 /* Sources */,
 				B3E427B82470696300CB4186 /* Frameworks */,
 				B3E427B92470696300CB4186 /* Resources */,
 				B3E427EB247075C200CB4186 /* SwiftLint AutoCorrect */,
 				B3E427EA2470740B00CB4186 /* SwiftLint */,
+				4A9F4AB2EA2ADAE6C65EA213 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -344,6 +395,45 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		03836725E2138A28A9F91E96 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Easify-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A9F4AB2EA2ADAE6C65EA213 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Easify/Pods-Easify-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Easify/Pods-Easify-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Easify/Pods-Easify-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B3E427EA2470740B00CB4186 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -387,20 +477,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3DD9B4C2471F25800C6C780 /* LoginViewController.swift in Sources */,
 				B3E427F32470863B00CB4186 /* SpotifyService.swift in Sources */,
 				B3E427BF2470696300CB4186 /* AppDelegate.swift in Sources */,
 				B3DD9B362470DA7200C6C780 /* BackgroundView.swift in Sources */,
 				B3DD9B2B2470C1C900C6C780 /* UIColor+Theme.swift in Sources */,
 				B3DD9B382470DD1800C6C780 /* DescriptionTextView.swift in Sources */,
+				B3DD9B4A2471EF4300C6C780 /* HomeView.swift in Sources */,
 				B3DD9B312470D97400C6C780 /* ConnectButtonView.swift in Sources */,
 				B3E427C12470696300CB4186 /* SceneDelegate.swift in Sources */,
 				B3DD9B332470DA1600C6C780 /* AppNameView.swift in Sources */,
 				B3DD9B3B2470DF2C00C6C780 /* LoginViewModel.swift in Sources */,
 				B38F8F8F2470AA8200024200 /* ServiceProvider.swift in Sources */,
-				B3E427C32470696300CB4186 /* ContentView.swift in Sources */,
 				B3E427E9247071DB00CB4186 /* PlistReaderService.swift in Sources */,
+				B3DD9B472471991700C6C780 /* SafariView.swift in Sources */,
 				B3DD9B282470BCA700C6C780 /* LoginView.swift in Sources */,
 				B3DD9B2F2470D91000C6C780 /* EdgeInsets+Convenience.swift in Sources */,
+				B3DD9B442471943F00C6C780 /* ButtonWithLinkView.swift in Sources */,
 				B38F8F882470A6EA00024200 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -551,6 +644,7 @@
 		};
 		B3E427DB2470696400CB4186 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B9D7950A9553988FBD7F8E3 /* Pods-Easify.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -560,6 +654,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Easify/Vendor",
+					"$(PROJECT_DIR)/Pods",
 				);
 				INFOPLIST_FILE = "Easify/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -577,6 +672,7 @@
 		};
 		B3E427DC2470696400CB4186 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3ED5E81F9FE4A4FF39F4121 /* Pods-Easify.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -586,6 +682,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Easify/Vendor",
+					"$(PROJECT_DIR)/Pods",
 				);
 				INFOPLIST_FILE = "Easify/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (

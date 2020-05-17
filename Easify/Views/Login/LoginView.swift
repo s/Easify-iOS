@@ -11,24 +11,29 @@ import SwiftUI
 struct LoginView: View {
     // MARK: Properties
     @ObservedObject private var loginViewModel = LoginViewModel()
+    private let spotifyService: SpotifyService
+
+    // MARK: Lifecycle
+    init(spotifyService: SpotifyService) {
+        self.spotifyService = spotifyService
+    }
 
     // MARK: UI
     var body: some View {
         ZStack {
             BackgroundView()
-            VStack(spacing: Constants.Spacings.quadruple.rawValue) {
+            VStack(alignment: .center, spacing: Constants.Spacings.quadruple.rawValue) {
                 AppNameView()
+
                 VStack(spacing: Constants.Spacings.single.rawValue) {
                     DescriptionTextView()
-                    ConnectButtonView(isEnabled: !loginViewModel.isConnecting)
+                    ConnectButtonView(spotifyService: spotifyService)
+                        .frame(minWidth: 0,
+                               maxWidth: UIScreen.main.bounds.width,
+                               minHeight: 0,
+                               maxHeight: 60)
                 }
-            }
+            }.offset(x: 0, y: -Constants.Spacings.double.rawValue)
         }
-    }
-}
-
-struct LoginView_Previews: PreviewProvider {
-    static var previews: some View {
-        LoginView()
     }
 }
