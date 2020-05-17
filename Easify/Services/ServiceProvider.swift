@@ -16,7 +16,7 @@ class ServiceProvider {
     // MARK: Lifecycle
     init() throws {
         do {
-            plistReaderService = try PlistReaderService(name: Constants.Files.spotifyPlist.rawValue, bundle: Bundle(for: type(of: self)))
+            plistReaderService = try PlistReaderService(name: Constants.Files.spotifyPlistFileName.rawValue, bundle: Bundle(for: type(of: self)))
             spotifyService = try SpotifyService(plistReaderService: plistReaderService)
         } catch {
             throw(error)
