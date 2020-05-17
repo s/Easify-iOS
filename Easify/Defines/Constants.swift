@@ -18,11 +18,16 @@ enum Constants {
         case connectToSpotifyAccount = "Connect to your Spotify account"
         case connectCTA = "Connect"
         case easify = "Easify"
+        case backgroundImageReference = "Image: Ron Smith on Unsplash"
     }
 
     enum Spacings: CGFloat {
         case single = 8.0
         case double = 16.0
         case quadruple = 32.0
+    }
+
+    enum URLS: String {
+        case backgroundImageURL = "https://unsplash.com/photos/tknOyEefp2k"
     }
 }
