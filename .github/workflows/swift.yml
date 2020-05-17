@@ -25,6 +25,7 @@ jobs:
         uses: actions/checkout@master
       - name: Build and Test
         run:
+          brew install swiftlint
           xcodebuild clean test -project Easify.xcodeproj -scheme Easify -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
         env: 
          destination: ${{ matrix.destination }}
