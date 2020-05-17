@@ -7,9 +7,22 @@
 //
 
 import Foundation
+import SwiftUI
 
 enum Constants {
     enum Files: String {
-        case spotifyPlist = "SpotifyCredentials.plist"
+        case spotifyPlistFileName = "SpotifyCredentials"
+    }
+
+    enum Copies: String {
+        case connectToSpotifyAccount = "Connect to your Spotify account"
+        case connectCTA = "Connect"
+        case easify = "Easify"
+    }
+
+    enum Spacings: CGFloat {
+        case single = 8.0
+        case double = 16.0
+        case quadruple = 32.0
     }
 }
