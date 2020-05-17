@@ -6,46 +6,30 @@
 //  Copyright © 2020 Muhammed Said Özcan. All rights reserved.
 //
 
+import UIKit
 import SwiftUI
+import SpotifyLogin
 
 // MARK: ConnectButtonView
-struct ConnectButtonView: View {
+struct ConnectButtonView {
     // MARK: Properties
-    private let isEnabled: Bool
+    private let spotifyService: SpotifyService
 
     // MARK: Lifecycle
-    init(isEnabled: Bool) {
-        self.isEnabled = isEnabled
-    }
-
-    // MARK: UI
-    var body: some View {
-        Group {
-            Button(action: {
-                print("Hello button tapped!")
-            }) {
-                Text(Constants.Copies.connectCTA.rawValue.uppercased())
-                    .kerning(4)
-                    .fontWeight(.heavy)
-                    .font(.callout)
-                    .foregroundColor(.white)
-                    .background(Color.spotifyGreen)
-                    .padding(EdgeInsets.doubleQuadruple)
-            }
-            .frame(height: 44)
-            .background(Color.spotifyGreen)
-            .cornerRadius(22)
-            .overlay(
-                RoundedRectangle(cornerRadius: 22)
-                    .stroke(Color.spotifyGreen, lineWidth: 1)
-            ).disabled(!isEnabled)
-        }
-
+    init(spotifyService: SpotifyService) {
+        self.spotifyService = spotifyService
     }
 }
 
-struct ConnectButtonView_Previews: PreviewProvider {
-    static var previews: some View {
-        ConnectButtonView(isEnabled: true)
+// MARK: ConnectButtonView: UIViewControllerRepresentable
+extension ConnectButtonView: UIViewControllerRepresentable {
+    typealias UIViewControllerType = LogInViewController
+
+    func makeUIViewController(context: Context) -> LogInViewController {
+        return LogInViewController(spotifyService: spotifyService)
+    }
+
+    func updateUIViewController(_ uiViewController: LogInViewController, context: Context) {
+
     }
 }

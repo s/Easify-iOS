@@ -7,13 +7,13 @@
 //
 
 import Foundation
+import SpotifyLogin
 
 // MARK: SpotifyCredentialsKeys
 private enum SpotifyCredentialsKeys: String {
     case clientID = "client_id"
+    case clientSecret = "client_secret"
     case redirectURL = "redirect_url"
-    case tokenSwapURL = "token_swap_url"
-    case tokenRefreshURL = "token_refresh_url"
 }
 
 // MARK: SpotifyServiceError
@@ -34,27 +34,16 @@ enum SpotifyServiceError: Error {
 
 // MARK: SpotifyService
 class SpotifyService: NSObject {
-    // MARK: Public Properties
-    lazy var appRemote: SPTAppRemote = {
-        let appRemote = SPTAppRemote(configuration: self.configuration, logLevel: .debug)
-        appRemote.delegate = self
-        appRemote.connectionParameters.accessToken = self.accessToken
-        return appRemote
-    }()
-    lazy var sessionManager: SPTSessionManager = {
-        let manager = SPTSessionManager(configuration: configuration, delegate: self)
-        return manager
-    }()
-
-    // MARK: Private Properties
-    private let configuration: SPTConfiguration
-    private static let accessTokenKey = "nl.saidozcan.SpotifyService.AccessTokenKey"
-    private var accessToken: String? = UserDefaults.standard.string(forKey: SpotifyService.accessTokenKey) {
-        didSet {
-            let defaults = UserDefaults.standard
-            defaults.set(accessToken, forKey: SpotifyService.accessTokenKey)
-        }
-    }
+    // MARK: Properties
+    let loginScopes: [Scope] = [
+        .userReadTop,
+        .playlistModifyPublic,
+        .playlistReadPrivate,
+        .playlistReadCollaborative,
+        .userFollowRead,
+        .userFollowModify
+    ]
+    private static let accessTokenKey = "nl.saidozcan.SpotifyService.accessTokenKey"
 
     // MARK: Lifecycle
     init(plistReaderService: PlistReaderService) throws {
@@ -69,59 +58,44 @@ class SpotifyService: NSObject {
             throw SpotifyServiceError.readingError(for: SpotifyCredentialsKeys.redirectURL.rawValue)
         }
 
-        self.configuration = SPTConfiguration(clientID: clientID, redirectURL: redirectURL)
-        self.configuration.tokenSwapURL = plistReaderService.read(key: SpotifyCredentialsKeys.tokenSwapURL.rawValue)
-        self.configuration.tokenRefreshURL = plistReaderService.read(key: SpotifyCredentialsKeys.tokenRefreshURL.rawValue)
+        guard let clientSecret: String = plistReaderService.read(key: SpotifyCredentialsKeys.clientSecret.rawValue) else {
+            throw SpotifyServiceError.readingError(for: SpotifyCredentialsKeys.clientSecret.rawValue)
+        }
+
+        SpotifyLogin.shared.configure(clientID: clientID, clientSecret: clientSecret, redirectURL: redirectURL)
         super.init()
+
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(didLoginSuccessfully),
+                                               name: .SpotifyLoginSuccessful,
+                                               object: nil)
     }
 
     // MARK: Public
-    func update(accessToken: String) {
-        self.accessToken = accessToken
-        self.appRemote.connectionParameters.accessToken = accessToken
+    func isLoggedIn(completion: @escaping (Bool) -> Void) {
+        SpotifyLogin.shared.getAccessToken { (accessToken, _) in
+            guard accessToken != nil else {
+                completion(false)
+                return
+            }
+            completion(true)
+        }
     }
 
-    func login() {
-        let scope: SPTScope = [
-            .playlistReadPrivate,
-            .playlistReadCollaborative,
-            .playlistModifyPublic,
-            .userReadRecentlyPlayed,
-            .userLibraryModify,
-            .userReadPrivate,
-            .userTopRead
-        ]
-        sessionManager.initiateSession(with: scope, options: .clientOnly)
-    }
-}
-
-// MARK: SpotifyService: SPTAppRemoteDelegate
-extension SpotifyService: SPTAppRemoteDelegate {
-    func appRemoteDidEstablishConnection(_ appRemote: SPTAppRemote) {
-        print("appRemoteDidEstablishConnection")
+    func loggedInSuccessfully() {
+        SpotifyLogin.shared.getAccessToken { (accessToken, _) in
+            if let accessToken = accessToken {
+                print(accessToken)
+            }
+        }
     }
 
-    func appRemote(_ appRemote: SPTAppRemote, didFailConnectionAttemptWithError error: Error?) {
-        print("didFailConnectionAttemptWithError")
-    }
-
-    func appRemote(_ appRemote: SPTAppRemote, didDisconnectWithError error: Error?) {
-        print("didDisconnectWithError")
-    }
-}
-
-// MARK: SpotifyService: SPTSessionManager
-extension SpotifyService: SPTSessionManagerDelegate {
-    func sessionManager(manager: SPTSessionManager, didInitiate session: SPTSession) {
-        appRemote.connectionParameters.accessToken = session.accessToken
-        appRemote.connect()
-    }
-
-    func sessionManager(manager: SPTSessionManager, didFailWith error: Error) {
-
-    }
-
-    func sessionManager(manager: SPTSessionManager, didRenew session: SPTSession) {
-
+    // MARK: Private
+    @objc private func didLoginSuccessfully() {
+        SpotifyLogin.shared.getAccessToken { (accessToken, _) in
+            if let accessToken = accessToken {
+                print(accessToken)
+            }
+        }
     }
 }

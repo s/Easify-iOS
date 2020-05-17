@@ -7,11 +7,30 @@
 //
 
 import UIKit
+import SpotifyLogin
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder {
+    // MARK: Properties
+    private(set) var serviceProvider: ServiceProvider?
+}
+
+// MARK: AppDelegate: UIApplicationDelegate
+extension AppDelegate: UIApplicationDelegate {
+    // MARK: Lifecycle
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        do {
+            self.serviceProvider = try ServiceProvider()
+        } catch {
+            print(error.localizedDescription)
+            return false
+        }
         return true
+    }
+
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
+        let handled = SpotifyLogin.shared.applicationOpenURL(url) { (_) in }
+        return handled
     }
 
     // MARK: UISceneSession Lifecycle
