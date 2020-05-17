@@ -10,15 +10,6 @@ import UIKit
 import SwiftUI
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-    // MARK: Properties
-    private lazy var serviceProvider: ServiceProvider? = {
-        do {
-            return try ServiceProvider()
-        } catch {
-            print(error)
-            return nil
-        }
-    }()
     var window: UIWindow?
 
     // MARK: Lifecycle
@@ -37,27 +28,5 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             self.window = window
             window.makeKeyAndVisible()
         }
-    }
-
-    func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
-        guard let url = URLContexts.first?.url, let appRemote = serviceProvider?.spotifyService.appRemote else {
-            return
-        }
-        let parameters = appRemote.authorizationParameters(from: url)
-        if let accessToken = parameters?[SPTAppRemoteAccessTokenKey] {
-            appRemote.connectionParameters.accessToken = accessToken
-            serviceProvider?.spotifyService.update(accessToken: accessToken)
-        } else if let errorDescription = parameters?[SPTAppRemoteErrorDescriptionKey] {
-            print(errorDescription)
-        }
-    }
-
-    func sceneDidBecomeActive(_ scene: UIScene) {
-        guard serviceProvider?.spotifyService.appRemote.connectionParameters.accessToken != nil else { return }
-        serviceProvider?.spotifyService.appRemote.connect()
-    }
-
-    func sceneWillResignActive(_ scene: UIScene) {
-        serviceProvider?.spotifyService.appRemote.disconnect()
     }
 }
