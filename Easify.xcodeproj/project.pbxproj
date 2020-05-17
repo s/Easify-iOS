@@ -17,6 +17,7 @@
 		B3DD9B362470DA7200C6C780 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DD9B352470DA7200C6C780 /* BackgroundView.swift */; };
 		B3DD9B382470DD1800C6C780 /* DescriptionTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DD9B372470DD1800C6C780 /* DescriptionTextView.swift */; };
 		B3DD9B3B2470DF2C00C6C780 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DD9B3A2470DF2C00C6C780 /* LoginViewModel.swift */; };
+		B3DD9B442471943F00C6C780 /* ButtonWithLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DD9B432471943F00C6C780 /* ButtonWithLinkView.swift */; };
 		B3DD9B472471991700C6C780 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DD9B462471991700C6C780 /* SafariView.swift */; };
 		B3E427BF2470696300CB4186 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E427BE2470696300CB4186 /* AppDelegate.swift */; };
 		B3E427C12470696300CB4186 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E427C02470696300CB4186 /* SceneDelegate.swift */; };
@@ -53,6 +54,7 @@
 		B3DD9B352470DA7200C6C780 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		B3DD9B372470DD1800C6C780 /* DescriptionTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionTextView.swift; sourceTree = "<group>"; };
 		B3DD9B3A2470DF2C00C6C780 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		B3DD9B432471943F00C6C780 /* ButtonWithLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithLinkView.swift; sourceTree = "<group>"; };
 		B3DD9B462471991700C6C780 /* SafariView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
 		B3E427BB2470696300CB4186 /* Easify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Easify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E427BE2470696300CB4186 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 			children = (
 				B3DD9B322470DA1600C6C780 /* AppNameView.swift */,
 				B3DD9B352470DA7200C6C780 /* BackgroundView.swift */,
+				B3DD9B432471943F00C6C780 /* ButtonWithLinkView.swift */,
 				B3DD9B302470D97400C6C780 /* ConnectButtonView.swift */,
 				B3DD9B372470DD1800C6C780 /* DescriptionTextView.swift */,
 				B3DD9B272470BCA700C6C780 /* LoginView.swift */,
@@ -413,6 +416,7 @@
 				B3DD9B472471991700C6C780 /* SafariView.swift in Sources */,
 				B3DD9B282470BCA700C6C780 /* LoginView.swift in Sources */,
 				B3DD9B2F2470D91000C6C780 /* EdgeInsets+Convenience.swift in Sources */,
+				B3DD9B442471943F00C6C780 /* ButtonWithLinkView.swift in Sources */,
 				B38F8F882470A6EA00024200 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
