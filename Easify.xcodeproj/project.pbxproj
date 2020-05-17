@@ -7,14 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B38F8F882470A6EA00024200 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38F8F872470A6EA00024200 /* Constants.swift */; };
+		B38F8F8F2470AA8200024200 /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B38F8F8E2470AA8200024200 /* ServiceProvider.swift */; };
+		B3DD9B282470BCA700C6C780 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DD9B272470BCA700C6C780 /* LoginView.swift */; };
+		B3DD9B2B2470C1C900C6C780 /* UIColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DD9B2A2470C1C900C6C780 /* UIColor+Theme.swift */; };
+		B3DD9B2F2470D91000C6C780 /* EdgeInsets+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DD9B2E2470D91000C6C780 /* EdgeInsets+Convenience.swift */; };
+		B3DD9B312470D97400C6C780 /* ConnectButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DD9B302470D97400C6C780 /* ConnectButtonView.swift */; };
+		B3DD9B332470DA1600C6C780 /* AppNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DD9B322470DA1600C6C780 /* AppNameView.swift */; };
+		B3DD9B362470DA7200C6C780 /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DD9B352470DA7200C6C780 /* BackgroundView.swift */; };
+		B3DD9B382470DD1800C6C780 /* DescriptionTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DD9B372470DD1800C6C780 /* DescriptionTextView.swift */; };
+		B3DD9B3B2470DF2C00C6C780 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DD9B3A2470DF2C00C6C780 /* LoginViewModel.swift */; };
 		B3E427BF2470696300CB4186 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E427BE2470696300CB4186 /* AppDelegate.swift */; };
 		B3E427C12470696300CB4186 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E427C02470696300CB4186 /* SceneDelegate.swift */; };
 		B3E427C32470696300CB4186 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E427C22470696300CB4186 /* ContentView.swift */; };
 		B3E427C52470696400CB4186 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3E427C42470696400CB4186 /* Assets.xcassets */; };
 		B3E427C82470696400CB4186 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3E427C72470696400CB4186 /* Preview Assets.xcassets */; };
 		B3E427CB2470696400CB4186 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3E427C92470696400CB4186 /* LaunchScreen.storyboard */; };
-		B3E427D62470696400CB4186 /* EasifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E427D52470696400CB4186 /* EasifyTests.swift */; };
 		B3E427E324706E7400CB4186 /* SpotifyiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3E427E224706E7400CB4186 /* SpotifyiOS.framework */; };
+		B3E427E62470711000CB4186 /* SpotifyCredentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3E427E52470711000CB4186 /* SpotifyCredentials.plist */; };
+		B3E427E9247071DB00CB4186 /* PlistReaderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E427E8247071DB00CB4186 /* PlistReaderService.swift */; };
+		B3E427EE2470798500CB4186 /* PlistReaderServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E427ED2470798500CB4186 /* PlistReaderServiceTests.swift */; };
+		B3E427F1247079E000CB4186 /* PlistReaderServiceTests.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3E427F0247079E000CB4186 /* PlistReaderServiceTests.plist */; };
+		B3E427F32470863B00CB4186 /* SpotifyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E427F22470863B00CB4186 /* SpotifyService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,6 +42,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B38F8F872470A6EA00024200 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		B38F8F8E2470AA8200024200 /* ServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
+		B3DD9B272470BCA700C6C780 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		B3DD9B2A2470C1C900C6C780 /* UIColor+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Theme.swift"; sourceTree = "<group>"; };
+		B3DD9B2E2470D91000C6C780 /* EdgeInsets+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EdgeInsets+Convenience.swift"; sourceTree = "<group>"; };
+		B3DD9B302470D97400C6C780 /* ConnectButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectButtonView.swift; sourceTree = "<group>"; };
+		B3DD9B322470DA1600C6C780 /* AppNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNameView.swift; sourceTree = "<group>"; };
+		B3DD9B352470DA7200C6C780 /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		B3DD9B372470DD1800C6C780 /* DescriptionTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionTextView.swift; sourceTree = "<group>"; };
+		B3DD9B3A2470DF2C00C6C780 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		B3E427BB2470696300CB4186 /* Easify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Easify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E427BE2470696300CB4186 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3E427C02470696300CB4186 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,9 +61,14 @@
 		B3E427CA2470696400CB4186 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B3E427CC2470696400CB4186 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3E427D12470696400CB4186 /* EasifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3E427D52470696400CB4186 /* EasifyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasifyTests.swift; sourceTree = "<group>"; };
 		B3E427D72470696400CB4186 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3E427E224706E7400CB4186 /* SpotifyiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyiOS.framework; sourceTree = "<group>"; };
+		B3E427E52470711000CB4186 /* SpotifyCredentials.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SpotifyCredentials.plist; sourceTree = "<group>"; };
+		B3E427E8247071DB00CB4186 /* PlistReaderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistReaderService.swift; sourceTree = "<group>"; };
+		B3E427ED2470798500CB4186 /* PlistReaderServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistReaderServiceTests.swift; sourceTree = "<group>"; };
+		B3E427F0247079E000CB4186 /* PlistReaderServiceTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PlistReaderServiceTests.plist; sourceTree = "<group>"; };
+		B3E427F22470863B00CB4186 /* SpotifyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyService.swift; sourceTree = "<group>"; };
+		B3E427F424708BC400CB4186 /* Easify-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Easify-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +90,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B38F8F862470A6D000024200 /* Defines */ = {
+			isa = PBXGroup;
+			children = (
+				B38F8F872470A6EA00024200 /* Constants.swift */,
+			);
+			path = Defines;
+			sourceTree = "<group>";
+		};
+		B3DD9B262470B4C600C6C780 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B3DD9B342470DA6600C6C780 /* Login */,
+				B3E427C22470696300CB4186 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B3DD9B292470C1BA00C6C780 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B3DD9B2A2470C1C900C6C780 /* UIColor+Theme.swift */,
+				B3DD9B2E2470D91000C6C780 /* EdgeInsets+Convenience.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B3DD9B2C2470C1D900C6C780 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B3E427BE2470696300CB4186 /* AppDelegate.swift */,
+				B3E427C02470696300CB4186 /* SceneDelegate.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		B3DD9B342470DA6600C6C780 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B3DD9B322470DA1600C6C780 /* AppNameView.swift */,
+				B3DD9B352470DA7200C6C780 /* BackgroundView.swift */,
+				B3DD9B302470D97400C6C780 /* ConnectButtonView.swift */,
+				B3DD9B372470DD1800C6C780 /* DescriptionTextView.swift */,
+				B3DD9B272470BCA700C6C780 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		B3DD9B392470DF0300C6C780 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B3DD9B3A2470DF2C00C6C780 /* LoginViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		B3E427B22470696200CB4186 = {
 			isa = PBXGroup;
 			children = (
@@ -82,12 +166,15 @@
 		B3E427BD2470696300CB4186 /* Easify */ = {
 			isa = PBXGroup;
 			children = (
-				B3E427BE2470696300CB4186 /* AppDelegate.swift */,
-				B3E427C22470696300CB4186 /* ContentView.swift */,
-				B3E427C02470696300CB4186 /* SceneDelegate.swift */,
+				B3DD9B2C2470C1D900C6C780 /* Common */,
+				B38F8F862470A6D000024200 /* Defines */,
+				B3DD9B292470C1BA00C6C780 /* Extensions */,
 				B3E427C62470696400CB4186 /* Preview Content */,
+				B3E427E7247071BF00CB4186 /* Services */,
 				B3E427E424706F7C00CB4186 /* Supporting Files */,
 				B3E427E124706E6400CB4186 /* Vendor */,
+				B3DD9B392470DF0300C6C780 /* ViewModels */,
+				B3DD9B262470B4C600C6C780 /* Views */,
 			);
 			path = Easify;
 			sourceTree = "<group>";
@@ -103,7 +190,8 @@
 		B3E427D42470696400CB4186 /* EasifyTests */ = {
 			isa = PBXGroup;
 			children = (
-				B3E427D52470696400CB4186 /* EasifyTests.swift */,
+				B3E427EF247079D200CB4186 /* Supporting Files */,
+				B3E427EC2470796A00CB4186 /* Services */,
 				B3E427D72470696400CB4186 /* Info.plist */,
 			);
 			path = EasifyTests;
@@ -123,6 +211,34 @@
 				B3E427C42470696400CB4186 /* Assets.xcassets */,
 				B3E427CC2470696400CB4186 /* Info.plist */,
 				B3E427C92470696400CB4186 /* LaunchScreen.storyboard */,
+				B3E427E52470711000CB4186 /* SpotifyCredentials.plist */,
+				B3E427F424708BC400CB4186 /* Easify-Bridging-Header.h */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B3E427E7247071BF00CB4186 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B3E427E8247071DB00CB4186 /* PlistReaderService.swift */,
+				B38F8F8E2470AA8200024200 /* ServiceProvider.swift */,
+				B3E427F22470863B00CB4186 /* SpotifyService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B3E427EC2470796A00CB4186 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				B3E427ED2470798500CB4186 /* PlistReaderServiceTests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		B3E427EF247079D200CB4186 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B3E427F0247079E000CB4186 /* PlistReaderServiceTests.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -137,6 +253,8 @@
 				B3E427B72470696300CB4186 /* Sources */,
 				B3E427B82470696300CB4186 /* Frameworks */,
 				B3E427B92470696300CB4186 /* Resources */,
+				B3E427EB247075C200CB4186 /* SwiftLint AutoCorrect */,
+				B3E427EA2470740B00CB4186 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -210,6 +328,7 @@
 			files = (
 				B3E427CB2470696400CB4186 /* LaunchScreen.storyboard in Resources */,
 				B3E427C82470696400CB4186 /* Preview Assets.xcassets in Resources */,
+				B3E427E62470711000CB4186 /* SpotifyCredentials.plist in Resources */,
 				B3E427C52470696400CB4186 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,19 +337,71 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3E427F1247079E000CB4186 /* PlistReaderServiceTests.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B3E427EA2470740B00CB4186 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		B3E427EB247075C200CB4186 /* SwiftLint AutoCorrect */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftLint AutoCorrect";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nswiftlint autocorrect\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B3E427B72470696300CB4186 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3E427F32470863B00CB4186 /* SpotifyService.swift in Sources */,
 				B3E427BF2470696300CB4186 /* AppDelegate.swift in Sources */,
+				B3DD9B362470DA7200C6C780 /* BackgroundView.swift in Sources */,
+				B3DD9B2B2470C1C900C6C780 /* UIColor+Theme.swift in Sources */,
+				B3DD9B382470DD1800C6C780 /* DescriptionTextView.swift in Sources */,
+				B3DD9B312470D97400C6C780 /* ConnectButtonView.swift in Sources */,
 				B3E427C12470696300CB4186 /* SceneDelegate.swift in Sources */,
+				B3DD9B332470DA1600C6C780 /* AppNameView.swift in Sources */,
+				B3DD9B3B2470DF2C00C6C780 /* LoginViewModel.swift in Sources */,
+				B38F8F8F2470AA8200024200 /* ServiceProvider.swift in Sources */,
 				B3E427C32470696300CB4186 /* ContentView.swift in Sources */,
+				B3E427E9247071DB00CB4186 /* PlistReaderService.swift in Sources */,
+				B3DD9B282470BCA700C6C780 /* LoginView.swift in Sources */,
+				B3DD9B2F2470D91000C6C780 /* EdgeInsets+Convenience.swift in Sources */,
+				B38F8F882470A6EA00024200 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,7 +409,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3E427D62470696400CB4186 /* EasifyTests.swift in Sources */,
+				B3E427EE2470798500CB4186 /* PlistReaderServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,13 +561,15 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Easify/Vendor",
 				);
-				INFOPLIST_FILE = Easify/Info.plist;
+				INFOPLIST_FILE = "Easify/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = nl.saidozcan.Easify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Easify/Supporting Files/Easify-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -414,13 +587,15 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Easify/Vendor",
 				);
-				INFOPLIST_FILE = Easify/Info.plist;
+				INFOPLIST_FILE = "Easify/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = nl.saidozcan.Easify;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Easify/Supporting Files/Easify-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
