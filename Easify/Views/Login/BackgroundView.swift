@@ -22,7 +22,7 @@ struct BackgroundView: View {
                 Spacer()
                 HStack {
                     ButtonWithLinkView()
-                }.offset(x: 0, y: -16)
+                }.offset(x: 0, y: -Constants.Spacings.quadruple.rawValue)
             }
         }
     }
