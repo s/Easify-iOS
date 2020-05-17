@@ -62,8 +62,7 @@ class PlistReaderServiceTests: XCTestCase {
     func testDateKey() throws {
         let dateValue: Date? = self.readerService?.read(key: "date_key")
         XCTAssertNotNil(dateValue)
-
-        let dateComponents = DateComponents(year: 2020, month: 5, day: 16, hour: 21, minute: 45, second: 54)
+        let dateComponents = DateComponents(timeZone: TimeZone(abbreviation: "CEST"), year: 2020, month: 5, day: 16, hour: 21, minute: 45, second: 54)
         let date = Calendar.current.date(from: dateComponents)
         XCTAssertEqual(dateValue!, date)
     }

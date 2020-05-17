@@ -1,4 +1,4 @@
-name: Swift
+name: CI
 
 on:
   push:
@@ -7,13 +7,27 @@ on:
     branches: [ master ]
 
 jobs:
-  build:
-
-    runs-on: macos-latest
-
+  SwiftLint:
+    runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Build
-      run: swift build -v
-    - name: Run tests
-      run: swift test -v
+    - uses: actions/checkout@v1
+    - name: GitHub Action for SwiftLint
+      uses: norio-nomura/action-swiftlint@3.0.1
+
+  Workflow:
+    name: Build & Test
+    runs-on: macOS-latest
+    strategy:
+        matrix:
+          destination: ['platform=iOS Simulator,name=iPhone 11 Pro Max']
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+      - name: Install SwiftLint
+        run:
+          brew install swiftlint
+      - name: Build and Test
+        run:
+          xcodebuild clean test -project Easify.xcodeproj -scheme Easify -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
+        env: 
+         destination: ${{ matrix.destination }}
