@@ -21,7 +21,6 @@
 		B3DD9B472471991700C6C780 /* SafariView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3DD9B462471991700C6C780 /* SafariView.swift */; };
 		B3E427BF2470696300CB4186 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E427BE2470696300CB4186 /* AppDelegate.swift */; };
 		B3E427C12470696300CB4186 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E427C02470696300CB4186 /* SceneDelegate.swift */; };
-		B3E427C32470696300CB4186 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E427C22470696300CB4186 /* ContentView.swift */; };
 		B3E427C52470696400CB4186 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3E427C42470696400CB4186 /* Assets.xcassets */; };
 		B3E427C82470696400CB4186 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3E427C72470696400CB4186 /* Preview Assets.xcassets */; };
 		B3E427CB2470696400CB4186 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3E427C92470696400CB4186 /* LaunchScreen.storyboard */; };
@@ -63,7 +62,6 @@
 		B3E427BB2470696300CB4186 /* Easify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Easify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E427BE2470696300CB4186 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B3E427C02470696300CB4186 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B3E427C22470696300CB4186 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B3E427C42470696400CB4186 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B3E427C72470696400CB4186 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B3E427CA2470696400CB4186 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -120,7 +118,6 @@
 			children = (
 				B3DD9B452471990E00C6C780 /* Common */,
 				B3DD9B342470DA6600C6C780 /* Login */,
-				B3E427C22470696300CB4186 /* ContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -476,7 +473,6 @@
 				B3DD9B332470DA1600C6C780 /* AppNameView.swift in Sources */,
 				B3DD9B3B2470DF2C00C6C780 /* LoginViewModel.swift in Sources */,
 				B38F8F8F2470AA8200024200 /* ServiceProvider.swift in Sources */,
-				B3E427C32470696300CB4186 /* ContentView.swift in Sources */,
 				B3E427E9247071DB00CB4186 /* PlistReaderService.swift in Sources */,
 				B3DD9B472471991700C6C780 /* SafariView.swift in Sources */,
 				B3DD9B282470BCA700C6C780 /* LoginView.swift in Sources */,
