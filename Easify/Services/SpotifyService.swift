@@ -11,7 +11,9 @@ import Foundation
 // MARK: SpotifyCredentialsKeys
 private enum SpotifyCredentialsKeys: String {
     case clientID = "client_id"
-    case redirectURI = "redirect_uri"
+    case redirectURL = "redirect_url"
+    case tokenSwapURL = "token_swap_url"
+    case tokenRefreshURL = "token_refresh_url"
 }
 
 // MARK: SpotifyServiceError
@@ -24,11 +26,15 @@ enum SpotifyServiceError: Error {
             return message
         }
     }
+
+    static func readingError(for key: String) -> SpotifyServiceError {
+        return SpotifyServiceError.cannotReadRequiredKey(message: "Cannot read the required key: \(key)")
+    }
 }
 
 // MARK: SpotifyService
 class SpotifyService: NSObject {
-    // MARK: Properties
+    // MARK: Public Properties
     lazy var appRemote: SPTAppRemote = {
         let appRemote = SPTAppRemote(configuration: self.configuration, logLevel: .debug)
         appRemote.delegate = self
@@ -39,8 +45,9 @@ class SpotifyService: NSObject {
         let manager = SPTSessionManager(configuration: configuration, delegate: self)
         return manager
     }()
-    private let clientID: String
-    private let redirectURI: URL
+
+    // MARK: Private Properties
+    private let configuration: SPTConfiguration
     private static let accessTokenKey = "nl.saidozcan.SpotifyService.AccessTokenKey"
     private var accessToken: String? = UserDefaults.standard.string(forKey: SpotifyService.accessTokenKey) {
         didSet {
@@ -48,26 +55,23 @@ class SpotifyService: NSObject {
             defaults.set(accessToken, forKey: SpotifyService.accessTokenKey)
         }
     }
-    private let configuration: SPTConfiguration
 
     // MARK: Lifecycle
     init(plistReaderService: PlistReaderService) throws {
-        if let clientIDString: String? = plistReaderService.read(key: SpotifyCredentialsKeys.clientID.rawValue),
-            let nonOptionalClientID = clientIDString {
-            self.clientID = nonOptionalClientID
-        } else {
-            throw SpotifyServiceError.cannotReadRequiredKey(message: "Cannot read the required key: \(SpotifyCredentialsKeys.clientID.rawValue)")
+        guard let clientID: String = plistReaderService.read(key: SpotifyCredentialsKeys.clientID.rawValue) else {
+            throw SpotifyServiceError.readingError(for: SpotifyCredentialsKeys.clientID.rawValue)
         }
 
-        if let redirectURIString: String? = plistReaderService.read(key: SpotifyCredentialsKeys.redirectURI.rawValue),
-            let nonOptionalRedirectURI = redirectURIString,
-            let redirectURI = URL(string: nonOptionalRedirectURI) {
-            self.redirectURI = redirectURI
-        } else {
-            throw SpotifyServiceError.cannotReadRequiredKey(message: "Cannot read the required key: \(SpotifyCredentialsKeys.redirectURI.rawValue)")
+        guard
+            let redirectURLString: String = plistReaderService.read(key: SpotifyCredentialsKeys.redirectURL.rawValue),
+            let redirectURL = URL(string: redirectURLString)
+        else {
+            throw SpotifyServiceError.readingError(for: SpotifyCredentialsKeys.redirectURL.rawValue)
         }
 
-        self.configuration = SPTConfiguration(clientID: clientID, redirectURL: redirectURI)
+        self.configuration = SPTConfiguration(clientID: clientID, redirectURL: redirectURL)
+        self.configuration.tokenSwapURL = plistReaderService.read(key: SpotifyCredentialsKeys.tokenSwapURL.rawValue)
+        self.configuration.tokenRefreshURL = plistReaderService.read(key: SpotifyCredentialsKeys.tokenRefreshURL.rawValue)
         super.init()
     }
 
@@ -78,7 +82,15 @@ class SpotifyService: NSObject {
     }
 
     func login() {
-        let scope: SPTScope = [.playlistReadPrivate]
+        let scope: SPTScope = [
+            .playlistReadPrivate,
+            .playlistReadCollaborative,
+            .playlistModifyPublic,
+            .userReadRecentlyPlayed,
+            .userLibraryModify,
+            .userReadPrivate,
+            .userTopRead
+        ]
         sessionManager.initiateSession(with: scope, options: .clientOnly)
     }
 }
