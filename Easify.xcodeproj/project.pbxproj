@@ -103,6 +103,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		B3DD9B2C2470C1D900C6C780 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				B3E427BE2470696300CB4186 /* AppDelegate.swift */,
+				B3E427C02470696300CB4186 /* SceneDelegate.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
 		B3E427B22470696200CB4186 = {
 			isa = PBXGroup;
 			children = (
@@ -124,8 +132,7 @@
 		B3E427BD2470696300CB4186 /* Easify */ = {
 			isa = PBXGroup;
 			children = (
-				B3E427BE2470696300CB4186 /* AppDelegate.swift */,
-				B3E427C02470696300CB4186 /* SceneDelegate.swift */,
+				B3DD9B2C2470C1D900C6C780 /* Common */,
 				B38F8F862470A6D000024200 /* Defines */,
 				B3DD9B292470C1BA00C6C780 /* Extensions */,
 				B3E427C62470696400CB4186 /* Preview Content */,
