@@ -26,9 +26,6 @@ jobs:
       - name: Install SwiftLint
         run:
           brew install swiftlint
-      - name: Install Cocoapods
-        run:
-          brew install cocoapods
       - name: Install Dependencies
         run:
           pod install
