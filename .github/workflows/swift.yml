@@ -1,4 +1,4 @@
-name: Swift
+name: CI
 
 on:
   push:
@@ -7,13 +7,19 @@ on:
     branches: [ master ]
 
 jobs:
-  build:
-
-    runs-on: macos-latest
-
+  test:
+    name: Test
+    runs-on: macOS-latest
+    strategy:
+        matrix:
+          destination: ['platform=iOS Simulator,OS=13.3,name=iPhone 11 Pro Max']
     steps:
-    - uses: actions/checkout@v2
-    - name: Build
-      run: swift build -v
-    - name: Run tests
-      run: swift test -v
+      - name: Checkout
+        uses: actions/checkout@master
+      - name: Build and test
+        run: |
+          cd Easify
+          xcodebuild clean test -project Easify.xcodeproj -scheme Texstyle -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
+          bash <(curl -s https://codecov.io/bash)
+        env: 
+         destination: ${{ matrix.destination }}
