@@ -35,6 +35,10 @@ class SpotifyService: NSObject {
         appRemote.connectionParameters.accessToken = self.accessToken
         return appRemote
     }()
+    lazy var sessionManager: SPTSessionManager = {
+        let manager = SPTSessionManager(configuration: configuration, delegate: self)
+        return manager
+    }()
     private let clientID: String
     private let redirectURI: URL
     private static let accessTokenKey = "nl.saidozcan.SpotifyService.AccessTokenKey"
@@ -72,19 +76,40 @@ class SpotifyService: NSObject {
         self.accessToken = accessToken
         self.appRemote.connectionParameters.accessToken = accessToken
     }
+
+    func login() {
+        let scope: SPTScope = [.playlistReadPrivate]
+        sessionManager.initiateSession(with: scope, options: .clientOnly)
+    }
 }
 
 // MARK: SpotifyService: SPTAppRemoteDelegate
 extension SpotifyService: SPTAppRemoteDelegate {
     func appRemoteDidEstablishConnection(_ appRemote: SPTAppRemote) {
-
+        print("appRemoteDidEstablishConnection")
     }
 
     func appRemote(_ appRemote: SPTAppRemote, didFailConnectionAttemptWithError error: Error?) {
-
+        print("didFailConnectionAttemptWithError")
     }
 
     func appRemote(_ appRemote: SPTAppRemote, didDisconnectWithError error: Error?) {
+        print("didDisconnectWithError")
+    }
+}
+
+// MARK: SpotifyService: SPTSessionManager
+extension SpotifyService: SPTSessionManagerDelegate {
+    func sessionManager(manager: SPTSessionManager, didInitiate session: SPTSession) {
+        appRemote.connectionParameters.accessToken = session.accessToken
+        appRemote.connect()
+    }
+
+    func sessionManager(manager: SPTSessionManager, didFailWith error: Error) {
+
+    }
+
+    func sessionManager(manager: SPTSessionManager, didRenew session: SPTSession) {
 
     }
 }
