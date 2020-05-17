@@ -19,6 +19,7 @@
 		B3E427E9247071DB00CB4186 /* PlistReaderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E427E8247071DB00CB4186 /* PlistReaderService.swift */; };
 		B3E427EE2470798500CB4186 /* PlistReaderServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E427ED2470798500CB4186 /* PlistReaderServiceTests.swift */; };
 		B3E427F1247079E000CB4186 /* PlistReaderServiceTests.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3E427F0247079E000CB4186 /* PlistReaderServiceTests.plist */; };
+		B3E427F32470863B00CB4186 /* SpotifyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E427F22470863B00CB4186 /* SpotifyService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		B3E427E8247071DB00CB4186 /* PlistReaderService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistReaderService.swift; sourceTree = "<group>"; };
 		B3E427ED2470798500CB4186 /* PlistReaderServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistReaderServiceTests.swift; sourceTree = "<group>"; };
 		B3E427F0247079E000CB4186 /* PlistReaderServiceTests.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PlistReaderServiceTests.plist; sourceTree = "<group>"; };
+		B3E427F22470863B00CB4186 /* SpotifyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyService.swift; sourceTree = "<group>"; };
 		B3E427F424708BC400CB4186 /* Easify-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Easify-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -161,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				B3E427E8247071DB00CB4186 /* PlistReaderService.swift */,
+				B3E427F22470863B00CB4186 /* SpotifyService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -325,6 +328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3E427F32470863B00CB4186 /* SpotifyService.swift in Sources */,
 				B3E427BF2470696300CB4186 /* AppDelegate.swift in Sources */,
 				B3E427C12470696300CB4186 /* SceneDelegate.swift in Sources */,
 				B3E427C32470696300CB4186 /* ContentView.swift in Sources */,
