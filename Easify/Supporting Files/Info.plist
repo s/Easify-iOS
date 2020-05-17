@@ -5,10 +5,12 @@
 	<key>CFBundleURLTypes</key>
 	<array>
 		<dict>
-			<key>URL schemes</key>
-			<string>easify</string>
 			<key>CFBundleURLName</key>
 			<string>nl.saidozcan.Easify</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>easify</string>
+			</array>
 		</dict>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>
@@ -64,6 +66,10 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>spotify</string>
 	</array>
 </dict>
 </plist>
