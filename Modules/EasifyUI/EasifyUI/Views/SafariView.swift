@@ -13,7 +13,7 @@ import SafariServices
 public struct SafariView {
     // MARK: Properties
     public let url: URL
-    
+
     // MARK: Lifecycle
     public init(url: URL) {
         self.url = url

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -172,6 +172,7 @@
 				B32CEB0624733D9B00769C44 /* Sources */,
 				B32CEB0724733D9B00769C44 /* Frameworks */,
 				B32CEB0824733D9B00769C44 /* Resources */,
+				B3C433CF2473551E00EC67C3 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -191,6 +192,7 @@
 				B32CEB1024733D9B00769C44 /* Frameworks */,
 				B32CEB1124733D9B00769C44 /* Resources */,
 				4DC5002B30C6961DEFD56713 /* [CP] Embed Pods Frameworks */,
+				B3C433D02473553600EC67C3 /* SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -295,6 +297,42 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EasifyUITests/Pods-EasifyUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		B3C433CF2473551E00EC67C3 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		B3C433D02473553600EC67C3 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 		FA01606C315D6B634B933114 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
