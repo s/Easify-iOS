@@ -7,6 +7,11 @@ def common_pods
 	use_frameworks!
 end
 
+def network_pods
+    pod 'Alamofire'
+    use_frameworks!
+end
+
 def core_pods
 	project 'Modules/EasifyCore/EasifyCore.project'
     common_pods
@@ -45,4 +50,9 @@ end
 
 target 'EasifyTests' do
     app_pods
+end
+
+target 'EasifyNetwork' do
+    project 'Modules/EasifyNetwork/EasifyNetwork.project'
+    network_pods
 end
