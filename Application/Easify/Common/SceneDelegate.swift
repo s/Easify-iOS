@@ -8,7 +8,6 @@
 
 import UIKit
 import SwiftUI
-import Combine
 import SpotifyLogin
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
