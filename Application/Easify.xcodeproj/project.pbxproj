@@ -102,7 +102,6 @@
 		B3B3808824733E92008411DE /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		B3B3808C24733E92008411DE /* ContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
 		B3B3808F24733E92008411DE /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		B3B3809124733E92008411DE /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B3B3809324733E92008411DE /* AppNameView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppNameView.swift; sourceTree = "<group>"; };
 		B3B3809424733E92008411DE /* ButtonWithLinkView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonWithLinkView.swift; sourceTree = "<group>"; };
 		B3B3809524733E92008411DE /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -266,7 +265,6 @@
 			isa = PBXGroup;
 			children = (
 				B3B3808E24733E92008411DE /* View Models */,
-				B3B3809024733E92008411DE /* View Controllers */,
 				B3B3809224733E92008411DE /* Views */,
 			);
 			path = Login;
@@ -278,14 +276,6 @@
 				B3B3808F24733E92008411DE /* LoginViewModel.swift */,
 			);
 			path = "View Models";
-			sourceTree = "<group>";
-		};
-		B3B3809024733E92008411DE /* View Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				B3B3809124733E92008411DE /* LoginViewController.swift */,
-			);
-			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 		B3B3809224733E92008411DE /* Views */ = {
