@@ -4,7 +4,14 @@ Easify-iOS is an iOS application to discover new songs based on your preferences
 
 It uses [SpotifyLogin SDK](https://github.com/spotify/SpotifyLogin) to handle the login process with Spotify.
 
-To be able to run the application, register an application on [Spotify Developer Portal](https://developer.spotify.com/dashboard/applications) and please add following values to the `SpotifyCredentials.plist` in `EasifyCore` module:
+To be able to run the application, first run following commands to install the dependencies:
+
+```
+pod install
+brew install swiftlint
+```
+
+Then you can register an application on [Spotify Developer Portal](https://developer.spotify.com/dashboard/applications) and add the following values to the `SpotifyCredentials.plist` in `EasifyCore` module:
 
 ```
 	<key>client_id</key>
