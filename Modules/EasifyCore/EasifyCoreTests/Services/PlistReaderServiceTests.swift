@@ -21,7 +21,8 @@ class PlistReaderServiceTests: XCTestCase {
         let plistNameThatDoesNotExist: String = "PlistThatDoesNotExist"
         XCTAssertThrowsError(try PlistReaderService(name: plistNameThatDoesNotExist, bundle: bundle)) { error in
             XCTAssert(error is PlistReaderServiceError)
-            XCTAssertEqual(error as! PlistReaderServiceError, PlistReaderServiceError.noSuchFileFound(fileName: "\(plistNameThatDoesNotExist).plist"))
+            XCTAssertEqual(error as! PlistReaderServiceError,
+                           PlistReaderServiceError.noSuchFileFound(fileName: "\(plistNameThatDoesNotExist).plist"))
         }
         XCTAssertNoThrow(self.readerService = try PlistReaderService(name: testPlistFileName, bundle: bundle))
     }
