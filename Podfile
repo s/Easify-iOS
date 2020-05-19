@@ -1,4 +1,5 @@
 workspace 'Easify'
+platform :ios, '13.0'
 
 # mark defs
 def common_pods
