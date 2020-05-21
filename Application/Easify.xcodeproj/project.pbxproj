@@ -361,8 +361,8 @@
 				B384ADC824733AD200D9514A /* Sources */,
 				B384ADC924733AD200D9514A /* Frameworks */,
 				B384ADCA24733AD200D9514A /* Resources */,
-				B3C433D12473556400EC67C3 /* SwiftLint */,
 				B393A0152476F1F200CDCA21 /* Copy Frameworks */,
+				B3C433D12473556400EC67C3 /* SwiftLint */,
 			);
 			buildRules = (
 			);

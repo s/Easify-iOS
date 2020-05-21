@@ -16,7 +16,7 @@ public struct SpotifyTrack {
     public let isExplicit: Bool
     public let externalURLs: [String: URL]
     public let href: URL
-    public let id: String
+    public let identifier: String
     public let name: String
     public let previewURL: URL
     public let trackNumber: Int
@@ -32,7 +32,7 @@ private extension SpotifyTrack {
         case isExplicit = "explicit"
         case externalURLs = "external_urls"
         case href
-        case id
+        case identifier = "id"
         case name
         case previewURL = "preview_url"
         case trackNumber = "track_number"

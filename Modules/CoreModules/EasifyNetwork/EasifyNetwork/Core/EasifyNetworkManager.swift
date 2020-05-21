@@ -30,12 +30,12 @@ final class EasifyNetworkManager {
         .request(request)
         .publishDecodable(type: Request.Response.self)
         .tryMap { dataResponse in
-            //DataResponse<Decodable, AFError>
+//            DataResponse<Decodable, AFError>
             switch dataResponse.result {
-            case .success(let d):
-                print(d)
-            case .failure(let e):
-                print(e)
+            case .success(let decodable):
+                print(decodable)
+            case .failure(let error):
+                print(error)
             }
             print(dataResponse)
             return dataResponse.data ?? Data()
@@ -45,8 +45,8 @@ final class EasifyNetworkManager {
             case .finished: print("finished")
             case .failure(let error): print(error)
             }
-        }) { a in
-            print(a)
+        }) { variable in
+            print(variable)
         }
 
     }
