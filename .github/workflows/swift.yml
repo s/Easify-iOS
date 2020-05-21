@@ -18,6 +18,10 @@ jobs:
         uses: actions/checkout@master
       - name: Force Xcode 11.5
         run: sudo xcode-select -switch /Applications/Xcode_11.5.app
+      - name: Dump file hierarchy
+        run: ls -R
+      - name: Current directory
+        run: pwd
       - name: Build and Test
         run: |
           xcodebuild -workspace Easify.xcworkspace -scheme SpotifyLogin -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO -configuration clean build
