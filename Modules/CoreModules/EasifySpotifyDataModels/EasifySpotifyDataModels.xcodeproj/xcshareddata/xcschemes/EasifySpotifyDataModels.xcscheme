@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B3924B722476109F008821F9"
+               BuildableName = "EasifySpotifyDataModels.framework"
+               BlueprintName = "EasifySpotifyDataModels"
+               ReferencedContainer = "container:EasifySpotifyDataModels.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -16,10 +32,10 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B384ADE124733AD300D9514A"
-               BuildableName = "EasifyTests.xctest"
-               BlueprintName = "EasifyTests"
-               ReferencedContainer = "container:Application/Easify.xcodeproj">
+               BlueprintIdentifier = "B3924B7B247610A0008821F9"
+               BuildableName = "EasifySpotifyDataModelsTests.xctest"
+               BlueprintName = "EasifySpotifyDataModelsTests"
+               ReferencedContainer = "container:EasifySpotifyDataModels.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -41,6 +57,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "B3924B722476109F008821F9"
+            BuildableName = "EasifySpotifyDataModels.framework"
+            BlueprintName = "EasifySpotifyDataModels"
+            ReferencedContainer = "container:EasifySpotifyDataModels.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

@@ -16,10 +16,10 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B384AE0324733BCD00D9514A"
-               BuildableName = "EasifyCoreTests.xctest"
-               BlueprintName = "EasifyCoreTests"
-               ReferencedContainer = "container:Modules/CoreModules/EasifyCore/EasifyCore.xcodeproj">
+               BlueprintIdentifier = "B3C4343C2474412100EC67C3"
+               BuildableName = "EasifyNetworkTests.xctest"
+               BlueprintName = "EasifyNetworkTests"
+               ReferencedContainer = "container:EasifyNetwork.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>

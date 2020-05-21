@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B30B2EF52475EB5C00C6088F"
-               BuildableName = "EasifyDefines.framework"
-               BlueprintName = "EasifyDefines"
-               ReferencedContainer = "container:Modules/CoreModules/EasifyDefines/EasifyDefines.xcodeproj">
+               BlueprintIdentifier = "B384ADCB24733AD200D9514A"
+               BuildableName = "Easify.app"
+               BlueprintName = "Easify"
+               ReferencedContainer = "container:Easify.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,6 +28,16 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B384ADE124733AD300D9514A"
+               BuildableName = "EasifyTests.xctest"
+               BlueprintName = "EasifyTests"
+               ReferencedContainer = "container:Easify.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -40,6 +50,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "B384ADCB24733AD200D9514A"
+            BuildableName = "Easify.app"
+            BlueprintName = "Easify"
+            ReferencedContainer = "container:Easify.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -47,15 +67,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B30B2EF52475EB5C00C6088F"
-            BuildableName = "EasifyDefines.framework"
-            BlueprintName = "EasifyDefines"
-            ReferencedContainer = "container:Modules/CoreModules/EasifyDefines/EasifyDefines.xcodeproj">
+            BlueprintIdentifier = "B384ADCB24733AD200D9514A"
+            BuildableName = "Easify.app"
+            BlueprintName = "Easify"
+            ReferencedContainer = "container:Easify.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
