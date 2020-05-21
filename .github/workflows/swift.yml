@@ -18,12 +18,13 @@ jobs:
         uses: actions/checkout@master
       - name: Build and Test
         run: |
-          xcodebuild -workspace Easify.xcworkspace -scheme SpotifyLogin -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
-          xcodebuild -workspace Easify.xcworkspace -scheme EasifyDefines -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
-          xcodebuild -workspace Easify.xcworkspace -scheme EasifyNetwork -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
-          xcodebuild test -workspace Easify.xcworkspace -scheme EasifyNetworkTests -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
-          xcodebuild test -workspace Easify.xcworkspace -scheme EasifySpotifyDataModels -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
-          xcodebuild test -workspace Easify.xcworkspace -scheme EasifyCore -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
-          xcodebuild test -workspace Easify.xcworkspace -scheme EasifyUI -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
+          xcodebuild -workspace Easify.xcworkspace -scheme SpotifyLogin -destination 'platform=iOS Simulator,name=iPhone 11 Pro Max' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO -configuration clean build
+          xcodebuild -workspace Easify.xcworkspace -scheme SpotifyLogin -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO -configuration clean build
+          xcodebuild -workspace Easify.xcworkspace -scheme EasifyDefines -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO -configuration clean build
+          xcodebuild -workspace Easify.xcworkspace -scheme EasifyNetwork -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO -configuration clean build
+          xcodebuild test -workspace Easify.xcworkspace -scheme EasifyNetworkTests -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO -configuration clean build
+          xcodebuild test -workspace Easify.xcworkspace -scheme EasifySpotifyDataModels -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO -configuration clean build
+          xcodebuild test -workspace Easify.xcworkspace -scheme EasifyCore -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO -configuration clean build
+          xcodebuild test -workspace Easify.xcworkspace -scheme EasifyUI -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO -configuration clean build
         env: 
          destination: ${{ matrix.destination }}
