@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B30B2EF52475EB5C00C6088F"
-               BuildableName = "EasifyDefines.framework"
-               BlueprintName = "EasifyDefines"
-               ReferencedContainer = "container:EasifyDefines.xcodeproj">
+               BlueprintIdentifier = "B384ADFA24733BCD00D9514A"
+               BuildableName = "EasifyCore.framework"
+               BlueprintName = "EasifyCore"
+               ReferencedContainer = "container:Modules/CoreModules/EasifyCore/EasifyCore.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,6 +28,16 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "B384AE0324733BCD00D9514A"
+               BuildableName = "EasifyCoreTests.xctest"
+               BlueprintName = "EasifyCoreTests"
+               ReferencedContainer = "container:Modules/CoreModules/EasifyCore/EasifyCore.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -50,10 +60,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B30B2EF52475EB5C00C6088F"
-            BuildableName = "EasifyDefines.framework"
-            BlueprintName = "EasifyDefines"
-            ReferencedContainer = "container:EasifyDefines.xcodeproj">
+            BlueprintIdentifier = "B384ADFA24733BCD00D9514A"
+            BuildableName = "EasifyCore.framework"
+            BlueprintName = "EasifyCore"
+            ReferencedContainer = "container:Modules/CoreModules/EasifyCore/EasifyCore.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

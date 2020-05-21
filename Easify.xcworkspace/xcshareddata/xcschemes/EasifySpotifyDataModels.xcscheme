@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B384ADFA24733BCD00D9514A"
-               BuildableName = "EasifyCore.framework"
-               BlueprintName = "EasifyCore"
-               ReferencedContainer = "container:EasifyCore.xcodeproj">
+               BlueprintIdentifier = "B3924B722476109F008821F9"
+               BuildableName = "EasifySpotifyDataModels.framework"
+               BlueprintName = "EasifySpotifyDataModels"
+               ReferencedContainer = "container:Modules/CoreModules/EasifySpotifyDataModels/EasifySpotifyDataModels.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B384AE0324733BCD00D9514A"
-               BuildableName = "EasifyCoreTests.xctest"
-               BlueprintName = "EasifyCoreTests"
-               ReferencedContainer = "container:EasifyCore.xcodeproj">
+               BlueprintIdentifier = "B3924B7B247610A0008821F9"
+               BuildableName = "EasifySpotifyDataModelsTests.xctest"
+               BlueprintName = "EasifySpotifyDataModelsTests"
+               ReferencedContainer = "container:Modules/CoreModules/EasifySpotifyDataModels/EasifySpotifyDataModels.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -60,10 +60,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B384ADFA24733BCD00D9514A"
-            BuildableName = "EasifyCore.framework"
-            BlueprintName = "EasifyCore"
-            ReferencedContainer = "container:EasifyCore.xcodeproj">
+            BlueprintIdentifier = "B3924B722476109F008821F9"
+            BuildableName = "EasifySpotifyDataModels.framework"
+            BlueprintName = "EasifySpotifyDataModels"
+            ReferencedContainer = "container:Modules/CoreModules/EasifySpotifyDataModels/EasifySpotifyDataModels.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
