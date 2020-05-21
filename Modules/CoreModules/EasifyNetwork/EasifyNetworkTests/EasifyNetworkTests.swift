@@ -13,6 +13,6 @@ import Alamofire
 
 class EasifyNetworkTests: XCTestCase {
     func testExample() throws {
-        
+
     }
 }
