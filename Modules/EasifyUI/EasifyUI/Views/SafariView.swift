@@ -9,18 +9,20 @@
 import SwiftUI
 import SafariServices
 
-// MARK: SafariView
+// MARK: - SafariView
+/// `SafariView` can be used to show a `SFSafariViewController` instance for a given `URL` parameter.
+/// - parameter url: The url to be opened in the `SFSafariViewController` instance.
 public struct SafariView {
-    // MARK: Properties
+    // MARK: - Properties
     public let url: URL
 
-    // MARK: Lifecycle
+    // MARK: - Lifecycle
     public init(url: URL) {
         self.url = url
     }
 }
 
-// MARK: SafariView: UIViewControllerRepresentable
+// MARK: - SafariView: UIViewControllerRepresentable
 extension SafariView: UIViewControllerRepresentable {
     public typealias UIViewControllerType = SFSafariViewController
 

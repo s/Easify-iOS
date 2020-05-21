@@ -12,13 +12,13 @@ import SpotifyLogin
 
 @UIApplicationMain
 class AppDelegate: UIResponder {
-    // MARK: Properties
+    // MARK: - Properties
     private(set) var serviceProvider: ServiceProvider?
 }
 
-// MARK: AppDelegate: UIApplicationDelegate
+// MARK: - AppDelegate: UIApplicationDelegate
 extension AppDelegate: UIApplicationDelegate {
-    // MARK: Lifecycle
+    // MARK: - Lifecycle
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         do {
             self.serviceProvider = try ServiceProvider()
@@ -34,7 +34,7 @@ extension AppDelegate: UIApplicationDelegate {
         return handled
     }
 
-    // MARK: UISceneSession Lifecycle
+    // MARK: - UISceneSession Lifecycle
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         // Called when a new scene session is being created.
         // Use this method to select a configuration to create the new scene with.

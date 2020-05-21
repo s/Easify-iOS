@@ -9,12 +9,13 @@
 import UIKit
 import SwiftUI
 
-// MARK: ActivityIndicatorView
+// MARK: - ActivityIndicatorView
+/// ActivityIndicatorView provides a wrapper around `UIActivityIndicatorView` to show a loading indicator for asynchronous operations.
 struct ActivityIndicatorView {
     let style: UIActivityIndicatorView.Style
 }
 
-// MARK: ActivityIndicatorView: UIViewRepresentable
+// MARK: - ActivityIndicatorView: UIViewRepresentable
 extension ActivityIndicatorView: UIViewRepresentable {
     public typealias UIViewType = UIActivityIndicatorView
 

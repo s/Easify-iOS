@@ -9,13 +9,13 @@
 import SwiftUI
 import EasifyCore
 
-// MARK: ConnectButtonView
+// MARK: - ConnectButtonView
 struct ConnectButtonView {
-    // MARK: Properties
+    // MARK: - Properties
     @EnvironmentObject var spotifyService: SpotifyService
 }
 
-// MARK: ConnectButtonView: UIViewControllerRepresentable
+// MARK: - ConnectButtonView: UIViewControllerRepresentable
 extension ConnectButtonView: UIViewControllerRepresentable {
     typealias UIViewControllerType = SpotifyLoginViewController
 

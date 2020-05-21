@@ -10,7 +10,7 @@ import SwiftUI
 import EasifyCore
 
 struct ContainerView: View {
-    // MARK: Properties
+    // MARK: - Properties
     @EnvironmentObject var spotifyService: SpotifyService
 
     var body: some View {

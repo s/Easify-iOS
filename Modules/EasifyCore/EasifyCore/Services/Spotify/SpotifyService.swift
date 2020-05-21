@@ -10,33 +10,38 @@ import Combine
 import Foundation
 import SpotifyLogin
 
-// MARK: SpotifyCredentialsKeys
+// MARK: - SpotifyCredentialsKeys
 private enum SpotifyCredentialsKeys: String {
     case clientID = "client_id"
     case clientSecret = "client_secret"
     case redirectURL = "redirect_url"
 }
 
-// MARK: SpotifyServiceError
+// MARK: - SpotifyServiceError
+/// `SpotifyServiceError` is used when an error occurs while constructing `SpotifyService` instance.
 public enum SpotifyServiceError: Error {
+    /// `.cannotReadRequiredKey` type of error is thrown when one of the required keys is not found or is able to read from the given property list file.
     case cannotReadRequiredKey(message: String)
 
+    /// `description` property returns the message of an error type of `SpotifyServiceError`.
     var description: String {
         switch self {
         case .cannotReadRequiredKey(let message):
             return message
         }
     }
-
+    
+    /// `readingError` method is a conveinence method which is used to create `.cannotReadRequiredKey` type of errors.
     static func readingError(for key: String) -> SpotifyServiceError {
         return SpotifyServiceError.cannotReadRequiredKey(message: "Cannot read the required key: \(key)")
     }
 }
 
-// MARK: SpotifyService
+// MARK: - SpotifyService
 public class SpotifyService: ObservableObject {
-    // MARK: Properties
-    static let loginScopes: [Scope] = [
+    // MARK: - Properties
+    /// The scopes which are requested upon login to Spotify API. They are as follows:
+    public static let loginScopes: [Scope] = [
         .userReadTop,
         .playlistModifyPublic,
         .playlistReadPrivate,
@@ -47,7 +52,8 @@ public class SpotifyService: ObservableObject {
     private static let accessTokenKey = "nl.saidozcan.SpotifyService.accessTokenKey"
     @Published public private(set) var isLoggedIn: Bool = false
 
-    // MARK: Lifecycle
+    // MARK: - Lifecycle
+    /// `SpotifyService` requires an instance of `PlistReaderService` which is constructed with the necessary plist file which includes `client_id`, `client_secret` and `redirect_uri` keys in it.
     public init(plistReaderService: PlistReaderService) throws {
         guard let clientID: String = plistReaderService.read(key: SpotifyCredentialsKeys.clientID.rawValue) else {
             throw SpotifyServiceError.readingError(for: SpotifyCredentialsKeys.clientID.rawValue)
@@ -78,7 +84,7 @@ public class SpotifyService: ObservableObject {
                                                object: nil)
     }
 
-    // MARK: Private
+    // MARK: - Private
     @objc private func didLoginSuccessfully() {
         SpotifyLogin.shared.getAccessToken { [weak self] (accessToken, _) in
             if let accessToken = accessToken {

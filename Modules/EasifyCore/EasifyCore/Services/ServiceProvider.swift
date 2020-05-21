@@ -8,12 +8,14 @@
 
 import Foundation
 
+/// ServiceProvider contains various services which are critical to the application.
 public class ServiceProvider {
-    // MARK: Properties
+    // MARK: - Properties
+    /// Property `plistReaderService` returns an instance for reading values from `Plist` files.
     public let plistReaderService: PlistReaderService
+    /// Property `spotifyService` returns an instance for interacting with Spotify API.
     public let spotifyService: SpotifyService
 
-    // MARK: Lifecycle
     public init() throws {
         do {
             plistReaderService = try PlistReaderService(name: Constants.Files.spotifyPlistFileName,

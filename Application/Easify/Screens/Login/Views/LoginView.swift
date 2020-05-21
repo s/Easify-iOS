@@ -9,12 +9,12 @@
 import SwiftUI
 import EasifyCore
 
-// MARK: LoginView
+// MARK: - LoginView
 struct LoginView: View {
-    // MARK: Properties
+    // MARK: - Properties
     @ObservedObject private var loginViewModel = LoginViewModel()
 
-    // MARK: UI
+    // MARK: - UI
     var body: some View {
         ZStack {
             BackgroundView()

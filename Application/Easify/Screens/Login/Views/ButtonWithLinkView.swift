@@ -11,12 +11,12 @@ import EasifyUI
 import EasifyCore
 import SafariServices
 
-// MARK: ButtonWithLinkView
+// MARK: - ButtonWithLinkView
 struct ButtonWithLinkView: View {
-    // MARK: Properties
+    // MARK: - Properties
     @State var showSafari = false
 
-    // MARK: 
+    // MARK: - 
     var body: some View {
         URL(string: Constants.URLS.backgroundImageURL).map { url in
             Button(action: {

@@ -10,7 +10,7 @@ import SwiftUI
 import EasifyCore
 
 struct BackgroundView: View {
-    // MARK: 
+    // MARK: - 
     var body: some View {
         ZStack {
             HStack {
