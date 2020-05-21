@@ -181,8 +181,8 @@
 				B32CEB0624733D9B00769C44 /* Sources */,
 				B32CEB0724733D9B00769C44 /* Frameworks */,
 				B32CEB0824733D9B00769C44 /* Resources */,
-				B3C433CF2473551E00EC67C3 /* SwiftLint */,
 				B3E4B985247622DE001FD420 /* Embed Frameworks */,
+				B3C433CF2473551E00EC67C3 /* SwiftLint */,
 			);
 			buildRules = (
 			);
