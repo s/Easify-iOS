@@ -8,8 +8,8 @@
 
 import Combine
 
-// MARK: LoginViewModel
+// MARK: - LoginViewModel
 class LoginViewModel: ObservableObject {
-    // MARK: Properties
+    // MARK: - Properties
     @Published var isConnecting = false
 }

@@ -11,7 +11,18 @@ import SpotifyLogin
 
 struct HomeView: View {
     var body: some View {
-        Text("Welcome \(SpotifyLogin.shared.username ?? "")")
+        TabView {
+            Text("First View")
+                .tabItem {
+                    Image(systemName: "1.circle")
+                    Text("First")
+                }.tag(0)
+            Text("Second View")
+                .tabItem {
+                    Image(systemName: "2.circle")
+                    Text("Second")
+                }.tag(1)
+        }
     }
 }
 

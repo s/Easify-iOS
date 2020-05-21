@@ -1,0 +1,692 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B3924B7D247610A0008821F9 /* EasifySpotifyDataModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3924B732476109F008821F9 /* EasifySpotifyDataModels.framework */; };
+		B3924B82247610A0008821F9 /* EasifySpotifyDataModelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3924B81247610A0008821F9 /* EasifySpotifyDataModelsTests.swift */; };
+		B3924B84247610A0008821F9 /* EasifySpotifyDataModels.h in Headers */ = {isa = PBXBuildFile; fileRef = B3924B762476109F008821F9 /* EasifySpotifyDataModels.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3924BAB24761175008821F9 /* SpotifyRecentlyPlayedEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3924BA224761175008821F9 /* SpotifyRecentlyPlayedEndpoint.swift */; };
+		B3924BAC24761175008821F9 /* SpotifyEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3924BA324761175008821F9 /* SpotifyEndpoint.swift */; };
+		B3924BAD24761175008821F9 /* SpotifyCursor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3924BA524761175008821F9 /* SpotifyCursor.swift */; };
+		B3924BAE24761175008821F9 /* SpotifyPagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3924BA624761175008821F9 /* SpotifyPagination.swift */; };
+		B3924BAF24761175008821F9 /* SpotifyContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3924BA724761175008821F9 /* SpotifyContext.swift */; };
+		B3924BB024761175008821F9 /* SpotifyPlayHistoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3924BA824761175008821F9 /* SpotifyPlayHistoryItem.swift */; };
+		B3924BB124761175008821F9 /* SpotifyTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3924BA924761175008821F9 /* SpotifyTrack.swift */; };
+		B3924BB224761175008821F9 /* SpotifyArtist.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3924BAA24761175008821F9 /* SpotifyArtist.swift */; };
+		B3D4D7E02476E05C00A7D906 /* DateFormatter+ISO8601.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D4D7DB2476E05C00A7D906 /* DateFormatter+ISO8601.swift */; };
+		B3D4D7E12476E05C00A7D906 /* KeyedDecodingContainer+DecodeURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D4D7DC2476E05C00A7D906 /* KeyedDecodingContainer+DecodeURL.swift */; };
+		B3D4D7E22476E05C00A7D906 /* KeyedDecodingContainer+DecodeDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D4D7DD2476E05C00A7D906 /* KeyedDecodingContainer+DecodeDate.swift */; };
+		B3D4D7E32476E05C00A7D906 /* Int+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D4D7DE2476E05C00A7D906 /* Int+Convenience.swift */; };
+		B3D4D7E42476E05C00A7D906 /* TimeInterval+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D4D7DF2476E05C00A7D906 /* TimeInterval+Convenience.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B309354E2476210800E95AA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B30935492476210800E95AA7 /* EasifyNetwork.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B3C434342474412100EC67C3;
+			remoteInfo = EasifyNetwork;
+		};
+		B30935502476210800E95AA7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B30935492476210800E95AA7 /* EasifyNetwork.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B3C4343D2474412100EC67C3;
+			remoteInfo = EasifyNetworkTests;
+		};
+		B3924B7E247610A0008821F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3924B6A2476109F008821F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3924B722476109F008821F9;
+			remoteInfo = EasifySpotifyDataModels;
+		};
+		B3E4B9AF24762417001FD420 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3E4B9AB24762417001FD420 /* EasifyDefines.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B30B2EF62475EB5C00C6088F;
+			remoteInfo = EasifyDefines;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B30935492476210800E95AA7 /* EasifyNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EasifyNetwork.xcodeproj; path = ../EasifyNetwork/EasifyNetwork.xcodeproj; sourceTree = "<group>"; };
+		B3924B732476109F008821F9 /* EasifySpotifyDataModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasifySpotifyDataModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3924B762476109F008821F9 /* EasifySpotifyDataModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasifySpotifyDataModels.h; sourceTree = "<group>"; };
+		B3924B772476109F008821F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3924B7C247610A0008821F9 /* EasifySpotifyDataModelsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasifySpotifyDataModelsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3924B81247610A0008821F9 /* EasifySpotifyDataModelsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasifySpotifyDataModelsTests.swift; sourceTree = "<group>"; };
+		B3924B83247610A0008821F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3924BA224761175008821F9 /* SpotifyRecentlyPlayedEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyRecentlyPlayedEndpoint.swift; sourceTree = "<group>"; };
+		B3924BA324761175008821F9 /* SpotifyEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyEndpoint.swift; sourceTree = "<group>"; };
+		B3924BA524761175008821F9 /* SpotifyCursor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyCursor.swift; sourceTree = "<group>"; };
+		B3924BA624761175008821F9 /* SpotifyPagination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyPagination.swift; sourceTree = "<group>"; };
+		B3924BA724761175008821F9 /* SpotifyContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyContext.swift; sourceTree = "<group>"; };
+		B3924BA824761175008821F9 /* SpotifyPlayHistoryItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyPlayHistoryItem.swift; sourceTree = "<group>"; };
+		B3924BA924761175008821F9 /* SpotifyTrack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyTrack.swift; sourceTree = "<group>"; };
+		B3924BAA24761175008821F9 /* SpotifyArtist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyArtist.swift; sourceTree = "<group>"; };
+		B3D4D7DB2476E05C00A7D906 /* DateFormatter+ISO8601.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DateFormatter+ISO8601.swift"; sourceTree = "<group>"; };
+		B3D4D7DC2476E05C00A7D906 /* KeyedDecodingContainer+DecodeURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "KeyedDecodingContainer+DecodeURL.swift"; sourceTree = "<group>"; };
+		B3D4D7DD2476E05C00A7D906 /* KeyedDecodingContainer+DecodeDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "KeyedDecodingContainer+DecodeDate.swift"; sourceTree = "<group>"; };
+		B3D4D7DE2476E05C00A7D906 /* Int+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Convenience.swift"; sourceTree = "<group>"; };
+		B3D4D7DF2476E05C00A7D906 /* TimeInterval+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Convenience.swift"; sourceTree = "<group>"; };
+		B3E4B9AB24762417001FD420 /* EasifyDefines.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EasifyDefines.xcodeproj; path = ../EasifyDefines/EasifyDefines.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B3924B702476109F008821F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3924B79247610A0008821F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3924B7D247610A0008821F9 /* EasifySpotifyDataModels.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B30935192476204300E95AA7 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				B3E4B9AB24762417001FD420 /* EasifyDefines.xcodeproj */,
+				B30935492476210800E95AA7 /* EasifyNetwork.xcodeproj */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
+		B309354A2476210800E95AA7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B309354F2476210800E95AA7 /* EasifyNetwork.framework */,
+				B30935512476210800E95AA7 /* EasifyNetworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3924B692476109F008821F9 = {
+			isa = PBXGroup;
+			children = (
+				B30935192476204300E95AA7 /* Dependencies */,
+				B3924B752476109F008821F9 /* EasifySpotifyDataModels */,
+				B3924B80247610A0008821F9 /* EasifySpotifyDataModelsTests */,
+				B3924B742476109F008821F9 /* Products */,
+				B3924BB324761193008821F9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B3924B742476109F008821F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3924B732476109F008821F9 /* EasifySpotifyDataModels.framework */,
+				B3924B7C247610A0008821F9 /* EasifySpotifyDataModelsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3924B752476109F008821F9 /* EasifySpotifyDataModels */ = {
+			isa = PBXGroup;
+			children = (
+				B3924BA124761175008821F9 /* Endpoints */,
+				B3D4D7D72476E04900A7D906 /* Extensions */,
+				B3924BA424761175008821F9 /* Models */,
+				B3924B8D247610B1008821F9 /* Supporting Files */,
+			);
+			path = EasifySpotifyDataModels;
+			sourceTree = "<group>";
+		};
+		B3924B80247610A0008821F9 /* EasifySpotifyDataModelsTests */ = {
+			isa = PBXGroup;
+			children = (
+				B3924B8E247610BB008821F9 /* Supporting Files */,
+			);
+			path = EasifySpotifyDataModelsTests;
+			sourceTree = "<group>";
+		};
+		B3924B8D247610B1008821F9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B3924B762476109F008821F9 /* EasifySpotifyDataModels.h */,
+				B3924B772476109F008821F9 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B3924B8E247610BB008821F9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B3924B81247610A0008821F9 /* EasifySpotifyDataModelsTests.swift */,
+				B3924B83247610A0008821F9 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B3924BA124761175008821F9 /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				B3924BA224761175008821F9 /* SpotifyRecentlyPlayedEndpoint.swift */,
+				B3924BA324761175008821F9 /* SpotifyEndpoint.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
+		B3924BA424761175008821F9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B3924BA524761175008821F9 /* SpotifyCursor.swift */,
+				B3924BA624761175008821F9 /* SpotifyPagination.swift */,
+				B3924BA724761175008821F9 /* SpotifyContext.swift */,
+				B3924BA824761175008821F9 /* SpotifyPlayHistoryItem.swift */,
+				B3924BA924761175008821F9 /* SpotifyTrack.swift */,
+				B3924BAA24761175008821F9 /* SpotifyArtist.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B3924BB324761193008821F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B3D4D7D72476E04900A7D906 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B3D4D7DB2476E05C00A7D906 /* DateFormatter+ISO8601.swift */,
+				B3D4D7DE2476E05C00A7D906 /* Int+Convenience.swift */,
+				B3D4D7DD2476E05C00A7D906 /* KeyedDecodingContainer+DecodeDate.swift */,
+				B3D4D7DC2476E05C00A7D906 /* KeyedDecodingContainer+DecodeURL.swift */,
+				B3D4D7DF2476E05C00A7D906 /* TimeInterval+Convenience.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B3E4B9AC24762417001FD420 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3E4B9B024762417001FD420 /* EasifyDefines.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		B3924B6E2476109F008821F9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3924B84247610A0008821F9 /* EasifySpotifyDataModels.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B3924B722476109F008821F9 /* EasifySpotifyDataModels */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3924B87247610A0008821F9 /* Build configuration list for PBXNativeTarget "EasifySpotifyDataModels" */;
+			buildPhases = (
+				B3924B6E2476109F008821F9 /* Headers */,
+				B3924B6F2476109F008821F9 /* Sources */,
+				B3924B702476109F008821F9 /* Frameworks */,
+				B3924B712476109F008821F9 /* Resources */,
+				B37EE6232476F99C00955C31 /* SwiftLint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EasifySpotifyDataModels;
+			productName = EasifySpotifyDataModels;
+			productReference = B3924B732476109F008821F9 /* EasifySpotifyDataModels.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B3924B7B247610A0008821F9 /* EasifySpotifyDataModelsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3924B8A247610A0008821F9 /* Build configuration list for PBXNativeTarget "EasifySpotifyDataModelsTests" */;
+			buildPhases = (
+				B3924B78247610A0008821F9 /* Sources */,
+				B3924B79247610A0008821F9 /* Frameworks */,
+				B3924B7A247610A0008821F9 /* Resources */,
+				B37EE6272476F9A700955C31 /* SwiftLint */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3924B7F247610A0008821F9 /* PBXTargetDependency */,
+			);
+			name = EasifySpotifyDataModelsTests;
+			productName = EasifySpotifyDataModelsTests;
+			productReference = B3924B7C247610A0008821F9 /* EasifySpotifyDataModelsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B3924B6A2476109F008821F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = "Muhammed Said Özcan";
+				TargetAttributes = {
+					B3924B722476109F008821F9 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					B3924B7B247610A0008821F9 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+				};
+			};
+			buildConfigurationList = B3924B6D2476109F008821F9 /* Build configuration list for PBXProject "EasifySpotifyDataModels" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B3924B692476109F008821F9;
+			productRefGroup = B3924B742476109F008821F9 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B3E4B9AC24762417001FD420 /* Products */;
+					ProjectRef = B3E4B9AB24762417001FD420 /* EasifyDefines.xcodeproj */;
+				},
+				{
+					ProductGroup = B309354A2476210800E95AA7 /* Products */;
+					ProjectRef = B30935492476210800E95AA7 /* EasifyNetwork.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				B3924B722476109F008821F9 /* EasifySpotifyDataModels */,
+				B3924B7B247610A0008821F9 /* EasifySpotifyDataModelsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B309354F2476210800E95AA7 /* EasifyNetwork.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = EasifyNetwork.framework;
+			remoteRef = B309354E2476210800E95AA7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B30935512476210800E95AA7 /* EasifyNetworkTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = EasifyNetworkTests.xctest;
+			remoteRef = B30935502476210800E95AA7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B3E4B9B024762417001FD420 /* EasifyDefines.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = EasifyDefines.framework;
+			remoteRef = B3E4B9AF24762417001FD420 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B3924B712476109F008821F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3924B7A247610A0008821F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B37EE6232476F99C00955C31 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		B37EE6272476F9A700955C31 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B3924B6F2476109F008821F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3D4D7E02476E05C00A7D906 /* DateFormatter+ISO8601.swift in Sources */,
+				B3924BAD24761175008821F9 /* SpotifyCursor.swift in Sources */,
+				B3924BAB24761175008821F9 /* SpotifyRecentlyPlayedEndpoint.swift in Sources */,
+				B3D4D7E32476E05C00A7D906 /* Int+Convenience.swift in Sources */,
+				B3924BB024761175008821F9 /* SpotifyPlayHistoryItem.swift in Sources */,
+				B3D4D7E42476E05C00A7D906 /* TimeInterval+Convenience.swift in Sources */,
+				B3924BB224761175008821F9 /* SpotifyArtist.swift in Sources */,
+				B3D4D7E22476E05C00A7D906 /* KeyedDecodingContainer+DecodeDate.swift in Sources */,
+				B3924BB124761175008821F9 /* SpotifyTrack.swift in Sources */,
+				B3924BAE24761175008821F9 /* SpotifyPagination.swift in Sources */,
+				B3D4D7E12476E05C00A7D906 /* KeyedDecodingContainer+DecodeURL.swift in Sources */,
+				B3924BAC24761175008821F9 /* SpotifyEndpoint.swift in Sources */,
+				B3924BAF24761175008821F9 /* SpotifyContext.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3924B78247610A0008821F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3924B82247610A0008821F9 /* EasifySpotifyDataModelsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B3924B7F247610A0008821F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B3924B722476109F008821F9 /* EasifySpotifyDataModels */;
+			targetProxy = B3924B7E247610A0008821F9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B3924B85247610A0008821F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B3924B86247610A0008821F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B3924B88247610A0008821F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Z2EVZ5Y6JY;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "EasifySpotifyDataModels/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nl.saidozcan.EasifySpotifyDataModels;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B3924B89247610A0008821F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = Z2EVZ5Y6JY;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "EasifySpotifyDataModels/Supporting Files/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nl.saidozcan.EasifySpotifyDataModels;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B3924B8B247610A0008821F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2EVZ5Y6JY;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "EasifySpotifyDataModelsTests/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nl.saidozcan.EasifySpotifyDataModelsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B3924B8C247610A0008821F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z2EVZ5Y6JY;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = "EasifySpotifyDataModelsTests/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = nl.saidozcan.EasifySpotifyDataModelsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B3924B6D2476109F008821F9 /* Build configuration list for PBXProject "EasifySpotifyDataModels" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3924B85247610A0008821F9 /* Debug */,
+				B3924B86247610A0008821F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3924B87247610A0008821F9 /* Build configuration list for PBXNativeTarget "EasifySpotifyDataModels" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3924B88247610A0008821F9 /* Debug */,
+				B3924B89247610A0008821F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3924B8A247610A0008821F9 /* Build configuration list for PBXNativeTarget "EasifySpotifyDataModelsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3924B8B247610A0008821F9 /* Debug */,
+				B3924B8C247610A0008821F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B3924B6A2476109F008821F9 /* Project object */;
+}
