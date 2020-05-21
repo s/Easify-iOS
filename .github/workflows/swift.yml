@@ -18,16 +18,12 @@ jobs:
         uses: actions/checkout@master
       - name: Select Xcode 11.5
         run: sudo xcode-select -switch /Applications/Xcode_11.5.app && /usr/bin/xcodebuild -version
-      - name: Dump file hierarchy
-        run: ls -la
-      - name: Current directory
-        run: pwd
       - name: Build and Test
         run: |
           xcodebuild -project Modules/CoreModules/SpotifyLogin/SpotifyLogin.xcodeproj -scheme SpotifyLogin -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO -configuration clean build
           xcodebuild -project Modules/CoreModules/EasifyDefines/EasifyDefines.xcodeproj -scheme EasifyDefines -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO -configuration clean build
-          xcodebuild -project Modules/CoreModules/EasifyNetwork/EasifyNetwork.xcodeproj -scheme EasifyNetwork -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO -configuration clean build
-          xcodebuild -project Modules/CoreModules/EasifyNetwork/EasifyNetwork.xcodeproj -scheme EasifyNetworkTests -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO -configuration test
+          xcodebuild -project Modules/CoreModules/EasifyNetwork/EasifyNetwork.xcodeproj -scheme EasifyNetwork -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO -configuration clean build -forceResolvedPackageVersions
+          xcodebuild -project Modules/CoreModules/EasifyNetwork/EasifyNetwork.xcodeproj -scheme EasifyNetworkTests -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO -configuration test -forceResolvedPackageVersions
           xcodebuild -project Modules/CoreModules/EasifySpotifyDataModels/EasifySpotifyDataModels.xcodeproj -scheme EasifySpotifyDataModels -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO -configuration clean build
           xcodebuild -project Modules/CoreModules/EasifySpotifyDataModels/EasifySpotifyDataModels.xcodeproj -scheme EasifySpotifyDataModelsTests -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO -configuration clean test
           xcodebuild -project Modules/CoreModules/EasifyCore/EasifyCore.xcodeproj -scheme EasifyCore -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO -configuration clean build
