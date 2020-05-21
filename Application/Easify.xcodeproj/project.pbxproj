@@ -12,6 +12,7 @@
 		B32CEB2724733DEA00769C44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32CEB2524733DEA00769C44 /* AppDelegate.swift */; };
 		B32CEB2824733DEA00769C44 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32CEB2624733DEA00769C44 /* SceneDelegate.swift */; };
 		B32CEB3024733E2400769C44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B32CEB2C24733E2400769C44 /* Assets.xcassets */; };
+		B32EFFC024760C44009F6FCC /* SpotifyLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32EFFBF24760C44009F6FCC /* SpotifyLoginViewController.swift */; };
 		B384ADD924733AD300D9514A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B384ADD824733AD300D9514A /* Preview Assets.xcassets */; };
 		B384ADDC24733AD300D9514A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B384ADDA24733AD300D9514A /* LaunchScreen.storyboard */; };
 		B384ADE724733AD300D9514A /* EasifyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B384ADE624733AD300D9514A /* EasifyTests.swift */; };
@@ -92,6 +93,7 @@
 		B32CEB2C24733E2400769C44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B32CEB2D24733E2400769C44 /* Easify-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Easify-Bridging-Header.h"; sourceTree = "<group>"; };
 		B32CEB3324733E3A00769C44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B32EFFBF24760C44009F6FCC /* SpotifyLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyLoginViewController.swift; sourceTree = "<group>"; };
 		B37F81AB247340AC005D66C9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B384ADCC24733AD200D9514A /* Easify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Easify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B384ADD824733AD300D9514A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -187,6 +189,14 @@
 			path = Base.lproj;
 			sourceTree = "<group>";
 		};
+		B32EFFBA24760C30009F6FCC /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B32EFFBF24760C44009F6FCC /* SpotifyLoginViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
 		B384ADC324733AD200D9514A = {
 			isa = PBXGroup;
 			children = (
@@ -264,6 +274,7 @@
 		B3B3808D24733E92008411DE /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				B32EFFBA24760C30009F6FCC /* View Controllers */,
 				B3B3808E24733E92008411DE /* View Models */,
 				B3B3809224733E92008411DE /* Views */,
 			);
@@ -603,6 +614,7 @@
 				B3B380A124733E92008411DE /* LoginView.swift in Sources */,
 				B3B3809F24733E92008411DE /* AppNameView.swift in Sources */,
 				B3B380A024733E92008411DE /* ButtonWithLinkView.swift in Sources */,
+				B32EFFC024760C44009F6FCC /* SpotifyLoginViewController.swift in Sources */,
 				B3B3809C24733E92008411DE /* ContainerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

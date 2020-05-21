@@ -15,7 +15,6 @@ end
 
 def ui_pods
 	project 'Modules/EasifyUI/EasifyUI.project'
-    pod 'SpotifyLogin'
     use_frameworks!
 end
 
