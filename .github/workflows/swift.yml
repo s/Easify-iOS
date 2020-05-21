@@ -16,41 +16,32 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@master
-
       - name: Select Xcode 11.5
         run: sudo xcode-select -switch /Applications/Xcode_11.5.app && /usr/bin/xcodebuild -version
-
       - name: Build SpotifyLogin
         run: xcodebuild clean build -workspace Easify.xcworkspace -scheme SpotifyLogin -destination "${destination}"
-
       - name: Build EasifyDefines
         run: xcodebuild clean build -workspace Easify.xcworkspace -scheme EasifyDefines -destination "${destination}"
-
       - name: Build & Test EasifyNetwork
         run: |
           xcodebuild clean build -workspace Easify.xcworkspace -scheme EasifyDefines -destination "${destination}"
           xcodebuild test -workspace Easify.xcworkspace -scheme EasifyNetworkTests -destination "${destination}"
-
       - name: Build & Test EasifySpotifyDataModels
         run: |
           xcodebuild clean build -workspace Easify.xcworkspace -scheme EasifySpotifyDataModels -destination "${destination}"
           xcodebuild test -workspace Easify.xcworkspace -scheme EasifySpotifyDataModelsTests -destination "${destination}"
-
       - name: Build & Test EasifyCore
         run: |
           xcodebuild clean build -workspace Easify.xcworkspace -scheme EasifyCore -destination "${destination}"
           xcodebuild test -workspace Easify.xcworkspace -scheme EasifyCoreTests -destination "${destination}"
-
       - name: Build & Test EasifyUI
         run: |
           xcodebuild clean build -workspace Easify.xcworkspace -scheme EasifyUI -destination "${destination}"
           xcodebuild test -workspace Easify.xcworkspace -scheme EasifyUITests -destination "${destination}"
-      
       - name: Build & Test Easify
         run: |
           xcodebuild clean build -workspace Easify.xcworkspace -scheme Easify -destination "${destination}"
           xcodebuild test -workspace Easify.xcworkspace -scheme EasifyTests -destination "${destination}"
-        
         env: 
          destination: 'platform=iOS Simulator,OS=13.5,name=iPhone 11 Pro Max'
          buildSettings: 'CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO'
