@@ -14,6 +14,8 @@ jobs:
         matrix:
           destination: ['platform=iOS Simulator,name=iPhone 11 Pro Max']
     steps:
+      - name: Checkout
+        uses: actions/checkout@master
       - name: Build and Test
         run: |
           xcodebuild -workspace Easify.xcworkspace -scheme SpotifyLogin -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
