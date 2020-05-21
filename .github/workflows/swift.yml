@@ -26,9 +26,6 @@ jobs:
       - name: Install SwiftLint
         run:
           brew install swiftlint
-      - name: Install Dependencies
-        run:
-          pod install
       - name: Build and Test
         run: |
           xcodebuild -workspace Easify.xcworkspace -scheme SpotifyLogin -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
