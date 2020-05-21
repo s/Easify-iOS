@@ -13,6 +13,7 @@ jobs:
     strategy:
         matrix:
           destination: ['platform=iOS Simulator,OS=13.3,name=iPhone 11 Pro Max']
+          buildSettings: ['CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO']
     steps:
       - name: Checkout
         uses: actions/checkout@master
@@ -53,4 +54,4 @@ jobs:
         
         env: 
          destination: ${{ matrix.destination }}
-         buildSettings: 'CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO'
+         buildSettings: ${{ matrix.buildSettings }}
