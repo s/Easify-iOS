@@ -42,6 +42,6 @@ jobs:
         run: |
           xcodebuild clean build -workspace Easify.xcworkspace -scheme Easify -destination "${destination}" ${buildSettings}
           xcodebuild test -workspace Easify.xcworkspace -scheme EasifyTests -destination "${destination}" ${buildSettings}
-      env: 
-       destination: 'platform=iOS Simulator,OS=13.5,name=iPhone 11 Pro Max'
-       buildSettings: 'CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO'
+        env: 
+          destination: 'platform=iOS Simulator,OS=13.5,name=iPhone 11 Pro Max'
+          buildSettings: 'CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO'
