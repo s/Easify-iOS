@@ -21,15 +21,15 @@ jobs:
         run: sudo xcode-select -switch /Applications/Xcode_11.5.app && /usr/bin/xcodebuild -version
 
       - name: Build SpotifyLogin
-        run: xcodebuild clean build -workspace "Easify.xcworkspace" scheme "SpotifyLogin" destination "${destination}" "${buildSettings}"
+        run: xcodebuild clean build -workspace "Easify.xcworkspace" -scheme "SpotifyLogin" -destination "${destination}" "${buildSettings}"
 
       - name: Build EasifyDefines
-        run: xcodebuild clean build -workspace "Easify.xcworkspace" scheme "EasifyDefines" destination "${destination}" "${buildSettings}"
+        run: xcodebuild clean build -workspace "Easify.xcworkspace" -scheme "EasifyDefines" -destination "${destination}" "${buildSettings}"
 
       - name: Build & Test EasifyNetwork
         run: |
-          xcodebuild clean build -workspace "Easify.xcworkspace" scheme "EasifyDefines" destination "${destination}" "${buildSettings}"
-          xcodebuild test -workspace "Easify.xcworkspace" scheme "EasifyNetworkTests" destination "${destination}" "${buildSettings}"
+          xcodebuild clean build -workspace "Easify.xcworkspace" -scheme "EasifyDefines" -destination "${destination}" "${buildSettings}"
+          xcodebuild test -workspace "Easify.xcworkspace" -scheme "EasifyNetworkTests" -destination "${destination}" "${buildSettings}"
 
       - name: Build & Test EasifySpotifyDataModels
         run: |
