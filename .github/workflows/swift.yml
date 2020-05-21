@@ -19,7 +19,7 @@ jobs:
       - name: Select Xcode 11.5
         run: sudo xcode-select -switch /Applications/Xcode_11.5.app && /usr/bin/xcodebuild -version
       - name: Run unit tests
-        run: xcodebuild -workspace Easify.xcworkspace -scheme Easify -destination 'platform=iOS Simulator,name=iPhone 11 Pro Max' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO -configuration clean build test
+        run: xcodebuild -workspace Easify.xcworkspace -scheme Easify -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO -configuration clean build test
       - name: Dump file hierarchy
         run: ls -la
       - name: Current directory
