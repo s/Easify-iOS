@@ -9,6 +9,7 @@
 import SwiftUI
 import EasifyUI
 import EasifyCore
+import EasifyDefines
 import SafariServices
 
 // MARK: - ButtonWithLinkView
@@ -18,11 +19,11 @@ struct ButtonWithLinkView: View {
 
     // MARK: - 
     var body: some View {
-        URL(string: Constants.URLS.backgroundImageURL).map { url in
+        URL(string: EasifyConstants.URLS.backgroundImageURL).map { url in
             Button(action: {
                 self.showSafari = true
             }) {
-                Text(Constants.Copies.backgroundImageReference)
+                Text(EasifyConstants.Copies.backgroundImageReference)
                     .fontWeight(.light)
                     .font(.footnote)
                     .foregroundColor(.white)

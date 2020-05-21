@@ -9,5 +9,6 @@
 import SwiftUI
 
 extension EdgeInsets {
+    /// `EdgeInsets.doubleQuadruple` returns 16.0 for top/bottom and 32.0 for leading/trailing.
     static var doubleQuadruple = EdgeInsets(top: 16.0, leading: 32.0, bottom: 16.0, trailing: 32.0)
 }

@@ -8,6 +8,7 @@
 
 import SwiftUI
 import EasifyCore
+import EasifyDefines
 
 // MARK: - LoginView
 struct LoginView: View {
@@ -18,10 +19,10 @@ struct LoginView: View {
     var body: some View {
         ZStack {
             BackgroundView()
-            VStack(alignment: .center, spacing: Constants.Spacings.quadruple) {
+            VStack(alignment: .center, spacing: EasifyConstants.Spacings.quadruple) {
                 AppNameView()
 
-                VStack(spacing: Constants.Spacings.single) {
+                VStack(spacing: EasifyConstants.Spacings.single) {
                     DescriptionTextView()
                     ConnectButtonView()
                         .frame(minWidth: 0,
@@ -29,7 +30,7 @@ struct LoginView: View {
                                minHeight: 0,
                                maxHeight: 60)
                 }
-            }.offset(x: 0, y: -Constants.Spacings.double)
+            }.offset(x: 0, y: -EasifyConstants.Spacings.double)
         }
     }
 }

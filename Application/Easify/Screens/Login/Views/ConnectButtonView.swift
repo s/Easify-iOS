@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import EasifyUI
 import EasifyCore
 
 // MARK: - ConnectButtonView

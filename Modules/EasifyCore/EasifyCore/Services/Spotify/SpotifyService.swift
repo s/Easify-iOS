@@ -9,6 +9,7 @@
 import Combine
 import Foundation
 import SpotifyLogin
+import EasifyDefines
 
 // MARK: - SpotifyCredentialsKeys
 private enum SpotifyCredentialsKeys: String {
@@ -89,6 +90,7 @@ public class SpotifyService: ObservableObject {
         SpotifyLogin.shared.getAccessToken { [weak self] (accessToken, _) in
             if let accessToken = accessToken {
                 self?.isLoggedIn = true
+                UserDefaults.standard.set(accessToken, forKey: EasifyConstants.StorageKeys.spotifyAccessToken)
             }
         }
     }

@@ -8,7 +8,7 @@
 
 import Foundation
 
-// MARK: PlistReaderServiceError
+// MARK: - PlistReaderServiceError
 public enum PlistReaderServiceError: Error, Equatable {
     case noSuchFileFound(fileName: String)
     case dataReadingError(message: String)
@@ -23,14 +23,18 @@ public enum PlistReaderServiceError: Error, Equatable {
     }
 }
 
-// MARK: PlistReaderService
+// MARK: - PlistReaderService
+/// `PlistReaderService` provides number of readonly methods which can be used when interacting with property list type of files.
 public class PlistReaderService {
-    // MARK: Properties
+    // MARK: - Properties
     private let plistName: String
     private let plistPath: URL
     private let plistContents: [String: Any]
 
-    // MARK: Lifecycle
+    // MARK: - Lifecycle
+    /// `PlistReaderService` initializer tries to initialize itself but if it cannot find the given file name in the given `Bundle` it throws an `Error`.
+    /// - parameter name: Name of the property list file.
+    /// - parameter bundle: The bundle where the property list is in.
     init(name: String, bundle: Bundle) throws {
         plistName = name
 
@@ -50,7 +54,9 @@ public class PlistReaderService {
         }
     }
 
-    // MARK: Public
+    // MARK: - Public
+    /// `read<T>` method takes a `key` parameter and returns the value of that key in the property list if found. Otherwise it returns nil.
+    /// - parameter key: The key to read its value in the property list.
     func read<T>(key: String) -> T? {
         return plistContents[key] as? T
     }

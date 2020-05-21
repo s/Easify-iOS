@@ -8,10 +8,11 @@
 
 import SwiftUI
 import EasifyCore
+import EasifyDefines
 
 struct DescriptionTextView: View {
     var body: some View {
-        Text(Constants.Copies.connectToSpotifyAccount)
+        Text(EasifyConstants.Copies.connectToSpotifyAccount)
             .kerning(1.0)
             .fontWeight(.bold)
             .font(.callout)

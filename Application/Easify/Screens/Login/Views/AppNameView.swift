@@ -8,10 +8,11 @@
 
 import SwiftUI
 import EasifyCore
+import EasifyDefines
 
 struct AppNameView: View {
     var body: some View {
-        Text(Constants.Copies.easify.uppercased())
+        Text(EasifyConstants.Copies.easify.uppercased())
             .kerning(1.0)
             .fontWeight(.heavy)
             .font(.title)

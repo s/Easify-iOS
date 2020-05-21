@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import EasifyDefines
 
 /// ServiceProvider contains various services which are critical to the application.
 public class ServiceProvider {
@@ -16,9 +17,10 @@ public class ServiceProvider {
     /// Property `spotifyService` returns an instance for interacting with Spotify API.
     public let spotifyService: SpotifyService
 
+    // MARK: - Lifecycle
     public init() throws {
         do {
-            plistReaderService = try PlistReaderService(name: Constants.Files.spotifyPlistFileName,
+            plistReaderService = try PlistReaderService(name: EasifyConstants.Files.spotifyPlistFileName,
                                                         bundle: Bundle(for: type(of: self)))
             spotifyService = try SpotifyService(plistReaderService: plistReaderService)
         } catch {

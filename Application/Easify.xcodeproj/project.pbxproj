@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		98F5DF392D2DC1956EAC6139 /* Pods_Easify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8A6038595EECA46A2B79145 /* Pods_Easify.framework */; };
+		054AB77996FCC19CCCEA1792 /* libPods-EasifyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB16C19AE0AFE8757938C3E7 /* libPods-EasifyTests.a */; };
+		270E0960C40064B34463C0F7 /* libPods-Easify.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D3206CAB758BCA0C72EB200 /* libPods-Easify.a */; };
 		B32CEB2724733DEA00769C44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32CEB2524733DEA00769C44 /* AppDelegate.swift */; };
 		B32CEB2824733DEA00769C44 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32CEB2624733DEA00769C44 /* SceneDelegate.swift */; };
 		B32CEB3024733E2400769C44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B32CEB2C24733E2400769C44 /* Assets.xcassets */; };
@@ -27,7 +28,6 @@
 		B3C433B924734BBD00EC67C3 /* EasifyCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3C433AC24734B1100EC67C3 /* EasifyCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B3C433BA24734BBD00EC67C3 /* EasifyUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C433B524734B2100EC67C3 /* EasifyUI.framework */; };
 		B3C433BB24734BBD00EC67C3 /* EasifyUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3C433B524734B2100EC67C3 /* EasifyUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E971563B548726B4E3B1F0AE /* Pods_EasifyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A5A9E3FC198EF36229BDBA4 /* Pods_EasifyTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,7 +84,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2A5A9E3FC198EF36229BDBA4 /* Pods_EasifyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasifyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D3206CAB758BCA0C72EB200 /* libPods-Easify.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Easify.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F23FD0A5DC3ED8696CEFB82 /* Pods-Easify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easify.debug.xcconfig"; path = "Target Support Files/Pods-Easify/Pods-Easify.debug.xcconfig"; sourceTree = "<group>"; };
 		36AC11602BA105AD743F6594 /* Pods-EasifyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasifyTests.debug.xcconfig"; path = "Target Support Files/Pods-EasifyTests/Pods-EasifyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B32CEB2524733DEA00769C44 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -110,8 +110,8 @@
 		B3B3809824733E92008411DE /* DescriptionTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionTextView.swift; sourceTree = "<group>"; };
 		B3C433A624734B1100EC67C3 /* EasifyCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EasifyCore.xcodeproj; path = ../../../Modules/EasifyCore/EasifyCore.xcodeproj; sourceTree = "<group>"; };
 		B3C433AF24734B2100EC67C3 /* EasifyUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EasifyUI.xcodeproj; path = ../../../Modules/EasifyUI/EasifyUI.xcodeproj; sourceTree = "<group>"; };
+		BB16C19AE0AFE8757938C3E7 /* libPods-EasifyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EasifyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC323B34D639F92161149A39 /* Pods-EasifyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasifyTests.release.xcconfig"; path = "Target Support Files/Pods-EasifyTests/Pods-EasifyTests.release.xcconfig"; sourceTree = "<group>"; };
-		E8A6038595EECA46A2B79145 /* Pods_Easify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Easify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBDF378E53CD788BA4887DFC /* Pods-Easify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easify.release.xcconfig"; path = "Target Support Files/Pods-Easify/Pods-Easify.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,8 +121,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3C433B824734BBD00EC67C3 /* EasifyCore.framework in Frameworks */,
-				98F5DF392D2DC1956EAC6139 /* Pods_Easify.framework in Frameworks */,
 				B3C433BA24734BBD00EC67C3 /* EasifyUI.framework in Frameworks */,
+				270E0960C40064B34463C0F7 /* libPods-Easify.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,7 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E971563B548726B4E3B1F0AE /* Pods_EasifyTests.framework in Frameworks */,
+				054AB77996FCC19CCCEA1792 /* libPods-EasifyTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,8 +321,8 @@
 		BB9DC9E81444647FFB8A2C9D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E8A6038595EECA46A2B79145 /* Pods_Easify.framework */,
-				2A5A9E3FC198EF36229BDBA4 /* Pods_EasifyTests.framework */,
+				0D3206CAB758BCA0C72EB200 /* libPods-Easify.a */,
+				BB16C19AE0AFE8757938C3E7 /* libPods-EasifyTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -338,9 +338,9 @@
 				B384ADC824733AD200D9514A /* Sources */,
 				B384ADC924733AD200D9514A /* Frameworks */,
 				B384ADCA24733AD200D9514A /* Resources */,
-				272788785EBD4FD46C1EBE62 /* [CP] Embed Pods Frameworks */,
 				B3C433BC24734BBD00EC67C3 /* Embed Frameworks */,
 				B3C433D12473556400EC67C3 /* SwiftLint */,
+				A3605AC28B15B188A3AACBAC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -359,8 +359,8 @@
 				B384ADDE24733AD300D9514A /* Sources */,
 				B384ADDF24733AD300D9514A /* Frameworks */,
 				B384ADE024733AD300D9514A /* Resources */,
-				E5AEA9E298906DB2B8B175EF /* [CP] Embed Pods Frameworks */,
 				B3C433D22473556F00EC67C3 /* SwiftLint */,
+				9E0A8BD4DE76313F1D128F56 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -472,23 +472,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		272788785EBD4FD46C1EBE62 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Easify/Pods-Easify-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Easify/Pods-Easify-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Easify/Pods-Easify-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		7939FB8F73680931990A1F94 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -533,6 +516,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		9E0A8BD4DE76313F1D128F56 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EasifyTests/Pods-EasifyTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EasifyTests/Pods-EasifyTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EasifyTests/Pods-EasifyTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3605AC28B15B188A3AACBAC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Easify/Pods-Easify-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Easify/Pods-Easify-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Easify/Pods-Easify-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B3C433D12473556400EC67C3 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -568,23 +585,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
-		E5AEA9E298906DB2B8B175EF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EasifyTests/Pods-EasifyTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EasifyTests/Pods-EasifyTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EasifyTests/Pods-EasifyTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 

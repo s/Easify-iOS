@@ -7,15 +7,17 @@
 //
 
 import UIKit
+import EasifyCore
 import SpotifyLogin
 
+/// `SpotifyLoginViewController` provides a wrapper around `SpotifyLoginButton` which can be used when showing login with Spotify option.
 public class SpotifyLoginViewController: UIViewController {
-    // MARK: Properties
+    // MARK: - Properties
     private(set) lazy var loginButton: SpotifyLoginButton? = {
         return SpotifyLoginButton(viewController: self, scopes: SpotifyService.loginScopes)
     }()
 
-    // MARK: Lifecycle
+    // MARK: - Lifecycle
     public override func viewDidLoad() {
         super.viewDidLoad()
         if let loginButton = loginButton {

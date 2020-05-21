@@ -12,7 +12,7 @@ import XCTest
 // swiftlint:disable force_cast
 class PlistReaderServiceTests: XCTestCase {
 
-    // MARK: Properties
+    // MARK: - Properties
     private let testPlistFileName = "PlistReaderServiceTests"
     private var readerService: PlistReaderService?
 

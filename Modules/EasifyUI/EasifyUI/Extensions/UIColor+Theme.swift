@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+/// This extension to `Color` of `SwiftUI` provides more application-specific colors for more convenient usage.
 extension Color {
     static var spotifyGreen = Color(UIColor(red: 0.11, green: 0.73, blue: 0.33, alpha: 1.00))
 }
