@@ -14,6 +14,6 @@ import EasifyNetwork
 public extension SpotifyService {
     /// This method makes a HTTP call to `/me/player/recently-played` endpoint of Spotify API.
     static func fetchRecentlyPlayedTracks() {
-        SpotifyNetworkService.recentlyPlayedTracks.fetch()
+//        SpotifyNetworkService.recentlyPlayedTracks.fetch()
     }
 }

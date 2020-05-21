@@ -10,18 +10,6 @@
 		6F1FF68A9876117C546698A9 /* Pods_EasifyNetworkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01039F0EFA9F83FD052D0C3A /* Pods_EasifyNetworkTests.framework */; };
 		A2635CCEA563060B8FA62AB1 /* Pods_EasifyNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 397D0B4EB2DEE29585355A2D /* Pods_EasifyNetwork.framework */; };
 		B30B2E5324748E3D00C6088F /* EasifyNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30B2E5224748E3D00C6088F /* EasifyNetworkTests.swift */; };
-		B30B2E9B2474A3A000C6088F /* SpotifyCursor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30B2E922474A3A000C6088F /* SpotifyCursor.swift */; };
-		B30B2E9C2474A3A000C6088F /* SpotifyPagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30B2E932474A3A000C6088F /* SpotifyPagination.swift */; };
-		B30B2E9D2474A3A000C6088F /* SpotifyContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30B2E942474A3A000C6088F /* SpotifyContext.swift */; };
-		B30B2E9E2474A3A000C6088F /* SpotifyPlayHistoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30B2E952474A3A000C6088F /* SpotifyPlayHistoryItem.swift */; };
-		B30B2E9F2474A3A000C6088F /* SpotifyTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30B2E962474A3A000C6088F /* SpotifyTrack.swift */; };
-		B30B2EA02474A3A000C6088F /* SpotifyArtist.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30B2E972474A3A000C6088F /* SpotifyArtist.swift */; };
-		B30B2EA12474A3A000C6088F /* SpotifyRecentlyPlayedEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30B2E992474A3A000C6088F /* SpotifyRecentlyPlayedEndpoint.swift */; };
-		B30B2EA22474A3A000C6088F /* SpotifyEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30B2E9A2474A3A000C6088F /* SpotifyEndpoint.swift */; };
-		B30B2EA72474A3DC00C6088F /* KeyedDecodingContainer+DecodeURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30B2EA42474A3DC00C6088F /* KeyedDecodingContainer+DecodeURL.swift */; };
-		B30B2EA82474A3DC00C6088F /* TimeInterval+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30B2EA52474A3DC00C6088F /* TimeInterval+Convenience.swift */; };
-		B30B2EA92474A3DC00C6088F /* Int+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30B2EA62474A3DC00C6088F /* Int+Convenience.swift */; };
-		B30B2EAB2474A47500C6088F /* SpotifyNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30B2EAA2474A47500C6088F /* SpotifyNetworkService.swift */; };
 		B30B2EB32474AC4C00C6088F /* Publisher+ValidateDataTaskResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30B2EB22474AC4C00C6088F /* Publisher+ValidateDataTaskResult.swift */; };
 		B30B2EC52475E4C300C6088F /* Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30B2EC42475E4C300C6088F /* Atomic.swift */; };
 		B30B2F1C2475ED1300C6088F /* EasifyDefines.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B30B2F1B2475ED1300C6088F /* EasifyDefines.framework */; };
@@ -34,8 +22,6 @@
 		B3C434712474498200EC67C3 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C4346C2474498200EC67C3 /* API.swift */; };
 		B3C434732474498200EC67C3 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C4346E2474498200EC67C3 /* Response.swift */; };
 		B3C43475247449E900EC67C3 /* EasifyNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C43474247449E900EC67C3 /* EasifyNetworkManager.swift */; };
-		B3E61E692475F734006FD01A /* KeyedDecodingContainer+DecodeDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E61E682475F734006FD01A /* KeyedDecodingContainer+DecodeDate.swift */; };
-		B3E61E6B2475F94E006FD01A /* DateFormatter+ISO8601.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E61E6A2475F94E006FD01A /* DateFormatter+ISO8601.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,18 +41,6 @@
 		850D349A1CC71517CA7749C0 /* Pods-EasifyNetworkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasifyNetworkTests.debug.xcconfig"; path = "Target Support Files/Pods-EasifyNetworkTests/Pods-EasifyNetworkTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ADFE0874E3130F49A6E8137D /* Pods-EasifyNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasifyNetwork.release.xcconfig"; path = "Target Support Files/Pods-EasifyNetwork/Pods-EasifyNetwork.release.xcconfig"; sourceTree = "<group>"; };
 		B30B2E5224748E3D00C6088F /* EasifyNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasifyNetworkTests.swift; sourceTree = "<group>"; };
-		B30B2E922474A3A000C6088F /* SpotifyCursor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyCursor.swift; sourceTree = "<group>"; };
-		B30B2E932474A3A000C6088F /* SpotifyPagination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyPagination.swift; sourceTree = "<group>"; };
-		B30B2E942474A3A000C6088F /* SpotifyContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyContext.swift; sourceTree = "<group>"; };
-		B30B2E952474A3A000C6088F /* SpotifyPlayHistoryItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyPlayHistoryItem.swift; sourceTree = "<group>"; };
-		B30B2E962474A3A000C6088F /* SpotifyTrack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyTrack.swift; sourceTree = "<group>"; };
-		B30B2E972474A3A000C6088F /* SpotifyArtist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyArtist.swift; sourceTree = "<group>"; };
-		B30B2E992474A3A000C6088F /* SpotifyRecentlyPlayedEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyRecentlyPlayedEndpoint.swift; sourceTree = "<group>"; };
-		B30B2E9A2474A3A000C6088F /* SpotifyEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyEndpoint.swift; sourceTree = "<group>"; };
-		B30B2EA42474A3DC00C6088F /* KeyedDecodingContainer+DecodeURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "KeyedDecodingContainer+DecodeURL.swift"; sourceTree = "<group>"; };
-		B30B2EA52474A3DC00C6088F /* TimeInterval+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Convenience.swift"; sourceTree = "<group>"; };
-		B30B2EA62474A3DC00C6088F /* Int+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Convenience.swift"; sourceTree = "<group>"; };
-		B30B2EAA2474A47500C6088F /* SpotifyNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyNetworkService.swift; sourceTree = "<group>"; };
 		B30B2EB22474AC4C00C6088F /* Publisher+ValidateDataTaskResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+ValidateDataTaskResult.swift"; sourceTree = "<group>"; };
 		B30B2EC42475E4C300C6088F /* Atomic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atomic.swift; sourceTree = "<group>"; };
 		B30B2F122475EC1C00C6088F /* EasifyDefines.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EasifyDefines.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,8 +58,6 @@
 		B3C4346E2474498200EC67C3 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		B3C43474247449E900EC67C3 /* EasifyNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasifyNetworkManager.swift; sourceTree = "<group>"; };
 		B3E61E652475F185006FD01A /* SpotifyLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SpotifyLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3E61E682475F734006FD01A /* KeyedDecodingContainer+DecodeDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KeyedDecodingContainer+DecodeDate.swift"; sourceTree = "<group>"; };
-		B3E61E6A2475F94E006FD01A /* DateFormatter+ISO8601.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+ISO8601.swift"; sourceTree = "<group>"; };
 		FAE7805B780DD189C8BE825A /* Pods-EasifyNetworkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasifyNetworkTests.release.xcconfig"; path = "Target Support Files/Pods-EasifyNetworkTests/Pods-EasifyNetworkTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -135,55 +107,10 @@
 			path = ../../Pods;
 			sourceTree = "<group>";
 		};
-		B30B2E7D2474A29600C6088F /* APIs */ = {
-			isa = PBXGroup;
-			children = (
-				B30B2E7E2474A2A200C6088F /* Spotify */,
-			);
-			path = APIs;
-			sourceTree = "<group>";
-		};
-		B30B2E7E2474A2A200C6088F /* Spotify */ = {
-			isa = PBXGroup;
-			children = (
-				B30B2EAA2474A47500C6088F /* SpotifyNetworkService.swift */,
-				B30B2E982474A3A000C6088F /* Endpoints */,
-				B30B2E912474A3A000C6088F /* Models */,
-			);
-			path = Spotify;
-			sourceTree = "<group>";
-		};
-		B30B2E912474A3A000C6088F /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				B30B2E922474A3A000C6088F /* SpotifyCursor.swift */,
-				B30B2E932474A3A000C6088F /* SpotifyPagination.swift */,
-				B30B2E942474A3A000C6088F /* SpotifyContext.swift */,
-				B30B2E952474A3A000C6088F /* SpotifyPlayHistoryItem.swift */,
-				B30B2E962474A3A000C6088F /* SpotifyTrack.swift */,
-				B30B2E972474A3A000C6088F /* SpotifyArtist.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		B30B2E982474A3A000C6088F /* Endpoints */ = {
-			isa = PBXGroup;
-			children = (
-				B30B2E992474A3A000C6088F /* SpotifyRecentlyPlayedEndpoint.swift */,
-				B30B2E9A2474A3A000C6088F /* SpotifyEndpoint.swift */,
-			);
-			path = Endpoints;
-			sourceTree = "<group>";
-		};
 		B30B2EA32474A3C700C6088F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				B3E61E6A2475F94E006FD01A /* DateFormatter+ISO8601.swift */,
-				B30B2EA62474A3DC00C6088F /* Int+Convenience.swift */,
-				B3E61E682475F734006FD01A /* KeyedDecodingContainer+DecodeDate.swift */,
-				B30B2EA42474A3DC00C6088F /* KeyedDecodingContainer+DecodeURL.swift */,
 				B30B2EB22474AC4C00C6088F /* Publisher+ValidateDataTaskResult.swift */,
-				B30B2EA52474A3DC00C6088F /* TimeInterval+Convenience.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -236,7 +163,6 @@
 		B3C434572474426F00EC67C3 /* EasifyNetwork */ = {
 			isa = PBXGroup;
 			children = (
-				B30B2E7D2474A29600C6088F /* APIs */,
 				B3C434642474487300EC67C3 /* Core */,
 				B30B2EA32474A3C700C6088F /* Extensions */,
 				B30B2EC32475E4A700C6088F /* Helpers */,
@@ -454,29 +380,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3E61E6B2475F94E006FD01A /* DateFormatter+ISO8601.swift in Sources */,
 				B3C43475247449E900EC67C3 /* EasifyNetworkManager.swift in Sources */,
 				B3C43469247448C200EC67C3 /* BaseURL.swift in Sources */,
-				B30B2EA22474A3A000C6088F /* SpotifyEndpoint.swift in Sources */,
-				B30B2E9B2474A3A000C6088F /* SpotifyCursor.swift in Sources */,
-				B30B2EA82474A3DC00C6088F /* TimeInterval+Convenience.swift in Sources */,
-				B3E61E692475F734006FD01A /* KeyedDecodingContainer+DecodeDate.swift in Sources */,
-				B30B2E9C2474A3A000C6088F /* SpotifyPagination.swift in Sources */,
-				B30B2EA72474A3DC00C6088F /* KeyedDecodingContainer+DecodeURL.swift in Sources */,
-				B30B2E9D2474A3A000C6088F /* SpotifyContext.swift in Sources */,
 				B3C4346F2474498200EC67C3 /* Endpoint.swift in Sources */,
-				B30B2EA92474A3DC00C6088F /* Int+Convenience.swift in Sources */,
-				B30B2EA12474A3A000C6088F /* SpotifyRecentlyPlayedEndpoint.swift in Sources */,
 				B3C434702474498200EC67C3 /* NetworkingError.swift in Sources */,
 				B30B2EB32474AC4C00C6088F /* Publisher+ValidateDataTaskResult.swift in Sources */,
 				B3C434672474489700EC67C3 /* HTTPMethod.swift in Sources */,
-				B30B2E9F2474A3A000C6088F /* SpotifyTrack.swift in Sources */,
-				B30B2EA02474A3A000C6088F /* SpotifyArtist.swift in Sources */,
 				B3C434712474498200EC67C3 /* API.swift in Sources */,
 				B3C434732474498200EC67C3 /* Response.swift in Sources */,
-				B30B2E9E2474A3A000C6088F /* SpotifyPlayHistoryItem.swift in Sources */,
 				B30B2EC52475E4C300C6088F /* Atomic.swift in Sources */,
-				B30B2EAB2474A47500C6088F /* SpotifyNetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

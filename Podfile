@@ -59,3 +59,13 @@ target 'EasifyNetworkTests' do
     project 'Modules/EasifyNetwork/EasifyNetwork.project'
     network_pods
 end
+
+target 'EasifySpotifyDataModels' do
+    project 'Modules/EasifySpotifyDataModels/EasifySpotifyDataModels.project'
+    network_pods
+end
+
+target 'EasifySpotifyDataModelsTests' do
+    project 'Modules/EasifySpotifyDataModels/EasifySpotifyDataModels.project'
+    network_pods
+end

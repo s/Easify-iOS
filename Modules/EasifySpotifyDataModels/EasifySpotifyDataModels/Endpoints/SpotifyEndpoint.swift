@@ -7,13 +7,11 @@
 //
 
 import Foundation
-import SpotifyLogin
 import EasifyDefines
+import EasifyNetwork
 
 // MARK: - SpotifyEndpoint
-public protocol SpotifyEndpoint: Endpoint {
-
-}
+public protocol SpotifyEndpoint: Endpoint {}
 
 // MARK: - Endpoint Protocol Default Values
 extension SpotifyEndpoint {

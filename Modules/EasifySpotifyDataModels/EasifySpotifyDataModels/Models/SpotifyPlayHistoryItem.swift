@@ -7,8 +7,10 @@
 //
 
 import Foundation
+import EasifyCore
 
 // MARK: - SpotifyPlayHistoryItem
+/// Developer documentation: https://developer.spotify.com/documentation/web-api/reference/object-model/#play-history-object
 public struct SpotifyPlayHistoryItem {
     public let track: [SpotifyTrack]
     public let playedAt: Date

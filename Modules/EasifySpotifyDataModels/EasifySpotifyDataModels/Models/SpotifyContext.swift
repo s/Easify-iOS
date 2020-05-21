@@ -7,8 +7,10 @@
 //
 
 import Foundation
+import EasifyCore
 
 // MARK: - SpotifyContext
+/// Developer documentation: https://developer.spotify.com/documentation/web-api/reference/object-model/#context-object
 public struct SpotifyContext {
     public let type: String
     public let href: URL

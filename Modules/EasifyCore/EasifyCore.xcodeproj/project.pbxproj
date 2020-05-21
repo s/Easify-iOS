@@ -12,6 +12,11 @@
 		B30B2E7B2474A07C00C6088F /* EasifyNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B30B2E7A2474A07C00C6088F /* EasifyNetwork.framework */; };
 		B384AE0524733BCD00D9514A /* EasifyCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B384ADFB24733BCD00D9514A /* EasifyCore.framework */; };
 		B384AE0C24733BCD00D9514A /* EasifyCore.h in Headers */ = {isa = PBXBuildFile; fileRef = B384ADFE24733BCD00D9514A /* EasifyCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3924BBC2476127C008821F9 /* KeyedDecodingContainer+DecodeURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3924BB72476127B008821F9 /* KeyedDecodingContainer+DecodeURL.swift */; };
+		B3924BBD2476127C008821F9 /* TimeInterval+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3924BB82476127B008821F9 /* TimeInterval+Convenience.swift */; };
+		B3924BBE2476127C008821F9 /* DateFormatter+ISO8601.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3924BB92476127C008821F9 /* DateFormatter+ISO8601.swift */; };
+		B3924BBF2476127C008821F9 /* KeyedDecodingContainer+DecodeDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3924BBA2476127C008821F9 /* KeyedDecodingContainer+DecodeDate.swift */; };
+		B3924BC02476127C008821F9 /* Int+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3924BBB2476127C008821F9 /* Int+Convenience.swift */; };
 		B3C433C72473507C00EC67C3 /* SpotifyCredentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3C433C62473507C00EC67C3 /* SpotifyCredentials.plist */; };
 		B3F77A2C24733F18004247A1 /* SpotifyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F77A2524733F18004247A1 /* SpotifyService.swift */; };
 		B3F77A2D24733F18004247A1 /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F77A2624733F18004247A1 /* ServiceProvider.swift */; };
@@ -44,6 +49,11 @@
 		B384ADFF24733BCD00D9514A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B384AE0424733BCD00D9514A /* EasifyCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasifyCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B384AE0B24733BCD00D9514A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3924BB72476127B008821F9 /* KeyedDecodingContainer+DecodeURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "KeyedDecodingContainer+DecodeURL.swift"; sourceTree = "<group>"; };
+		B3924BB82476127B008821F9 /* TimeInterval+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TimeInterval+Convenience.swift"; sourceTree = "<group>"; };
+		B3924BB92476127C008821F9 /* DateFormatter+ISO8601.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "DateFormatter+ISO8601.swift"; sourceTree = "<group>"; };
+		B3924BBA2476127C008821F9 /* KeyedDecodingContainer+DecodeDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "KeyedDecodingContainer+DecodeDate.swift"; sourceTree = "<group>"; };
+		B3924BBB2476127C008821F9 /* Int+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Convenience.swift"; sourceTree = "<group>"; };
 		B3C433C62473507C00EC67C3 /* SpotifyCredentials.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SpotifyCredentials.plist; sourceTree = "<group>"; };
 		B3F77A2524733F18004247A1 /* SpotifyService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyService.swift; sourceTree = "<group>"; };
 		B3F77A2624733F18004247A1 /* ServiceProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
@@ -122,6 +132,7 @@
 		B384ADFD24733BCD00D9514A /* EasifyCore */ = {
 			isa = PBXGroup;
 			children = (
+				B3924BB624761267008821F9 /* Extensions */,
 				B3F77A2424733F18004247A1 /* Services */,
 				B3F77A1F24733EE7004247A1 /* Supporting Files */,
 			);
@@ -135,6 +146,18 @@
 				B3F77A3324733F35004247A1 /* Supporting Files */,
 			);
 			path = EasifyCoreTests;
+			sourceTree = "<group>";
+		};
+		B3924BB624761267008821F9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B3924BB92476127C008821F9 /* DateFormatter+ISO8601.swift */,
+				B3924BBB2476127C008821F9 /* Int+Convenience.swift */,
+				B3924BBA2476127C008821F9 /* KeyedDecodingContainer+DecodeDate.swift */,
+				B3924BB72476127B008821F9 /* KeyedDecodingContainer+DecodeURL.swift */,
+				B3924BB82476127B008821F9 /* TimeInterval+Convenience.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		B3C433BD24734D7500EC67C3 /* Spotify */ = {
@@ -399,10 +422,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3924BC02476127C008821F9 /* Int+Convenience.swift in Sources */,
 				B3F77A2D24733F18004247A1 /* ServiceProvider.swift in Sources */,
+				B3924BBF2476127C008821F9 /* KeyedDecodingContainer+DecodeDate.swift in Sources */,
 				B3F77A2C24733F18004247A1 /* SpotifyService.swift in Sources */,
+				B3924BBC2476127C008821F9 /* KeyedDecodingContainer+DecodeURL.swift in Sources */,
 				B3F77A2E24733F18004247A1 /* PlistReaderService.swift in Sources */,
 				B30B2E5B247498FA00C6088F /* SpotifyService+API.swift in Sources */,
+				B3924BBE2476127C008821F9 /* DateFormatter+ISO8601.swift in Sources */,
+				B3924BBD2476127C008821F9 /* TimeInterval+Convenience.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

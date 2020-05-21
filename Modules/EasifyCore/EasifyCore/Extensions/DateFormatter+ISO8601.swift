@@ -8,7 +8,8 @@
 
 import Foundation
 
-extension DateFormatter {
+public extension DateFormatter {
+    /// `iso8601Full` is a `DateFormatter` which uses `yyyy-MM-dd'T'HH:mm:ssZ` format for timestamps.
     static let iso8601Full: DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"

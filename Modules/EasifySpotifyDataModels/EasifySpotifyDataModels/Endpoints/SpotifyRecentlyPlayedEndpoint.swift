@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import EasifyNetwork
 
 // MARK: - SpotifyRecentlyPlayedEndpoint
 public struct SpotifyRecentlyPlayedEndpoint: SpotifyEndpoint {

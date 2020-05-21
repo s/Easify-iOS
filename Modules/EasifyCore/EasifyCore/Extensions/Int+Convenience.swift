@@ -8,7 +8,8 @@
 
 import Foundation
 
-extension Int {
+public extension Int {
+    /// `msToSeconds` converts miliseconds to seconds.
     var msToSeconds: Double {
         return Double(self) / 1000
     }

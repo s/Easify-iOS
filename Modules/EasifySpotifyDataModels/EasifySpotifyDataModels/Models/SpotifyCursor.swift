@@ -9,6 +9,7 @@
 import Foundation
 
 // MARK: - SpotifyCursor
+/// Developer documentation: https://developer.spotify.com/documentation/web-api/reference/object-model/#cursor-object
 public struct SpotifyCursor: Decodable {
     public let after: String
     public let before: String

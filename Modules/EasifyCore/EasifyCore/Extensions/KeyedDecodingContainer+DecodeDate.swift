@@ -8,7 +8,9 @@
 
 import Foundation
 
-extension KeyedDecodingContainer {
+public extension KeyedDecodingContainer {
+    /// This method decodes a `Date` field for a given `CodingKey`.
+    /// - parameter key: `Key` (a.k.a `CodingKey`)
     func decodeDate(keyedBy key: Key) throws -> Date {
         let startDateString = try decode(String.self, forKey: key)
         guard !startDateString.isEmpty else {

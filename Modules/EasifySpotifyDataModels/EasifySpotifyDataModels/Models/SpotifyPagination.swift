@@ -9,6 +9,7 @@
 import Foundation
 
 // MARK: - SpotifyPagination
+/// Developer documentation: https://developer.spotify.com/documentation/web-api/reference/object-model/#paging-object
 public struct SpotifyPagination <SpotifyItem: Decodable> {
     public let href: URL
     public let items: [SpotifyItem]
