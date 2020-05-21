@@ -3,16 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6F1FF68A9876117C546698A9 /* Pods_EasifyNetworkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01039F0EFA9F83FD052D0C3A /* Pods_EasifyNetworkTests.framework */; };
-		A2635CCEA563060B8FA62AB1 /* Pods_EasifyNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 397D0B4EB2DEE29585355A2D /* Pods_EasifyNetwork.framework */; };
 		B30B2E5324748E3D00C6088F /* EasifyNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30B2E5224748E3D00C6088F /* EasifyNetworkTests.swift */; };
 		B30B2EB32474AC4C00C6088F /* Publisher+ValidateDataTaskResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30B2EB22474AC4C00C6088F /* Publisher+ValidateDataTaskResult.swift */; };
-		B30B2EC52475E4C300C6088F /* Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30B2EC42475E4C300C6088F /* Atomic.swift */; };
-		B30B2F1C2475ED1300C6088F /* EasifyDefines.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B30B2F1B2475ED1300C6088F /* EasifyDefines.framework */; };
 		B3C4343E2474412100EC67C3 /* EasifyNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C434342474412100EC67C3 /* EasifyNetwork.framework */; };
 		B3C4345B2474426F00EC67C3 /* EasifyNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = B3C434592474426F00EC67C3 /* EasifyNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B3C434672474489700EC67C3 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C434662474489700EC67C3 /* HTTPMethod.swift */; };
@@ -22,6 +18,7 @@
 		B3C434712474498200EC67C3 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C4346C2474498200EC67C3 /* API.swift */; };
 		B3C434732474498200EC67C3 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C4346E2474498200EC67C3 /* Response.swift */; };
 		B3C43475247449E900EC67C3 /* EasifyNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C43474247449E900EC67C3 /* EasifyNetworkManager.swift */; };
+		B3D4D8062476E97600A7D906 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B3D4D8052476E97600A7D906 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,16 +32,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01039F0EFA9F83FD052D0C3A /* Pods_EasifyNetworkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasifyNetworkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		397D0B4EB2DEE29585355A2D /* Pods_EasifyNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasifyNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5DAB389FCAEC50F6CCA3664D /* Pods-EasifyNetwork.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasifyNetwork.debug.xcconfig"; path = "Target Support Files/Pods-EasifyNetwork/Pods-EasifyNetwork.debug.xcconfig"; sourceTree = "<group>"; };
-		850D349A1CC71517CA7749C0 /* Pods-EasifyNetworkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasifyNetworkTests.debug.xcconfig"; path = "Target Support Files/Pods-EasifyNetworkTests/Pods-EasifyNetworkTests.debug.xcconfig"; sourceTree = "<group>"; };
-		ADFE0874E3130F49A6E8137D /* Pods-EasifyNetwork.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasifyNetwork.release.xcconfig"; path = "Target Support Files/Pods-EasifyNetwork/Pods-EasifyNetwork.release.xcconfig"; sourceTree = "<group>"; };
 		B30B2E5224748E3D00C6088F /* EasifyNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasifyNetworkTests.swift; sourceTree = "<group>"; };
 		B30B2EB22474AC4C00C6088F /* Publisher+ValidateDataTaskResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+ValidateDataTaskResult.swift"; sourceTree = "<group>"; };
-		B30B2EC42475E4C300C6088F /* Atomic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Atomic.swift; sourceTree = "<group>"; };
-		B30B2F122475EC1C00C6088F /* EasifyDefines.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EasifyDefines.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B30B2F1B2475ED1300C6088F /* EasifyDefines.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EasifyDefines.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3C434342474412100EC67C3 /* EasifyNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasifyNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3C4343D2474412100EC67C3 /* EasifyNetworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasifyNetworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3C43451247441BF00EC67C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = "EasifyNetworkTests/Supporting Files/Info.plist"; sourceTree = SOURCE_ROOT; };
@@ -57,8 +46,6 @@
 		B3C4346C2474498200EC67C3 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		B3C4346E2474498200EC67C3 /* Response.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		B3C43474247449E900EC67C3 /* EasifyNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasifyNetworkManager.swift; sourceTree = "<group>"; };
-		B3E61E652475F185006FD01A /* SpotifyLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SpotifyLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FAE7805B780DD189C8BE825A /* Pods-EasifyNetworkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasifyNetworkTests.release.xcconfig"; path = "Target Support Files/Pods-EasifyNetworkTests/Pods-EasifyNetworkTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B30B2F1C2475ED1300C6088F /* EasifyDefines.framework in Frameworks */,
-				A2635CCEA563060B8FA62AB1 /* Pods_EasifyNetwork.framework in Frameworks */,
+				B3D4D8062476E97600A7D906 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,7 +62,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3C4343E2474412100EC67C3 /* EasifyNetwork.framework in Frameworks */,
-				6F1FF68A9876117C546698A9 /* Pods_EasifyNetworkTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,25 +71,8 @@
 		4118753A7BF6AD60D33CC7E6 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B3E61E652475F185006FD01A /* SpotifyLogin.framework */,
-				B30B2F1B2475ED1300C6088F /* EasifyDefines.framework */,
-				B30B2F122475EC1C00C6088F /* EasifyDefines.framework */,
-				397D0B4EB2DEE29585355A2D /* Pods_EasifyNetwork.framework */,
-				01039F0EFA9F83FD052D0C3A /* Pods_EasifyNetworkTests.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		580E608BFFE7683F3E5DC1BE /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				5DAB389FCAEC50F6CCA3664D /* Pods-EasifyNetwork.debug.xcconfig */,
-				ADFE0874E3130F49A6E8137D /* Pods-EasifyNetwork.release.xcconfig */,
-				850D349A1CC71517CA7749C0 /* Pods-EasifyNetworkTests.debug.xcconfig */,
-				FAE7805B780DD189C8BE825A /* Pods-EasifyNetworkTests.release.xcconfig */,
-			);
-			name = Pods;
-			path = ../../Pods;
 			sourceTree = "<group>";
 		};
 		B30B2EA32474A3C700C6088F /* Extensions */ = {
@@ -115,21 +83,12 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		B30B2EC32475E4A700C6088F /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				B30B2EC42475E4C300C6088F /* Atomic.swift */,
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
 		B3C4342A2474412100EC67C3 = {
 			isa = PBXGroup;
 			children = (
 				B3C434572474426F00EC67C3 /* EasifyNetwork */,
 				B3C434412474412100EC67C3 /* EasifyNetworkTests */,
 				B3C434352474412100EC67C3 /* Products */,
-				580E608BFFE7683F3E5DC1BE /* Pods */,
 				4118753A7BF6AD60D33CC7E6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -165,7 +124,6 @@
 			children = (
 				B3C434642474487300EC67C3 /* Core */,
 				B30B2EA32474A3C700C6088F /* Extensions */,
-				B30B2EC32475E4A700C6088F /* Helpers */,
 				B3C434582474426F00EC67C3 /* Supporting Files */,
 			);
 			path = EasifyNetwork;
@@ -220,7 +178,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B3C434482474412100EC67C3 /* Build configuration list for PBXNativeTarget "EasifyNetwork" */;
 			buildPhases = (
-				47B13B0131123EDC6BFF81E4 /* [CP] Check Pods Manifest.lock */,
 				B3C4342F2474412100EC67C3 /* Headers */,
 				B3C434302474412100EC67C3 /* Sources */,
 				B3C434312474412100EC67C3 /* Frameworks */,
@@ -231,6 +188,9 @@
 			dependencies = (
 			);
 			name = EasifyNetwork;
+			packageProductDependencies = (
+				B3D4D8052476E97600A7D906 /* Alamofire */,
+			);
 			productName = EasifyNetwork;
 			productReference = B3C434342474412100EC67C3 /* EasifyNetwork.framework */;
 			productType = "com.apple.product-type.framework";
@@ -239,11 +199,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B3C4344B2474412100EC67C3 /* Build configuration list for PBXNativeTarget "EasifyNetworkTests" */;
 			buildPhases = (
-				5FE67F3CBBFB88BA3CB49A44 /* [CP] Check Pods Manifest.lock */,
 				B3C434392474412100EC67C3 /* Sources */,
 				B3C4343A2474412100EC67C3 /* Frameworks */,
 				B3C4343B2474412100EC67C3 /* Resources */,
-				CDBA9A49EFCD4E8D936FDB9B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -284,6 +242,9 @@
 				Base,
 			);
 			mainGroup = B3C4342A2474412100EC67C3;
+			packageReferences = (
+				B3D4D7762476DAF400A7D906 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = B3C434352474412100EC67C3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -311,70 +272,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		47B13B0131123EDC6BFF81E4 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-EasifyNetwork-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5FE67F3CBBFB88BA3CB49A44 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-EasifyNetworkTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CDBA9A49EFCD4E8D936FDB9B /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EasifyNetworkTests/Pods-EasifyNetworkTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EasifyNetworkTests/Pods-EasifyNetworkTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EasifyNetworkTests/Pods-EasifyNetworkTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		B3C434302474412100EC67C3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -388,7 +285,6 @@
 				B3C434672474489700EC67C3 /* HTTPMethod.swift in Sources */,
 				B3C434712474498200EC67C3 /* API.swift in Sources */,
 				B3C434732474498200EC67C3 /* Response.swift in Sources */,
-				B30B2EC52475E4C300C6088F /* Atomic.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,7 +431,6 @@
 		};
 		B3C434492474412100EC67C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5DAB389FCAEC50F6CCA3664D /* Pods-EasifyNetwork.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -544,10 +439,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire\"",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "EasifyNetwork/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -568,7 +460,6 @@
 		};
 		B3C4344A2474412100EC67C3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ADFE0874E3130F49A6E8137D /* Pods-EasifyNetwork.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -577,11 +468,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/Alamofire\"",
-					"$(PROJECT_DIR)/Pods",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "EasifyNetwork/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -601,7 +488,6 @@
 		};
 		B3C4344C2474412100EC67C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 850D349A1CC71517CA7749C0 /* Pods-EasifyNetworkTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -623,7 +509,6 @@
 		};
 		B3C4344D2474412100EC67C3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FAE7805B780DD189C8BE825A /* Pods-EasifyNetworkTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
@@ -673,6 +558,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B3D4D7762476DAF400A7D906 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B3D4D8052476E97600A7D906 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B3D4D7762476DAF400A7D906 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B3C4342B2474412100EC67C3 /* Project object */;
 }

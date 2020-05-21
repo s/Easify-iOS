@@ -13,6 +13,7 @@ import SwiftUI
 public struct EasifyConstants {
     /// `EasifyConstants.Files` provides names for auxiliary files such as property list kind of files.
     public struct Files {
+        /// `spotifyPlistFileName` provides the name of plist file for Spotify API credentials.
         public static let spotifyPlistFileName: String = "SpotifyCredentials"
     }
 

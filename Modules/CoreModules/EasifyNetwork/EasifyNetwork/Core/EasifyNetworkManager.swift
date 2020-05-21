@@ -16,7 +16,6 @@ final class EasifyNetworkManager {
     // MARK: - Properties
     public static let shared = EasifyNetworkManager()
     private let session: Session
-    @Atomic private var storage: Set<AnyCancellable> = []
 
     // MARK: - Lifecycle
     init() {

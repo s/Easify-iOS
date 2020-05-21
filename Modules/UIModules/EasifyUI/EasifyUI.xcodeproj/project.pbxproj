@@ -3,16 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5393176DB219962CDB7990EA /* Pods_EasifyUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6AC924D47359F729653A53E /* Pods_EasifyUI.framework */; };
-		7442BF3324959BE207CDEBD7 /* Pods_EasifyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B7499A943C90811B75DAF54 /* Pods_EasifyUITests.framework */; };
 		B30B2EB72475D6A200C6088F /* UIColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30B2EB62475D6A200C6088F /* UIColor+Theme.swift */; };
 		B30B2EB92475D6A600C6088F /* EdgeInsets+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30B2EB82475D6A600C6088F /* EdgeInsets+Convenience.swift */; };
-		B30B2EC02475DAD900C6088F /* EasifyCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B30B2EBF2475DAD900C6088F /* EasifyCore.framework */; };
-		B30B2EC12475DAD900C6088F /* EasifyCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B30B2EBF2475DAD900C6088F /* EasifyCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B32CEB1424733D9B00769C44 /* EasifyUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B32CEB0A24733D9B00769C44 /* EasifyUI.framework */; };
 		B32CEB1924733D9B00769C44 /* EasifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32CEB1824733D9B00769C44 /* EasifyUITests.swift */; };
 		B32CEB1B24733D9B00769C44 /* EasifyUI.h in Headers */ = {isa = PBXBuildFile; fileRef = B32CEB0D24733D9B00769C44 /* EasifyUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -31,13 +27,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		B30B2EC22475DAD900C6088F /* Embed Frameworks */ = {
+		B3E4B985247622DE001FD420 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B30B2EC12475DAD900C6088F /* EasifyCore.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,13 +40,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4B7499A943C90811B75DAF54 /* Pods_EasifyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasifyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		525E9D3ABB84A47CB5A76A13 /* Pods-EasifyUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasifyUI.release.xcconfig"; path = "Target Support Files/Pods-EasifyUI/Pods-EasifyUI.release.xcconfig"; sourceTree = "<group>"; };
-		642A1476D4DDB6129D98F937 /* Pods-EasifyUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasifyUI.debug.xcconfig"; path = "Target Support Files/Pods-EasifyUI/Pods-EasifyUI.debug.xcconfig"; sourceTree = "<group>"; };
-		8E918E2798755C35F6A787D7 /* Pods-EasifyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasifyUITests.debug.xcconfig"; path = "Target Support Files/Pods-EasifyUITests/Pods-EasifyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B30B2EB62475D6A200C6088F /* UIColor+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Theme.swift"; sourceTree = "<group>"; };
 		B30B2EB82475D6A600C6088F /* EdgeInsets+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EdgeInsets+Convenience.swift"; sourceTree = "<group>"; };
-		B30B2EBF2475DAD900C6088F /* EasifyCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EasifyCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B32CEB0A24733D9B00769C44 /* EasifyUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasifyUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B32CEB0D24733D9B00769C44 /* EasifyUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasifyUI.h; sourceTree = "<group>"; };
 		B32CEB0E24733D9B00769C44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,8 +50,6 @@
 		B32CEB1A24733D9B00769C44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3F9A36D2473469200B6E569 /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
 		B3F9A36E2473469200B6E569 /* SafariView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafariView.swift; sourceTree = "<group>"; };
-		B6AC924D47359F729653A53E /* Pods_EasifyUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasifyUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E09E6CB85C5B0D158FFFE12A /* Pods-EasifyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasifyUITests.release.xcconfig"; path = "Target Support Files/Pods-EasifyUITests/Pods-EasifyUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,8 +57,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B30B2EC02475DAD900C6088F /* EasifyCore.framework in Frameworks */,
-				5393176DB219962CDB7990EA /* Pods_EasifyUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,33 +65,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				B32CEB1424733D9B00769C44 /* EasifyUI.framework in Frameworks */,
-				7442BF3324959BE207CDEBD7 /* Pods_EasifyUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3A56D8A96B658B0CC207DA4B /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				642A1476D4DDB6129D98F937 /* Pods-EasifyUI.debug.xcconfig */,
-				525E9D3ABB84A47CB5A76A13 /* Pods-EasifyUI.release.xcconfig */,
-				8E918E2798755C35F6A787D7 /* Pods-EasifyUITests.debug.xcconfig */,
-				E09E6CB85C5B0D158FFFE12A /* Pods-EasifyUITests.release.xcconfig */,
-			);
-			name = Pods;
-			path = ../../Pods;
-			sourceTree = "<group>";
-		};
 		A04AE55B79820C313322D502 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B30B2EBF2475DAD900C6088F /* EasifyCore.framework */,
-				B6AC924D47359F729653A53E /* Pods_EasifyUI.framework */,
-				4B7499A943C90811B75DAF54 /* Pods_EasifyUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B3093542247620BA00E95AA7 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Dependencies;
 			sourceTree = "<group>";
 		};
 		B30B2EB52475D69900C6088F /* Extensions */ = {
@@ -117,20 +94,13 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		B30B2EBA2475D88400C6088F /* View Controllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = "View Controllers";
-			sourceTree = "<group>";
-		};
 		B32CEB0024733D9B00769C44 = {
 			isa = PBXGroup;
 			children = (
+				B3093542247620BA00E95AA7 /* Dependencies */,
 				B32CEB0C24733D9B00769C44 /* EasifyUI */,
 				B32CEB1724733D9B00769C44 /* EasifyUITests */,
 				B32CEB0B24733D9B00769C44 /* Products */,
-				3A56D8A96B658B0CC207DA4B /* Pods */,
 				A04AE55B79820C313322D502 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -149,7 +119,6 @@
 			children = (
 				B30B2EB52475D69900C6088F /* Extensions */,
 				B3F9A36B2473464500B6E569 /* Supporting Files */,
-				B30B2EBA2475D88400C6088F /* View Controllers */,
 				B3F9A36A2473463F00B6E569 /* Views */,
 			);
 			path = EasifyUI;
@@ -208,13 +177,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B32CEB1E24733D9B00769C44 /* Build configuration list for PBXNativeTarget "EasifyUI" */;
 			buildPhases = (
-				4D76A51B5860994910741643 /* [CP] Check Pods Manifest.lock */,
 				B32CEB0524733D9B00769C44 /* Headers */,
 				B32CEB0624733D9B00769C44 /* Sources */,
 				B32CEB0724733D9B00769C44 /* Frameworks */,
 				B32CEB0824733D9B00769C44 /* Resources */,
 				B3C433CF2473551E00EC67C3 /* SwiftLint */,
-				B30B2EC22475DAD900C6088F /* Embed Frameworks */,
+				B3E4B985247622DE001FD420 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -229,7 +197,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B32CEB2124733D9B00769C44 /* Build configuration list for PBXNativeTarget "EasifyUITests" */;
 			buildPhases = (
-				FA01606C315D6B634B933114 /* [CP] Check Pods Manifest.lock */,
 				B32CEB0F24733D9B00769C44 /* Sources */,
 				B32CEB1024733D9B00769C44 /* Frameworks */,
 				B32CEB1124733D9B00769C44 /* Resources */,
@@ -300,28 +267,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4D76A51B5860994910741643 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-EasifyUI-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		B3C433CF2473551E00EC67C3 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -357,28 +302,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
-		};
-		FA01606C315D6B634B933114 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-EasifyUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -535,7 +458,6 @@
 		};
 		B32CEB1F24733D9B00769C44 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 642A1476D4DDB6129D98F937 /* Pods-EasifyUI.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -561,7 +483,6 @@
 		};
 		B32CEB2024733D9B00769C44 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 525E9D3ABB84A47CB5A76A13 /* Pods-EasifyUI.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -587,7 +508,6 @@
 		};
 		B32CEB2224733D9B00769C44 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8E918E2798755C35F6A787D7 /* Pods-EasifyUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -607,7 +527,6 @@
 		};
 		B32CEB2324733D9B00769C44 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E09E6CB85C5B0D158FFFE12A /* Pods-EasifyUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

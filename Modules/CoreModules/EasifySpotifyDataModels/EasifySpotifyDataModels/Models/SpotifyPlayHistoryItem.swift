@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import EasifyCore
 
 // MARK: - SpotifyPlayHistoryItem
 /// Developer documentation: https://developer.spotify.com/documentation/web-api/reference/object-model/#play-history-object

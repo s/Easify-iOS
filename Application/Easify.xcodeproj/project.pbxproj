@@ -3,12 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		054AB77996FCC19CCCEA1792 /* libPods-EasifyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BB16C19AE0AFE8757938C3E7 /* libPods-EasifyTests.a */; };
-		270E0960C40064B34463C0F7 /* libPods-Easify.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D3206CAB758BCA0C72EB200 /* libPods-Easify.a */; };
 		B32CEB2724733DEA00769C44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32CEB2524733DEA00769C44 /* AppDelegate.swift */; };
 		B32CEB2824733DEA00769C44 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32CEB2624733DEA00769C44 /* SceneDelegate.swift */; };
 		B32CEB3024733E2400769C44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B32CEB2C24733E2400769C44 /* Assets.xcassets */; };
@@ -25,10 +23,8 @@
 		B3B380A224733E92008411DE /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B3809624733E92008411DE /* BackgroundView.swift */; };
 		B3B380A324733E92008411DE /* ConnectButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B3809724733E92008411DE /* ConnectButtonView.swift */; };
 		B3B380A424733E92008411DE /* DescriptionTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3B3809824733E92008411DE /* DescriptionTextView.swift */; };
-		B3C433B824734BBD00EC67C3 /* EasifyCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C433AC24734B1100EC67C3 /* EasifyCore.framework */; };
-		B3C433B924734BBD00EC67C3 /* EasifyCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3C433AC24734B1100EC67C3 /* EasifyCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B3C433BA24734BBD00EC67C3 /* EasifyUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C433B524734B2100EC67C3 /* EasifyUI.framework */; };
-		B3C433BB24734BBD00EC67C3 /* EasifyUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3C433B524734B2100EC67C3 /* EasifyUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B3D4D80D2476EB8000A7D906 /* SpotifyLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D4D80C2476EB8000A7D906 /* SpotifyLogin.framework */; };
+		B3D4D80E2476EB8000A7D906 /* SpotifyLogin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3D4D80C2476EB8000A7D906 /* SpotifyLogin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,33 +35,40 @@
 			remoteGlobalIDString = B384ADCB24733AD200D9514A;
 			remoteInfo = Easify;
 		};
-		B3C433AB24734B1100EC67C3 /* PBXContainerItemProxy */ = {
+		B3D4D7C42476DEA100A7D906 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B3C433A624734B1100EC67C3 /* EasifyCore.xcodeproj */;
+			containerPortal = B3D4D7BF2476DEA100A7D906 /* EasifyCore.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = B384ADFB24733BCD00D9514A;
 			remoteInfo = EasifyCore;
 		};
-		B3C433AD24734B1100EC67C3 /* PBXContainerItemProxy */ = {
+		B3D4D7C62476DEA100A7D906 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B3C433A624734B1100EC67C3 /* EasifyCore.xcodeproj */;
+			containerPortal = B3D4D7BF2476DEA100A7D906 /* EasifyCore.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = B384AE0424733BCD00D9514A;
 			remoteInfo = EasifyCoreTests;
 		};
-		B3C433B424734B2100EC67C3 /* PBXContainerItemProxy */ = {
+		B3D4D7CD2476DEA100A7D906 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B3C433AF24734B2100EC67C3 /* EasifyUI.xcodeproj */;
+			containerPortal = B3D4D7C82476DEA100A7D906 /* EasifyUI.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = B32CEB0A24733D9B00769C44;
 			remoteInfo = EasifyUI;
 		};
-		B3C433B624734B2100EC67C3 /* PBXContainerItemProxy */ = {
+		B3D4D7CF2476DEA100A7D906 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = B3C433AF24734B2100EC67C3 /* EasifyUI.xcodeproj */;
+			containerPortal = B3D4D7C82476DEA100A7D906 /* EasifyUI.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = B32CEB1324733D9B00769C44;
 			remoteInfo = EasifyUITests;
+		};
+		B3D4D7D52476DEA100A7D906 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3D4D7D12476DEA100A7D906 /* EasifyDefines.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B30B2EF62475EB5C00C6088F;
+			remoteInfo = EasifyDefines;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -76,8 +79,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B3C433B924734BBD00EC67C3 /* EasifyCore.framework in Embed Frameworks */,
-				B3C433BB24734BBD00EC67C3 /* EasifyUI.framework in Embed Frameworks */,
+				B3D4D80E2476EB8000A7D906 /* SpotifyLogin.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,15 +87,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		0D3206CAB758BCA0C72EB200 /* libPods-Easify.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Easify.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F23FD0A5DC3ED8696CEFB82 /* Pods-Easify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easify.debug.xcconfig"; path = "Target Support Files/Pods-Easify/Pods-Easify.debug.xcconfig"; sourceTree = "<group>"; };
-		36AC11602BA105AD743F6594 /* Pods-EasifyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasifyTests.debug.xcconfig"; path = "Target Support Files/Pods-EasifyTests/Pods-EasifyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B32CEB2524733DEA00769C44 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B32CEB2624733DEA00769C44 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B32CEB2C24733E2400769C44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B32CEB2D24733E2400769C44 /* Easify-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Easify-Bridging-Header.h"; sourceTree = "<group>"; };
 		B32CEB3324733E3A00769C44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B32EFFBF24760C44009F6FCC /* SpotifyLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyLoginViewController.swift; sourceTree = "<group>"; };
+		B37C1B0324761F26004B21EE /* EasifyDefines.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EasifyDefines.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B37F81AB247340AC005D66C9 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B384ADCC24733AD200D9514A /* Easify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Easify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B384ADD824733AD300D9514A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -110,11 +110,10 @@
 		B3B3809624733E92008411DE /* BackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		B3B3809724733E92008411DE /* ConnectButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectButtonView.swift; sourceTree = "<group>"; };
 		B3B3809824733E92008411DE /* DescriptionTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionTextView.swift; sourceTree = "<group>"; };
-		B3C433A624734B1100EC67C3 /* EasifyCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EasifyCore.xcodeproj; path = ../../../Modules/EasifyCore/EasifyCore.xcodeproj; sourceTree = "<group>"; };
-		B3C433AF24734B2100EC67C3 /* EasifyUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EasifyUI.xcodeproj; path = ../../../Modules/EasifyUI/EasifyUI.xcodeproj; sourceTree = "<group>"; };
-		BB16C19AE0AFE8757938C3E7 /* libPods-EasifyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EasifyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DC323B34D639F92161149A39 /* Pods-EasifyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasifyTests.release.xcconfig"; path = "Target Support Files/Pods-EasifyTests/Pods-EasifyTests.release.xcconfig"; sourceTree = "<group>"; };
-		FBDF378E53CD788BA4887DFC /* Pods-Easify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Easify.release.xcconfig"; path = "Target Support Files/Pods-Easify/Pods-Easify.release.xcconfig"; sourceTree = "<group>"; };
+		B3D4D7BF2476DEA100A7D906 /* EasifyCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EasifyCore.xcodeproj; path = ../Modules/CoreModules/EasifyCore/EasifyCore.xcodeproj; sourceTree = "<group>"; };
+		B3D4D7C82476DEA100A7D906 /* EasifyUI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EasifyUI.xcodeproj; path = ../Modules/UIModules/EasifyUI/EasifyUI.xcodeproj; sourceTree = "<group>"; };
+		B3D4D7D12476DEA100A7D906 /* EasifyDefines.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EasifyDefines.xcodeproj; path = ../Modules/CoreModules/EasifyDefines/EasifyDefines.xcodeproj; sourceTree = "<group>"; };
+		B3D4D80C2476EB8000A7D906 /* SpotifyLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SpotifyLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,9 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3C433B824734BBD00EC67C3 /* EasifyCore.framework in Frameworks */,
-				B3C433BA24734BBD00EC67C3 /* EasifyUI.framework in Frameworks */,
-				270E0960C40064B34463C0F7 /* libPods-Easify.a in Frameworks */,
+				B3D4D80D2476EB8000A7D906 /* SpotifyLogin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,34 +129,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				054AB77996FCC19CCCEA1792 /* libPods-EasifyTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8710A67CE20EA62581CA7074 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2F23FD0A5DC3ED8696CEFB82 /* Pods-Easify.debug.xcconfig */,
-				FBDF378E53CD788BA4887DFC /* Pods-Easify.release.xcconfig */,
-				36AC11602BA105AD743F6594 /* Pods-EasifyTests.debug.xcconfig */,
-				DC323B34D639F92161149A39 /* Pods-EasifyTests.release.xcconfig */,
-			);
-			name = Pods;
-			path = ../Pods;
-			sourceTree = "<group>";
-		};
-		B32AE7DC247349F800EA9F0C /* Dependencies */ = {
-			isa = PBXGroup;
-			children = (
-				B3C433AF24734B2100EC67C3 /* EasifyUI.xcodeproj */,
-				B3C433A624734B1100EC67C3 /* EasifyCore.xcodeproj */,
-			);
-			path = Dependencies;
-			sourceTree = "<group>";
-		};
 		B32CEB2424733DDE00769C44 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,10 +175,10 @@
 		B384ADC324733AD200D9514A = {
 			isa = PBXGroup;
 			children = (
+				B3E4B957247621FA001FD420 /* Dependencies */,
 				B384ADCE24733AD200D9514A /* Easify */,
 				B384ADE524733AD300D9514A /* EasifyTests */,
 				B384ADCD24733AD200D9514A /* Products */,
-				8710A67CE20EA62581CA7074 /* Pods */,
 				BB9DC9E81444647FFB8A2C9D /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -221,7 +196,6 @@
 			isa = PBXGroup;
 			children = (
 				B32CEB2424733DDE00769C44 /* Common */,
-				B32AE7DC247349F800EA9F0C /* Dependencies */,
 				B384ADD724733AD300D9514A /* Preview Content */,
 				B3B3808624733E92008411DE /* Screens */,
 				B32CEB2924733DF900769C44 /* Supporting Files */,
@@ -302,24 +276,6 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		B3C433A724734B1100EC67C3 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B3C433AC24734B1100EC67C3 /* EasifyCore.framework */,
-				B3C433AE24734B1100EC67C3 /* EasifyCoreTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		B3C433B024734B2100EC67C3 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B3C433B524734B2100EC67C3 /* EasifyUI.framework */,
-				B3C433B724734B2100EC67C3 /* EasifyUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		B3C433CE2473538800EC67C3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -329,11 +285,47 @@
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B3D4D7C02476DEA100A7D906 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3D4D7C52476DEA100A7D906 /* EasifyCore.framework */,
+				B3D4D7C72476DEA100A7D906 /* EasifyCoreTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3D4D7C92476DEA100A7D906 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3D4D7CE2476DEA100A7D906 /* EasifyUI.framework */,
+				B3D4D7D02476DEA100A7D906 /* EasifyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3D4D7D22476DEA100A7D906 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3D4D7D62476DEA100A7D906 /* EasifyDefines.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3E4B957247621FA001FD420 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				B3D4D7D12476DEA100A7D906 /* EasifyDefines.xcodeproj */,
+				B3D4D7C82476DEA100A7D906 /* EasifyUI.xcodeproj */,
+				B3D4D7BF2476DEA100A7D906 /* EasifyCore.xcodeproj */,
+			);
+			name = Dependencies;
+			sourceTree = "<group>";
+		};
 		BB9DC9E81444647FFB8A2C9D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0D3206CAB758BCA0C72EB200 /* libPods-Easify.a */,
-				BB16C19AE0AFE8757938C3E7 /* libPods-EasifyTests.a */,
+				B3D4D80C2476EB8000A7D906 /* SpotifyLogin.framework */,
+				B37C1B0324761F26004B21EE /* EasifyDefines.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -345,13 +337,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B384ADEB24733AD300D9514A /* Build configuration list for PBXNativeTarget "Easify" */;
 			buildPhases = (
-				819275B483A1DDA4F45E54D7 /* [CP] Check Pods Manifest.lock */,
 				B384ADC824733AD200D9514A /* Sources */,
 				B384ADC924733AD200D9514A /* Frameworks */,
 				B384ADCA24733AD200D9514A /* Resources */,
 				B3C433BC24734BBD00EC67C3 /* Embed Frameworks */,
 				B3C433D12473556400EC67C3 /* SwiftLint */,
-				A3605AC28B15B188A3AACBAC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -366,12 +356,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B384ADEE24733AD300D9514A /* Build configuration list for PBXNativeTarget "EasifyTests" */;
 			buildPhases = (
-				7939FB8F73680931990A1F94 /* [CP] Check Pods Manifest.lock */,
 				B384ADDE24733AD300D9514A /* Sources */,
 				B384ADDF24733AD300D9514A /* Frameworks */,
 				B384ADE024733AD300D9514A /* Resources */,
 				B3C433D22473556F00EC67C3 /* SwiftLint */,
-				9E0A8BD4DE76313F1D128F56 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -415,12 +403,16 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = B3C433A724734B1100EC67C3 /* Products */;
-					ProjectRef = B3C433A624734B1100EC67C3 /* EasifyCore.xcodeproj */;
+					ProductGroup = B3D4D7C02476DEA100A7D906 /* Products */;
+					ProjectRef = B3D4D7BF2476DEA100A7D906 /* EasifyCore.xcodeproj */;
 				},
 				{
-					ProductGroup = B3C433B024734B2100EC67C3 /* Products */;
-					ProjectRef = B3C433AF24734B2100EC67C3 /* EasifyUI.xcodeproj */;
+					ProductGroup = B3D4D7D22476DEA100A7D906 /* Products */;
+					ProjectRef = B3D4D7D12476DEA100A7D906 /* EasifyDefines.xcodeproj */;
+				},
+				{
+					ProductGroup = B3D4D7C92476DEA100A7D906 /* Products */;
+					ProjectRef = B3D4D7C82476DEA100A7D906 /* EasifyUI.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -432,32 +424,39 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		B3C433AC24734B1100EC67C3 /* EasifyCore.framework */ = {
+		B3D4D7C52476DEA100A7D906 /* EasifyCore.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = EasifyCore.framework;
-			remoteRef = B3C433AB24734B1100EC67C3 /* PBXContainerItemProxy */;
+			remoteRef = B3D4D7C42476DEA100A7D906 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		B3C433AE24734B1100EC67C3 /* EasifyCoreTests.xctest */ = {
+		B3D4D7C72476DEA100A7D906 /* EasifyCoreTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = EasifyCoreTests.xctest;
-			remoteRef = B3C433AD24734B1100EC67C3 /* PBXContainerItemProxy */;
+			remoteRef = B3D4D7C62476DEA100A7D906 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		B3C433B524734B2100EC67C3 /* EasifyUI.framework */ = {
+		B3D4D7CE2476DEA100A7D906 /* EasifyUI.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = EasifyUI.framework;
-			remoteRef = B3C433B424734B2100EC67C3 /* PBXContainerItemProxy */;
+			remoteRef = B3D4D7CD2476DEA100A7D906 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		B3C433B724734B2100EC67C3 /* EasifyUITests.xctest */ = {
+		B3D4D7D02476DEA100A7D906 /* EasifyUITests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = EasifyUITests.xctest;
-			remoteRef = B3C433B624734B2100EC67C3 /* PBXContainerItemProxy */;
+			remoteRef = B3D4D7CF2476DEA100A7D906 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B3D4D7D62476DEA100A7D906 /* EasifyDefines.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = EasifyDefines.framework;
+			remoteRef = B3D4D7D52476DEA100A7D906 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -483,84 +482,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7939FB8F73680931990A1F94 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-EasifyTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		819275B483A1DDA4F45E54D7 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Easify-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9E0A8BD4DE76313F1D128F56 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EasifyTests/Pods-EasifyTests-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EasifyTests/Pods-EasifyTests-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EasifyTests/Pods-EasifyTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A3605AC28B15B188A3AACBAC /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Easify/Pods-Easify-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Easify/Pods-Easify-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Easify/Pods-Easify-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		B3C433D12473556400EC67C3 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -773,7 +694,6 @@
 		};
 		B384ADEC24733AD300D9514A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2F23FD0A5DC3ED8696CEFB82 /* Pods-Easify.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -794,7 +714,6 @@
 		};
 		B384ADED24733AD300D9514A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FBDF378E53CD788BA4887DFC /* Pods-Easify.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -815,7 +734,6 @@
 		};
 		B384ADEF24733AD300D9514A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 36AC11602BA105AD743F6594 /* Pods-EasifyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -838,7 +756,6 @@
 		};
 		B384ADF024733AD300D9514A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DC323B34D639F92161149A39 /* Pods-EasifyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
