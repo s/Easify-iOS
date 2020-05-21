@@ -21,82 +21,34 @@ jobs:
         run: sudo xcode-select -switch /Applications/Xcode_11.5.app && /usr/bin/xcodebuild -version
 
       - name: Build SpotifyLogin
-        run: xcodebuild clean build \ 
-        -workspace "Easify.xcworkspace" \
-        -scheme "SpotifyLogin" \
-        -destination "${destination}" \
-        "${buildSettings}"
+        run: xcodebuild clean build workspace "Easify.xcworkspace" scheme "SpotifyLogin" destination "${destination}" "${buildSettings}"
 
       - name: Build EasifyDefines
-        run: xcodebuild clean build \
-        -workspace "Easify.xcworkspace" \
-        -scheme "EasifyDefines" \
-        -destination "${destination}" \
-        "${buildSettings}"
+        run: xcodebuild clean build orkspace "Easify.xcworkspace" scheme "EasifyDefines" destination "${destination}" "${buildSettings}"
 
       - name: Build & Test EasifyNetwork
         run: |
-        xcodebuild clean build \
-        -workspace "Easify.xcworkspace" \
-        -scheme "EasifyDefines" \
-        -destination "${destination}" \
-        "${buildSettings}"
-        xcodebuild test \
-        -workspace "Easify.xcworkspace" \
-        -scheme "EasifyNetworkTests" \
-        -destination "${destination}" \
-        "${buildSettings}"
+          xcodebuild clean build orkspace "Easify.xcworkspace" scheme "EasifyDefines" destination "${destination}" "${buildSettings}"
+          xcodebuild test orkspace "Easify.xcworkspace" scheme "EasifyNetworkTests" destination "${destination}" "${buildSettings}"
 
       - name: Build & Test EasifySpotifyDataModels
         run: |
-        xcodebuild clean build \
-          -workspace "Easify.xcworkspace" \
-          -scheme "EasifySpotifyDataModels" \
-          -destination "${destination}" \
-          "${buildSettings}"
-        xcodebuild test \
-          -workspace "Easify.xcworkspace" \
-          -scheme "EasifySpotifyDataModelsTests" \
-          -destination "${destination}" \
-          "${buildSettings}"
+          xcodebuild clean build -workspace "Easify.xcworkspace" -scheme "EasifySpotifyDataModels" -destination "${destination}" "${buildSettings}"
+          xcodebuild test -workspace "Easify.xcworkspace" -scheme "EasifySpotifyDataModelsTests" -destination "${destination}" "${buildSettings}"
 
       - name: Build & Test EasifyCore
         run: |
-        xcodebuild clean build \
-          -workspace "Easify.xcworkspace" \
-          -scheme "EasifyCore" \
-          -destination "${destination}" \
-          "${buildSettings}"
-          xcodebuild test \
-          -workspace "Easify.xcworkspace" \
-          -scheme "EasifyCoreTests" \
-          -destination "${destination}" \
-          "${buildSettings}"
+          xcodebuild clean build -workspace "Easify.xcworkspace" -scheme "EasifyCore" -destination "${destination}" "${buildSettings}"
+          xcodebuild test -workspace "Easify.xcworkspace" -scheme "EasifyCoreTests" -destination "${destination}" "${buildSettings}"
 
       - name: Build & Test EasifyUI
         run: |
-        xcodebuild clean build \
-          -workspace "Easify.xcworkspace" \
-          -scheme "EasifyUI" \
-          -destination "${destination}" \
-          "${buildSettings}"
-          xcodebuild test \
-          -workspace "Easify.xcworkspace" \
-          -scheme "EasifyUITests" \
-          -destination "${destination}" \
-          "${buildSettings}"
+          xcodebuild clean build -workspace "Easify.xcworkspace" -scheme "EasifyUI" -destination "${destination}" "${buildSettings}"
+          xcodebuild test -workspace "Easify.xcworkspace" -scheme "EasifyUITests" -destination "${destination}" "${buildSettings}"
       - name: Build & Test Easify
         run: |
-          xcodebuild clean build \
-          -workspace "Easify.xcworkspace" \
-          -scheme "Easify" \
-          -destination "${destination}" \
-          "${buildSettings}"
-          xcodebuild test \
-          -workspace "Easify.xcworkspace" \
-          -scheme "EasifyTests" \
-          -destination "${destination}" \
-          "${buildSettings}"
+          xcodebuild clean build -workspace "Easify.xcworkspace" -scheme "Easify" -destination "${destination}" "${buildSettings}"
+          xcodebuild test -workspace "Easify.xcworkspace" -scheme "EasifyTests" -destination "${destination}" "${buildSettings}"
         env: 
          destination: ${{ matrix.destination }}
          buildSettings: 'CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO'
