@@ -15,5 +15,3 @@ FOUNDATION_EXPORT double EasifyNetworkVersionNumber;
 FOUNDATION_EXPORT const unsigned char EasifyNetworkVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <EasifyNetwork/PublicHeader.h>
-
-
