@@ -23,10 +23,6 @@
 		B3D4D7E22476E05C00A7D906 /* KeyedDecodingContainer+DecodeDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D4D7DD2476E05C00A7D906 /* KeyedDecodingContainer+DecodeDate.swift */; };
 		B3D4D7E32476E05C00A7D906 /* Int+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D4D7DE2476E05C00A7D906 /* Int+Convenience.swift */; };
 		B3D4D7E42476E05C00A7D906 /* TimeInterval+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D4D7DF2476E05C00A7D906 /* TimeInterval+Convenience.swift */; };
-		B3D4D7E52476E0E700A7D906 /* EasifyDefines.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3E4B9B024762417001FD420 /* EasifyDefines.framework */; };
-		B3D4D7E62476E0E700A7D906 /* EasifyDefines.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3E4B9B024762417001FD420 /* EasifyDefines.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B3E4B97F247622D2001FD420 /* EasifyNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B309354F2476210800E95AA7 /* EasifyNetwork.framework */; };
-		B3E4B980247622D2001FD420 /* EasifyNetwork.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B309354F2476210800E95AA7 /* EasifyNetwork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,21 +56,6 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		B3E4B981247622D2001FD420 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				B3D4D7E62476E0E700A7D906 /* EasifyDefines.framework in Embed Frameworks */,
-				B3E4B980247622D2001FD420 /* EasifyNetwork.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		B30935492476210800E95AA7 /* EasifyNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EasifyNetwork.xcodeproj; path = ../EasifyNetwork/EasifyNetwork.xcodeproj; sourceTree = "<group>"; };
 		B3924B732476109F008821F9 /* EasifySpotifyDataModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasifySpotifyDataModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -104,8 +85,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3E4B97F247622D2001FD420 /* EasifyNetwork.framework in Frameworks */,
-				B3D4D7E52476E0E700A7D906 /* EasifyDefines.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +245,6 @@
 				B3924B6F2476109F008821F9 /* Sources */,
 				B3924B702476109F008821F9 /* Frameworks */,
 				B3924B712476109F008821F9 /* Resources */,
-				B3E4B981247622D2001FD420 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
