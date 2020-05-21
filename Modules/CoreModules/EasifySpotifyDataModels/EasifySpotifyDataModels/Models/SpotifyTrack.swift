@@ -61,7 +61,7 @@ extension SpotifyTrack: Decodable {
         isExplicit = try rootContainer.decode(Bool.self, forKey: .isExplicit)
         externalURLs = try rootContainer.decodeURLForDictionaryValues(keyedBy: .externalURLs)
         href = try rootContainer.decodeURL(keyedBy: .href)
-        id = try rootContainer.decode(String.self, forKey: .id)
+        identifier = try rootContainer.decode(String.self, forKey: .identifier)
         name = try rootContainer.decode(String.self, forKey: .name)
         previewURL = try rootContainer.decodeURL(keyedBy: .previewURL)
         trackNumber = try rootContainer.decode(Int.self, forKey: .trackNumber)
