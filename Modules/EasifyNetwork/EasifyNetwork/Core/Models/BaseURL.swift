@@ -10,13 +10,13 @@ import Foundation
 
 /// Represents a URL for an environment
 public struct BaseURL {
-    
+
     /// Schema of the URL (https)
     public var scheme: String
-    
+
     /// Hostname of the URL (www.example.com)
     public var host: String
-    
+
     /// Lifecycle
     public init(scheme: String, host: String) {
         self.scheme = scheme

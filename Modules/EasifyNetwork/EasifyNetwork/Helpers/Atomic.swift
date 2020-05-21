@@ -16,7 +16,7 @@ struct Atomic<Value> {
     init(wrappedValue: Value) {
         self.value = wrappedValue
     }
-    
+
     var wrappedValue: Value {
         get {
             return queue.sync { value }

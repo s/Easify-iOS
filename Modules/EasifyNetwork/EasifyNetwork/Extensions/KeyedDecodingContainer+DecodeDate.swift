@@ -24,7 +24,7 @@ extension KeyedDecodingContainer {
                                                    in: self,
                                                    debugDescription: description)
         }
-        
+
         return date
     }
 

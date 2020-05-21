@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension KeyedDecodingContainer  {
+extension KeyedDecodingContainer {
     func decodeURL(keyedBy key: Key) throws -> URL {
         let urlString = try decode(String.self, forKey: key)
         guard let url = URL(string: urlString) else {
@@ -19,7 +19,7 @@ extension KeyedDecodingContainer  {
         }
         return url
     }
-    
+
     func decodeURLForDictionaryValues<K: Hashable & Decodable>(keyedBy key: Key) throws -> [K: URL] {
         var dictionary: [K: Any] = try decode([K: String].self, forKey: key)
         for (k, v) in dictionary {

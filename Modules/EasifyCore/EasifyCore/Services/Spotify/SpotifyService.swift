@@ -31,7 +31,7 @@ public enum SpotifyServiceError: Error {
             return message
         }
     }
-    
+
     /// `readingError` method is a conveinence method which is used to create `.cannotReadRequiredKey` type of errors.
     static func readingError(for key: String) -> SpotifyServiceError {
         return SpotifyServiceError.cannotReadRequiredKey(message: "Cannot read the required key: \(key)")

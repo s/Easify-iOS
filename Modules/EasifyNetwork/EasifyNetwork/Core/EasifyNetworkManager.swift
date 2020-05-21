@@ -12,21 +12,21 @@ import Foundation
 
 /// Generic network interface which can be used for any network operation.
 final class EasifyNetworkManager {
-    
+
     // MARK: - Properties
     public static let shared = EasifyNetworkManager()
     private let session: Session
     @Atomic private var storage: Set<AnyCancellable> = []
-    
+
     // MARK: - Lifecycle
     init() {
         session = Session(startRequestsImmediately: false)
     }
-    
+
     // MARK: - Public
     /// Execute method accepts a parameter of type: `Endpoint(URLRequestConvertible)` and returns a `Future<Request.Response(Decodable), Error>`
     public func execute<Request: Endpoint>(request: Request) {//-> AnyPublisher<Request.Response.Type, NetworkingError> {}
-        
+
         self.session
         .request(request)
         .publishDecodable(type: Request.Response.self)
@@ -49,6 +49,6 @@ final class EasifyNetworkManager {
         }) { a in
             print(a)
         }
-        
+
     }
 }

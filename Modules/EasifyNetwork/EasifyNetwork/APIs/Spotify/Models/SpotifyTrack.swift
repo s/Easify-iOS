@@ -53,7 +53,7 @@ extension SpotifyTrack: Decodable {
     public init(from decoder: Decoder) throws {
         // Root container
         let rootContainer = try decoder.container(keyedBy: SpotifyTrack.CodingKeys.self)
-        
+
         // Decoding properties
         artists = try rootContainer.decode([SpotifyArtist].self, forKey: .artists)
         duration = try SpotifyTrack.decodeDuration(from: rootContainer)

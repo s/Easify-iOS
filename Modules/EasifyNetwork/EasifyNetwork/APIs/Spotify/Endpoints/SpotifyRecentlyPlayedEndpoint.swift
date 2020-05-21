@@ -13,8 +13,7 @@ public struct SpotifyRecentlyPlayedEndpoint: SpotifyEndpoint {
     public typealias Response = SpotifyPagination<SpotifyPlayHistoryItem>
     public var path: String = "/v1/me/player/recently-played"
     public var method: HTTPMethod = .get
-    
+
     // MARK: Lifecycle
     public init() {}
 }
-

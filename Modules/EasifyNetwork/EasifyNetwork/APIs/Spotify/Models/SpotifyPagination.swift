@@ -34,7 +34,7 @@ private extension SpotifyPagination {
 extension SpotifyPagination: Decodable {
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: SpotifyPagination.CodingKeys.self)
-        
+
         href = try container.decodeURL(keyedBy: .href)
         items = try container.decode([SpotifyItem].self, forKey: .items)
         limit = try container.decode(Int.self, forKey: .limit)

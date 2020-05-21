@@ -13,7 +13,7 @@ import Alamofire
 
 class EasifyNetworkTests: XCTestCase {
     @Atomic private var storage: Set<AnyCancellable> = []
-    
+
     func testExample() throws {
         let timeout: TimeInterval = 10
         //SpotifyNetworkService.recentlyPlayedTracks.fetch()
@@ -36,7 +36,7 @@ class EasifyNetworkTests: XCTestCase {
         print(response?.response?.statusCode)
 //        XCTAssertTrue(response?.result.isSuccess == true)
     }
-    
+
     private func store(_ toStore: () -> AnyCancellable) {
         storage.insert(toStore())
     }

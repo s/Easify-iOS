@@ -12,7 +12,7 @@ import Foundation
 /// SpotifyNetworkService provides an interface for Spotify Developer API
 public enum SpotifyNetworkService {
     case recentlyPlayedTracks
-    
+
     public func fetch() {
         switch self {
         case .recentlyPlayedTracks:

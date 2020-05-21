@@ -12,7 +12,7 @@ import EasifyDefines
 
 // MARK: - SpotifyEndpoint
 public protocol SpotifyEndpoint: Endpoint {
-    
+
 }
 
 // MARK: - Endpoint Protocol Default Values
@@ -22,8 +22,8 @@ extension SpotifyEndpoint {
     public var api: API {
         return API(baseURL: BaseURL(scheme: "https", host: "api.spotify.com"))
     }
-    
-    public var additionalHeaders: [String : String] {
+
+    public var additionalHeaders: [String: String] {
         let key = EasifyConstants.StorageKeys.spotifyAccessToken
         if let token = UserDefaults.standard.string(forKey: key) {
             return ["Authorization": "Bearer \(token)"]

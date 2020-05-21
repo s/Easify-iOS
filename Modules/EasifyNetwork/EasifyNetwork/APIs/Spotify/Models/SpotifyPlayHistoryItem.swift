@@ -28,10 +28,9 @@ private extension SpotifyPlayHistoryItem {
 extension SpotifyPlayHistoryItem: Decodable {
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: SpotifyPlayHistoryItem.CodingKeys.self)
-        
+
         track = try container.decode([SpotifyTrack].self, forKey: .track)
         playedAt = try container.decodeDate(keyedBy: .playedAt)
         context = try container.decode(SpotifyContext.self, forKey: .context)
     }
 }
-

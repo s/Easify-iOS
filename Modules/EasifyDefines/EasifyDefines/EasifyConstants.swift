@@ -28,10 +28,10 @@ public struct EasifyConstants {
     public struct Spacings {
         /// `EasifyConstants.Spacings.single` returns 8.0 of type `CGFloat`
         public static let single: CGFloat = 8.0
-        
+
         /// `EasifyConstants.Spacings.double` returns 16.0 of type `CGFloat`
         public static let double: CGFloat = 16.0
-        
+
         /// `EasifyConstants.Spacings.quadruple` returns 32.0 of type `CGFloat`
         public static let quadruple: CGFloat = 32.0
     }
@@ -40,7 +40,7 @@ public struct EasifyConstants {
     public struct URLS {
         public static let backgroundImageURL: String = "https://unsplash.com/photos/tknOyEefp2k"
     }
-    
+
     /// `EasifyConstants.StorageKeys` provides a global key for common resources such as `UserDefaults`.
     public struct StorageKeys {
         /// `spotifyAccessToken` returns a `String` to be used for storing the Spotify API access token in any storage service.
