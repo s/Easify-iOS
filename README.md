@@ -25,11 +25,11 @@ Easify
   |_____EasifyCore
   |       |______EasifyDefines
   |       |______EasifyNetwork
-  |       |           |_________Alamofire
+  |       |           |______Alamofire
   |       |
   |       |______EasifySpotifyDataModels
-  |       |			|_________EasifyDefines
-  |       |			|_________EasifyNetwork
+  |       |			|______EasifyDefines
+  |       |			|______EasifyNetwork
   |       |
   |       |______SpotifyLogin
   |
