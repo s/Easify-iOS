@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <Group
+      location = "container:"
+      name = "Modules">
+      <Group
+         location = "container:"
+         name = "CoreModules">
+         <FileRef
+            location = "group:Modules/CoreModules/SpotifyLogin/SpotifyLogin.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:Modules/CoreModules/EasifySpotifyDataModels/EasifySpotifyDataModels.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:Modules/CoreModules/EasifyNetwork/EasifyNetwork.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:Modules/CoreModules/EasifyDefines/EasifyDefines.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:Modules/CoreModules/EasifyCore/EasifyCore.xcodeproj">
+         </FileRef>
+      </Group>
+      <Group
+         location = "container:"
+         name = "UIModules">
+         <FileRef
+            location = "group:Modules/UIModules/EasifyUI/EasifyUI.xcodeproj">
+         </FileRef>
+      </Group>
+   </Group>
+   <Group
+      location = "container:"
+      name = "Application">
+      <FileRef
+         location = "group:Application/Easify.xcodeproj">
+      </FileRef>
+   </Group>
+</Workspace>
