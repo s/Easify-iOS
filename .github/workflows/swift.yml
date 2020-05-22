@@ -18,29 +18,27 @@ jobs:
         uses: actions/checkout@master
       - name: Select Xcode 11.5
         run: sudo xcode-select -switch /Applications/Xcode_11.5.app && /usr/bin/xcodebuild -version
-      - name: List all schemes
-        run: xcodebuild -list
-      - name: Build SpotifyLogin
+      - name: Build SpotifyLogin Framework
         run: xcodebuild -workspace "Easify.xcworkspace" -scheme "SpotifyLogin" -destination 'platform=iOS Simulator,OS=13.5,name=iPhone 11 Pro Max' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO clean build
-      - name: Build EasifyDefines
+      - name: Build EasifyDefines Framework
         run: xcodebuild clean build -workspace Easify.xcworkspace -scheme EasifyDefines -destination 'platform=iOS Simulator,OS=13.5,name=iPhone 11 Pro Max' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
-      - name: Build & Test EasifyNetwork
+      - name: Build & Test EasifyNetwork Framework
         run: |
           xcodebuild clean build -workspace Easify.xcworkspace -scheme EasifyDefines -destination 'platform=iOS Simulator,OS=13.5,name=iPhone 11 Pro Max' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
           xcodebuild test -workspace Easify.xcworkspace -scheme EasifyNetworkTests -destination 'platform=iOS Simulator,OS=13.5,name=iPhone 11 Pro Max' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
-      - name: Build & Test EasifySpotifyDataModels
+      - name: Build & Test EasifySpotifyDataModels Framework
         run: |
           xcodebuild clean build -workspace Easify.xcworkspace -scheme EasifySpotifyDataModels -destination 'platform=iOS Simulator,OS=13.5,name=iPhone 11 Pro Max' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
           xcodebuild test -workspace Easify.xcworkspace -scheme EasifySpotifyDataModelsTests -destination 'platform=iOS Simulator,OS=13.5,name=iPhone 11 Pro Max' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
-      - name: Build & Test EasifyCore
+      - name: Build & Test EasifyCore Framework
         run: |
           xcodebuild clean build -workspace Easify.xcworkspace -scheme EasifyCore -destination 'platform=iOS Simulator,OS=13.5,name=iPhone 11 Pro Max' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
           xcodebuild test -workspace Easify.xcworkspace -scheme EasifyCoreTests -destination 'platform=iOS Simulator,OS=13.5,name=iPhone 11 Pro Max' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
-      - name: Build & Test EasifyUI
+      - name: Build & Test EasifyUI Framework
         run: |
           xcodebuild clean build -workspace Easify.xcworkspace -scheme EasifyUI -destination 'platform=iOS Simulator,OS=13.5,name=iPhone 11 Pro Max' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
           xcodebuild test -workspace Easify.xcworkspace -scheme EasifyUITests -destination 'platform=iOS Simulator,OS=13.5,name=iPhone 11 Pro Max' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
-      - name: Build & Test Easify
+      - name: Build & Test Easify Application
         run: |
           xcodebuild clean build -workspace Easify.xcworkspace -scheme Easify -destination 'platform=iOS Simulator,OS=13.5,name=iPhone 11 Pro Max' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
           xcodebuild test -workspace Easify.xcworkspace -scheme EasifyTests -destination 'platform=iOS Simulator,OS=13.5,name=iPhone 11 Pro Max' CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
