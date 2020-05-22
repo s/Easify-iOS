@@ -24,7 +24,7 @@ final class EasifyNetworkManager {
 
     // MARK: - Public
     /// Execute method accepts a parameter of type: `Endpoint(URLRequestConvertible)` and returns a `Future<Request.Response(Decodable), Error>`
-    public func execute<Request: Endpoint>(request: Request) {//-> AnyPublisher<Request.Response.Type, NetworkingError> {}
+    func execute<Request: Endpoint>(request: Request) {//-> AnyPublisher<Request.Response.Type, NetworkingError> {}
 
         self.session
         .request(request)
