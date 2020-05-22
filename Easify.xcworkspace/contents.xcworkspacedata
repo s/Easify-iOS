@@ -3,6 +3,13 @@
    version = "1.0">
    <Group
       location = "container:"
+      name = "Application">
+      <FileRef
+         location = "group:Application/Easify.xcodeproj">
+      </FileRef>
+   </Group>
+   <Group
+      location = "container:"
       name = "Modules">
       <Group
          location = "container:"
@@ -30,12 +37,5 @@
             location = "group:Modules/UIModules/EasifyUI/EasifyUI.xcodeproj">
          </FileRef>
       </Group>
-   </Group>
-   <Group
-      location = "container:"
-      name = "Application">
-      <FileRef
-         location = "group:Application/Easify.xcodeproj">
-      </FileRef>
    </Group>
 </Workspace>
