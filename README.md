@@ -9,10 +9,10 @@ It uses [SpotifyLogin SDK](https://github.com/spotify/SpotifyLogin) to handle th
 Then you can register an application on [Spotify Developer Portal](https://developer.spotify.com/dashboard/applications) and add the following values to the `SpotifyCredentials.plist` in `EasifyCore` module:
 
 ```
-	<key>client_id</key>
-	<string>YOUR_CLIENT_ID</string>
-	<key>client_secret</key>
-	<string>YOUR_CLIENT_SECRET</string>
-	<key>redirect_url</key>
-	<string>YOUR_REDIRECT_URL</string>
+<key>client_id</key>
+<string>YOUR_CLIENT_ID</string>
+<key>client_secret</key>
+<string>YOUR_CLIENT_SECRET</string>
+<key>redirect_url</key>
+<string>YOUR_REDIRECT_URL</string>
 ```
