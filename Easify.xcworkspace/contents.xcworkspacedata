@@ -15,19 +15,19 @@
          location = "container:"
          name = "CoreModules">
          <FileRef
-            location = "group:Modules/CoreModules/SpotifyLogin/SpotifyLogin.xcodeproj">
-         </FileRef>
-         <FileRef
-            location = "group:Modules/CoreModules/EasifySpotifyDataModels/EasifySpotifyDataModels.xcodeproj">
-         </FileRef>
-         <FileRef
-            location = "group:Modules/CoreModules/EasifyNetwork/EasifyNetwork.xcodeproj">
+            location = "group:Modules/CoreModules/EasifyCore/EasifyCore.xcodeproj">
          </FileRef>
          <FileRef
             location = "group:Modules/CoreModules/EasifyDefines/EasifyDefines.xcodeproj">
          </FileRef>
          <FileRef
-            location = "group:Modules/CoreModules/EasifyCore/EasifyCore.xcodeproj">
+            location = "group:Modules/CoreModules/EasifyNetwork/EasifyNetwork.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:Modules/CoreModules/EasifySpotifyDataModels/EasifySpotifyDataModels.xcodeproj">
+         </FileRef>
+         <FileRef
+            location = "group:Modules/CoreModules/SpotifyLogin/SpotifyLogin.xcodeproj">
          </FileRef>
       </Group>
       <Group
