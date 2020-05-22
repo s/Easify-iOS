@@ -21,18 +21,19 @@ Then you can register an application on [Spotify Developer Portal](https://devel
 
 Easify Application's dependency graph:
 
-Easify 												<br/>
-  |____EasifyCore 									<br/>
-  |			|______EasifyDefines 					<br/>
-  |			|______EasifyNetwork 					<br/>
-  |			|			|_________Alamofire			<br/>
-  |			| 										<br/>
-  |			|______EasifySpotifyDataModels			<br/>
-  |			|			|_________EasifyDefines		<br/>
-  |			|			|_________EasifyNetwork		<br/>
-  | 		|										<br/>
-  | 		|______SpotifyLogin						<br/>
-  |													<br/>
-  |____EasifyDefines 								<br/>
-  |____EasifyUI  									<br/>
-  |____SpotifyLogin 								<br/>
+Easify 									               <br/>
+  |_____EasifyCore 								<br/>
+  |              |______EasifyDefines 					       <br/>
+  |              |______EasifyNetwork 					<br/>
+  |		  |                    |_________Alamofire			<br/>
+  |		  | 										<br/>
+  |		  |______EasifySpotifyDataModels			<br/>
+  |		  |			|_________EasifyDefines		<br/>
+  |		  |			|_________EasifyNetwork		<br/>
+  | 		  |										<br/>
+  | 		  |______SpotifyLogin						<br/>
+  |			                                                                  <br/>
+  |                                                                                     <br/>
+  |_____EasifyDefines 								<br/>
+  |_____EasifyUI  									<br/>
+  |_____SpotifyLogin 								<br/>
