@@ -71,3 +71,9 @@ extension Endpoint {
     }
 
 }
+
+public extension Endpoint {
+    func execute() {
+        EasifyNetworkManager.shared.execute(request: self)
+    }
+}
