@@ -17,7 +17,7 @@ struct ContainerView: View {
         if spotifyService.isLoggedIn {
             return AnyView(HomeView())
         } else {
-            return AnyView(LoginView())
+            return AnyView(LoginView().environmentObject(spotifyService))
         }
     }
 }

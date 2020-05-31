@@ -12,11 +12,24 @@ import XCTest
 @testable import SpotifyLogin
 
 class SpotifyServiceTests: XCTestCase {
+    // MARK: - Properties
+    private var spotifyService: SpotifyService?
+
     // MARK: - Tests
-    func testSpotifyServiceInitialization() {
-        let name = EasifyConstants.Files.spotifyPlistFileName
+    override func setUpWithError() throws {
         let bundle = Bundle(for: type(of: self))
-        var plistReaderService: PlistReaderService? = nil
+        let plistName = EasifyDefines.Files.spotifyPlistFileName
+        var plistReaderService: PlistReaderService?
+        XCTAssertNoThrow(plistReaderService = try PlistReaderService(name: plistName, bundle: bundle))
+        if let plistReaderService = plistReaderService {
+            XCTAssertNoThrow(self.spotifyService = try SpotifyService(plistReaderService: plistReaderService))
+        }
+    }
+
+    func testSpotifyServiceInitialization() {
+        let name = EasifyDefines.Files.spotifyPlistFileName
+        let bundle = Bundle(for: type(of: self))
+        var plistReaderService: PlistReaderService?
         XCTAssertNoThrow(plistReaderService = try PlistReaderService(name: name, bundle: bundle))
         XCTAssertNotNil(plistReaderService)
         guard let prService = plistReaderService else {
@@ -25,8 +38,21 @@ class SpotifyServiceTests: XCTestCase {
         }
         XCTAssertNoThrow(try SpotifyService(plistReaderService: prService))
     }
- 
+    
+    func testSpotifyServiceLogin() {
+        guard let spotifyService = spotifyService else {
+            XCTFail("Found nil SpotifyService.")
+            return
+        }
+        XCTAssertTrue(!spotifyService.isAttemptingToLogin)
+        let exp = expectation(description: "Login Expectation")
+        spotifyService.login { _, _ in
+            exp.fulfill()
+        }
+        wait(for: [exp], timeout: 2.0)
+    }
+
     func testSpotifyRecentlyPlayedTracksAPI() {
-        SpotifyService.fetchRecentlyPlayedTracks()
+        spotifyService?.fetchRecentlyPlayedTracks()
     }
 }

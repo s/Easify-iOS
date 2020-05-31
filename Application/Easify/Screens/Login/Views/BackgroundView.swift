@@ -9,9 +9,13 @@
 import SwiftUI
 import EasifyCore
 import EasifyDefines
+import EasifyUI
 
-struct BackgroundView: View {
-    // MARK: - 
+// MARK: - BackgroundView
+struct BackgroundView {}
+
+// MARK: - BackgroundView: View
+extension BackgroundView: View {
     var body: some View {
         ZStack {
             HStack {
@@ -24,7 +28,7 @@ struct BackgroundView: View {
                 Spacer()
                 HStack {
                     ButtonWithLinkView()
-                }.offset(x: 0, y: -EasifyConstants.Spacings.quadruple)
+                }.offset(x: 0, y: -EasifyUIDefines.Spacings.quadruple)
             }
         }
     }

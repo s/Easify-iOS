@@ -26,6 +26,7 @@ extension AppDelegate: UIApplicationDelegate {
             print(error.localizedDescription)
             return false
         }
+        serviceProvider?.spotifyService.login()
         return true
     }
 

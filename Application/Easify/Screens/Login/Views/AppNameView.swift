@@ -12,7 +12,7 @@ import EasifyDefines
 
 struct AppNameView: View {
     var body: some View {
-        Text(EasifyConstants.Copies.easify.uppercased())
+        Text(EasifyDefines.Copies.easify.uppercased())
             .kerning(1.0)
             .fontWeight(.heavy)
             .font(.title)

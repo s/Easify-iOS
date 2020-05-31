@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import EasifyUI
 import EasifyCore
 import EasifyDefines
 
@@ -14,23 +15,26 @@ import EasifyDefines
 struct LoginView: View {
     // MARK: - Properties
     @ObservedObject private var loginViewModel = LoginViewModel()
+    @EnvironmentObject var spotifyService: SpotifyService
 
     // MARK: - UI
     var body: some View {
-        ZStack {
-            BackgroundView()
-            VStack(alignment: .center, spacing: EasifyConstants.Spacings.quadruple) {
-                AppNameView()
+        LoadingView(isShowing: .constant(spotifyService.isAttemptingToLogin), message: EasifyDefines.Copies.loading) {
+            ZStack {
+                BackgroundView()
+                VStack(alignment: .center, spacing: EasifyUIDefines.Spacings.quadruple) {
+                    AppNameView()
 
-                VStack(spacing: EasifyConstants.Spacings.single) {
-                    DescriptionTextView()
-                    ConnectButtonView()
-                        .frame(minWidth: 0,
-                               maxWidth: UIScreen.main.bounds.width,
-                               minHeight: 0,
-                               maxHeight: 60)
-                }
-            }.offset(x: 0, y: -EasifyConstants.Spacings.double)
+                    VStack(spacing: EasifyUIDefines.Spacings.single) {
+                        DescriptionTextView()
+                        ConnectButtonView()
+                            .frame(minWidth: 0,
+                                   maxWidth: UIScreen.main.bounds.width,
+                                   minHeight: 0,
+                                   maxHeight: 60)
+                    }
+                }.offset(x: 0, y: -EasifyUIDefines.Spacings.double)
+            }
         }
     }
 }

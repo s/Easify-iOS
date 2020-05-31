@@ -16,7 +16,7 @@ class ServiceProviderTests: XCTestCase {
         var serviceProvider: ServiceProvider?
         XCTAssertNoThrow(serviceProvider = try ServiceProvider())
         XCTAssertNotNil(serviceProvider)
-        guard let _ = serviceProvider else {
+        if serviceProvider == nil {
             XCTFail("Found unexpected nil ServiceProvider.")
             return
         }
