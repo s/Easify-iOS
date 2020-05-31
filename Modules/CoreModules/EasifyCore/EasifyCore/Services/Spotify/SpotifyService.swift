@@ -24,10 +24,13 @@ public enum SpotifyServiceError: Error {
     /// `.cannotReadRequiredKey` type of error is thrown when one of the required keys is not found or is able to read from the given property list file.
     case cannotReadRequiredKey(message: String)
 
+    /// `.cannotInitializeUserDefaults` type of error is thrown when `UserDefaults(_suiteName:)` method returns nil
+    case cannotInitializeUserDefaults(message: String)
+
     /// `description` property returns the message of an error type of `SpotifyServiceError`.
     var description: String {
         switch self {
-        case .cannotReadRequiredKey(let message):
+        case .cannotReadRequiredKey(let message), .cannotInitializeUserDefaults(let message):
             return message
         }
     }
@@ -51,7 +54,11 @@ public class SpotifyService: ObservableObject {
         .userFollowModify
     ]
     private static let accessTokenKey = "nl.saidozcan.SpotifyService.accessTokenKey"
+    private let clientID: String
+    private let clientSecret: String
+    private let redirectURL: URL
     @Published public private(set) var isLoggedIn: Bool = false
+    @Published public private(set) var isAttemptingToLogin: Bool = false
 
     // MARK: - Lifecycle
     /// `SpotifyService` requires an instance of `PlistReaderService` which is constructed with the necessary plist file which includes `client_id`, `client_secret` and `redirect_uri` keys in it.
@@ -59,6 +66,12 @@ public class SpotifyService: ObservableObject {
         guard let clientID: String = plistReaderService.read(key: SpotifyCredentialsKeys.clientID.rawValue) else {
             throw SpotifyServiceError.readingError(for: SpotifyCredentialsKeys.clientID.rawValue)
         }
+        self.clientID = clientID
+
+        guard let clientSecret: String = plistReaderService.read(key: SpotifyCredentialsKeys.clientSecret.rawValue) else {
+            throw SpotifyServiceError.readingError(for: SpotifyCredentialsKeys.clientSecret.rawValue)
+        }
+        self.clientSecret = clientSecret
 
         guard
             let redirectURLString: String = plistReaderService.read(key: SpotifyCredentialsKeys.redirectURL.rawValue),
@@ -66,23 +79,28 @@ public class SpotifyService: ObservableObject {
         else {
             throw SpotifyServiceError.readingError(for: SpotifyCredentialsKeys.redirectURL.rawValue)
         }
-
-        guard let clientSecret: String = plistReaderService.read(key: SpotifyCredentialsKeys.clientSecret.rawValue) else {
-            throw SpotifyServiceError.readingError(for: SpotifyCredentialsKeys.clientSecret.rawValue)
-        }
+        self.redirectURL = redirectURL
 
         SpotifyLogin.shared.configure(clientID: clientID, clientSecret: clientSecret, redirectURL: redirectURL)
 
-        let authSemaphore = DispatchSemaphore(value: 0)
-        SpotifyLogin.shared.getAccessToken { [weak self] (accessToken, _) in
-            self?.isLoggedIn = (accessToken != nil)
-            authSemaphore.signal()
-        }
-        authSemaphore.wait()
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(didLoginSuccessfully),
                                                name: .SpotifyLoginSuccessful,
                                                object: nil)
+    }
+
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+
+    // MARK: - Public
+    public func login(completion: ((String?, Error?) -> Void)? = nil) {
+        self.isAttemptingToLogin = true
+        SpotifyLogin.shared.getAccessToken { [weak self] (accessToken, error) in
+            self?.isLoggedIn = (accessToken != nil)
+            self?.isAttemptingToLogin = false
+            completion?(accessToken, error)
+        }
     }
 
     // MARK: - Private

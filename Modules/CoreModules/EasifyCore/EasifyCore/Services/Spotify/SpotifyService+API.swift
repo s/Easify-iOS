@@ -8,13 +8,14 @@
 
 import Foundation
 import EasifyNetwork
+import SpotifyLogin
 import EasifySpotifyDataModels
 
 // MARK: SpotifyService API Endpoints
 /// This extension provides an interface for Spotify API interactions.
 public extension SpotifyService {
     /// This method makes a HTTP call to `/me/player/recently-played` endpoint of Spotify API.
-    static func fetchRecentlyPlayedTracks() {
+    func fetchRecentlyPlayedTracks() {
         SpotifyRecentlyPlayedEndpoint().execute()
     }
 }
