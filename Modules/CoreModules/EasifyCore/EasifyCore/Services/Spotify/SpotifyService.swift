@@ -59,6 +59,7 @@ public class SpotifyService: ObservableObject {
     private let redirectURL: URL
     @Published public private(set) var isLoggedIn: Bool = false
     @Published public private(set) var isAttemptingToLogin: Bool = false
+    @Published public private(set) var authenticatedUsername: String?
 
     // MARK: - Lifecycle
     /// `SpotifyService` requires an instance of `PlistReaderService` which is constructed with the necessary plist file which includes `client_id`, `client_secret` and `redirect_uri` keys in it.
@@ -97,18 +98,27 @@ public class SpotifyService: ObservableObject {
     public func login(completion: ((String?, Error?) -> Void)? = nil) {
         self.isAttemptingToLogin = true
         SpotifyLogin.shared.getAccessToken { [weak self] (accessToken, error) in
-            self?.isLoggedIn = (accessToken != nil)
-            self?.isAttemptingToLogin = false
+            self?.executePostLoginOperations(token: accessToken, error: error)
             completion?(accessToken, error)
         }
     }
 
+    public func logout() {
+        SpotifyLogin.shared.logout()
+        self.isLoggedIn = false
+        self.authenticatedUsername = nil
+    }
+
     // MARK: - Private
+    private func executePostLoginOperations(token: String?, error: Error?) {
+        self.isLoggedIn = (token != nil)
+        self.authenticatedUsername = SpotifyLogin.shared.username
+        self.isAttemptingToLogin = false
+    }
+
     @objc private func didLoginSuccessfully() {
-        SpotifyLogin.shared.getAccessToken { [weak self] (accessToken, _) in
-            if let accessToken = accessToken {
-                self?.isLoggedIn = true
-            }
+        SpotifyLogin.shared.getAccessToken { [weak self] (accessToken, error) in
+            self?.executePostLoginOperations(token: accessToken, error: error)
         }
     }
 }
