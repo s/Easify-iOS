@@ -16,7 +16,7 @@ struct RecentlyPlayedView {}
 // MARK: - RecentlyPlayedView: View
 extension RecentlyPlayedView: View {
     var body: some View {
-        Text("Recently Played View").background(Color.yellow)
+        Text("Recently Played View")
     }
 }
 

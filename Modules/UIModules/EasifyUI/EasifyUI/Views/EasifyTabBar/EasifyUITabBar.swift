@@ -81,7 +81,7 @@ extension EasifyUITabBar: View {
                             })
                             .frame(width: geometry.size.width, height: 92)
                                 .offset(x: 0, y: -EasifyUIDefines.Spacings.single)
-                            .background(Color(UIColor.secondarySystemGroupedBackground))
+                            .background(Color(UIColor.tertiarySystemBackground))
                         }
                     }
                 }
@@ -92,18 +92,25 @@ extension EasifyUITabBar: View {
 }
 
 #if DEBUG
+// MARK: - EasifyUITabBarPreviewTab
+struct EasifyUITabBarPreviewTab: EasifyUITabBarItem {
+    var image: Image {
+        Image(systemName: "star.fill")
+    }
+
+    var text: Text {
+        Text("Demo Tab")
+    }
+
+    var content: AnyView {
+        AnyView(Text("Demo Tab Content"))
+    }
+}
+
 // MARK: - EasifyUITabBar_Previews
 struct EasifyUITabBar_Previews: PreviewProvider {
     static var previews: some View {
-        VStack(alignment: .leading) {
-            Text("Hello World")
-                .font(.title)
-            Text("Another")
-                .font(.body)
-            Spacer()
-        }
-        .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .topLeading)
-        .background(Color.red)
+        EasifyUITabBar(items: [EasifyUITabBarPreviewTab()], selectedIndex: 0)
     }
 }
 #endif

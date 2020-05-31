@@ -23,7 +23,7 @@ public struct EasifyUIDefines {
         /// `EasifyDefines.Spacings.quadruple` returns 32.0 of type `CGFloat`
         public static let quadruple: CGFloat = 32.0
     }
-    
+
     /// `EasifyUIDefines.Sizes` contains list of size metrics for more consistent user interface.
     public struct Sizes {
         /// `EasifyDefines.Sizes.tabBarItemSize` returns 16.0 of type `CGFloat`
