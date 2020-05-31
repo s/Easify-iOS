@@ -72,7 +72,7 @@ extension EasifyUITabBar: View {
                             Rectangle()
                                 .fill(Color(UIColor.tertiarySystemBackground))
                                 .frame(width: geometry.size.width, height: 1)
-                                .shadow(color: Color(UIColor.tertiarySystemBackground), radius: 5.0)
+                                .shadow(color: Color(UIColor.tertiarySystemBackground), radius: 2.0)
                             HStack {
                                 ForEach(self.items.indices, id: \.self) {
                                     self.item(at: $0)
