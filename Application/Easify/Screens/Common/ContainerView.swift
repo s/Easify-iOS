@@ -22,7 +22,7 @@ extension ContainerView: View {
         if spotifyService.isLoggedIn {
             return AnyView(HomeView())
         } else {
-            return AnyView(LoginView().environmentObject(spotifyService))
+            return AnyView(LoginView())
         }
     }
 }
