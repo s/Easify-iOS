@@ -46,7 +46,7 @@ class SpotifyServiceTests: XCTestCase {
         }
         XCTAssertTrue(!spotifyService.isAttemptingToLogin)
         let exp = expectation(description: "Login Expectation")
-        spotifyService.logIn { _, _ in
+        spotifyService.login { _, _ in
             exp.fulfill()
         }
         wait(for: [exp], timeout: 2.0)
