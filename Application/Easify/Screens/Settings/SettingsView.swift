@@ -7,15 +7,37 @@
 //
 
 import SwiftUI
+import EasifyUI
+import EasifyDefines
 
 // MARK: - SettingsView
 /// `SettingsView` provides list of options user can select including logging out functionality.
-struct SettingsView {}
+struct SettingsView {
+    // MARK: - Lifecycle
+    init() {
+        let appearance = EasifyUIService.navigationBarAppearance()
+        UINavigationBar.appearance().standardAppearance = appearance
+        UINavigationBar.appearance().scrollEdgeAppearance = appearance
+    }
+}
 
 // MARK: - SettingsView: View
 extension SettingsView: View {
     var body: some View {
-        Text("Settings View")
+        GeometryReader { _ in
+            VStack(alignment: .leading) {
+                NavigationView {
+                    VStack(alignment: .leading) {
+                        UserProfileView()
+                        Spacer()
+                    }
+                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
+                    .background(EasifyUIDefines.EasifyTabBar.backmostBackgroundColor)
+                    .edgesIgnoringSafeArea(.bottom)
+                    .navigationBarTitle(Text(EasifyDefines.Copies.settings))
+                }
+            }
+        }
     }
 }
 
