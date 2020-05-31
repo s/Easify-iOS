@@ -34,8 +34,11 @@ extension BackgroundView: View {
     }
 }
 
+#if DEBUG
+// MARK: - BackgroundView_Previews: PreviewProvider
 struct BackgroundView_Previews: PreviewProvider {
     static var previews: some View {
         BackgroundView()
     }
 }
+#endif

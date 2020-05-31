@@ -91,6 +91,7 @@ extension EasifyUITabBar: View {
     }
 }
 
+#if DEBUG
 // MARK: - EasifyUITabBar_Previews
 struct EasifyUITabBar_Previews: PreviewProvider {
     static var previews: some View {
@@ -105,3 +106,4 @@ struct EasifyUITabBar_Previews: PreviewProvider {
         .background(Color.red)
     }
 }
+#endif
