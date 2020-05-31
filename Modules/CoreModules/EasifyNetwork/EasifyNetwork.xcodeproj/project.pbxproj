@@ -182,6 +182,7 @@
 				B3C434302474412100EC67C3 /* Sources */,
 				B3C434312474412100EC67C3 /* Frameworks */,
 				B3C434322474412100EC67C3 /* Resources */,
+				B30FDEEE2483445D00994A01 /* SwiftLint Autocorrect */,
 				B37EE6212476F98300955C31 /* SwiftLint */,
 			);
 			buildRules = (
@@ -203,6 +204,7 @@
 				B3C434392474412100EC67C3 /* Sources */,
 				B3C4343A2474412100EC67C3 /* Frameworks */,
 				B3C4343B2474412100EC67C3 /* Resources */,
+				B30FDEEF2483446B00994A01 /* SwiftLint Autocorrect */,
 				B37EE6222476F98F00955C31 /* SwiftLint */,
 			);
 			buildRules = (
@@ -275,6 +277,42 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		B30FDEEE2483445D00994A01 /* SwiftLint Autocorrect */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftLint Autocorrect";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint autocorrect\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		B30FDEEF2483446B00994A01 /* SwiftLint Autocorrect */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "SwiftLint Autocorrect";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint autocorrect\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 		B37EE6212476F98300955C31 /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
