@@ -7,7 +7,6 @@
 //
 
 import SwiftUI
-import SpotifyLogin
 import EasifyUI
 
 // MARK: HomeView
