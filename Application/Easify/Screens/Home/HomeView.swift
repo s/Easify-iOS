@@ -8,24 +8,25 @@
 
 import SwiftUI
 import SpotifyLogin
+import EasifyUI
 
-struct HomeView: View {
+// MARK: HomeView
+struct HomeView {
+    // MARK: - Properties
+    private let contents: [EasifyUITabBarItem] = [
+        RecentlyPlayedTabBarItem(),
+        SettingsTabBarItem()
+    ]
+}
+
+// MARK: - HomeView: View
+extension HomeView: View {
     var body: some View {
-        TabView {
-            Text("First View")
-                .tabItem {
-                    Image(systemName: "1.circle")
-                    Text("First")
-                }.tag(0)
-            Text("Second View")
-                .tabItem {
-                    Image(systemName: "2.circle")
-                    Text("Second")
-                }.tag(1)
-        }
+        EasifyUITabBar(items: contents, selectedIndex: 0)
     }
 }
 
+// MARK: - HomeView_Previews: PreviewProvider
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
