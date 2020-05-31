@@ -9,8 +9,11 @@
 /* Begin PBXBuildFile section */
 		B30B2EB72475D6A200C6088F /* UIColor+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30B2EB62475D6A200C6088F /* UIColor+Theme.swift */; };
 		B30B2EB92475D6A600C6088F /* EdgeInsets+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30B2EB82475D6A600C6088F /* EdgeInsets+Convenience.swift */; };
+		B30FDEA82481A60500994A01 /* EasifyUITabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30FDEA72481A60500994A01 /* EasifyUITabBar.swift */; };
+		B30FDEAB2481A75200994A01 /* AnchorKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30FDEAA2481A75200994A01 /* AnchorKey.swift */; };
 		B30FDED42481C41A00994A01 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30FDED32481C41A00994A01 /* LoadingView.swift */; };
 		B30FDED72483230800994A01 /* EasifyUIDefines.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30FDED62483230800994A01 /* EasifyUIDefines.swift */; };
+		B30FDED92483267800994A01 /* EasifyUITabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30FDED82483267800994A01 /* EasifyUITabBarItem.swift */; };
 		B32CEB1424733D9B00769C44 /* EasifyUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B32CEB0A24733D9B00769C44 /* EasifyUI.framework */; };
 		B32CEB1924733D9B00769C44 /* EasifyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32CEB1824733D9B00769C44 /* EasifyUITests.swift */; };
 		B32CEB1B24733D9B00769C44 /* EasifyUI.h in Headers */ = {isa = PBXBuildFile; fileRef = B32CEB0D24733D9B00769C44 /* EasifyUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -44,8 +47,11 @@
 /* Begin PBXFileReference section */
 		B30B2EB62475D6A200C6088F /* UIColor+Theme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Theme.swift"; sourceTree = "<group>"; };
 		B30B2EB82475D6A600C6088F /* EdgeInsets+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "EdgeInsets+Convenience.swift"; sourceTree = "<group>"; };
+		B30FDEA72481A60500994A01 /* EasifyUITabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasifyUITabBar.swift; sourceTree = "<group>"; };
+		B30FDEAA2481A75200994A01 /* AnchorKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorKey.swift; sourceTree = "<group>"; };
 		B30FDED32481C41A00994A01 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		B30FDED62483230800994A01 /* EasifyUIDefines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasifyUIDefines.swift; sourceTree = "<group>"; };
+		B30FDED82483267800994A01 /* EasifyUITabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasifyUITabBarItem.swift; sourceTree = "<group>"; };
 		B32CEB0A24733D9B00769C44 /* EasifyUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasifyUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B32CEB0D24733D9B00769C44 /* EasifyUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasifyUI.h; sourceTree = "<group>"; };
 		B32CEB0E24733D9B00769C44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -98,6 +104,23 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		B30FDEA92481A73F00994A01 /* EasifyTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				B30FDEA72481A60500994A01 /* EasifyUITabBar.swift */,
+				B30FDED82483267800994A01 /* EasifyUITabBarItem.swift */,
+			);
+			path = EasifyTabBar;
+			sourceTree = "<group>";
+		};
+		B30FDEAC2481A87000994A01 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B30FDEAA2481A75200994A01 /* AnchorKey.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		B30FDED22481C2CC00994A01 /* ActivityIndicatorView */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +164,7 @@
 				B30FDED5248322FE00994A01 /* Defines */,
 				B30B2EB52475D69900C6088F /* Extensions */,
 				B3F9A36B2473464500B6E569 /* Supporting Files */,
+				B30FDEAC2481A87000994A01 /* Helpers */,
 				B3F9A36A2473463F00B6E569 /* Views */,
 			);
 			path = EasifyUI;
@@ -158,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				B30FDED22481C2CC00994A01 /* ActivityIndicatorView */,
+				B30FDEA92481A73F00994A01 /* EasifyTabBar */,
 				B3F9A36E2473469200B6E569 /* SafariView.swift */,
 			);
 			path = Views;
@@ -334,8 +359,10 @@
 			files = (
 				B30B2EB72475D6A200C6088F /* UIColor+Theme.swift in Sources */,
 				B3F9A3702473469200B6E569 /* SafariView.swift in Sources */,
+				B30FDEAB2481A75200994A01 /* AnchorKey.swift in Sources */,
+				B30FDED92483267800994A01 /* EasifyUITabBarItem.swift in Sources */,
 				B30B2EB92475D6A600C6088F /* EdgeInsets+Convenience.swift in Sources */,
-				B3F9A36F2473469200B6E569 /* ActivityIndicatorView.swift in Sources */,
+				B30FDEA82481A60500994A01 /* EasifyUITabBar.swift in Sources */,
 				B30FDED72483230800994A01 /* EasifyUIDefines.swift in Sources */,
 				B3F9A36F2473469200B6E569 /* EasifyUIActivityIndicatorView.swift in Sources */,
 				B30FDED42481C41A00994A01 /* LoadingView.swift in Sources */,
