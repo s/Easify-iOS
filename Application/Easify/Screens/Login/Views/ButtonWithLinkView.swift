@@ -19,11 +19,11 @@ struct ButtonWithLinkView: View {
 
     // MARK: - 
     var body: some View {
-        URL(string: EasifyConstants.URLS.backgroundImageURL).map { url in
+        URL(string: EasifyDefines.URLS.backgroundImageURL).map { url in
             Button(action: {
                 self.showSafari = true
             }) {
-                Text(EasifyConstants.Copies.backgroundImageReference)
+                Text(EasifyDefines.Copies.backgroundImageReference)
                     .fontWeight(.light)
                     .font(.footnote)
                     .foregroundColor(.white)

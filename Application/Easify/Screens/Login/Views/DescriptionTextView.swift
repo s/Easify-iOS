@@ -12,7 +12,7 @@ import EasifyDefines
 
 struct DescriptionTextView: View {
     var body: some View {
-        Text(EasifyConstants.Copies.connectToSpotifyAccount)
+        Text(EasifyDefines.Copies.connectToSpotifyAccount)
             .kerning(1.0)
             .fontWeight(.bold)
             .font(.callout)

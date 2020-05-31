@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B30B2F182475EC8500C6088F /* EasifyConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30B2F152475EC8500C6088F /* EasifyConstants.swift */; };
+		B30B2F182475EC8500C6088F /* EasifyDefines.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30B2F152475EC8500C6088F /* EasifyDefines.swift */; };
 		B30B2F192475EC8500C6088F /* EasifyDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = B30B2F162475EC8500C6088F /* EasifyDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B3E4B9B124762460001FD420 /* Atomic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3E4B99F247623B5001FD420 /* Atomic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B30B2EF62475EB5C00C6088F /* EasifyDefines.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasifyDefines.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B30B2F152475EC8500C6088F /* EasifyConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasifyConstants.swift; sourceTree = "<group>"; };
+		B30B2F152475EC8500C6088F /* EasifyDefines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EasifyDefines.swift; sourceTree = "<group>"; };
 		B30B2F162475EC8500C6088F /* EasifyDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasifyDefines.h; sourceTree = "<group>"; };
 		B30B2F172475EC8500C6088F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3E4B99F247623B5001FD420 /* Atomic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Atomic.swift; sourceTree = "<group>"; };
@@ -59,7 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				B3E4B9A0247623B5001FD420 /* Helpers */,
-				B30B2F152475EC8500C6088F /* EasifyConstants.swift */,
+				B30B2F152475EC8500C6088F /* EasifyDefines.swift */,
 				B30B2F162475EC8500C6088F /* EasifyDefines.h */,
 				B30B2F172475EC8500C6088F /* Info.plist */,
 			);
@@ -177,7 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3E4B9B124762460001FD420 /* Atomic.swift in Sources */,
-				B30B2F182475EC8500C6088F /* EasifyConstants.swift in Sources */,
+				B30B2F182475EC8500C6088F /* EasifyDefines.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
