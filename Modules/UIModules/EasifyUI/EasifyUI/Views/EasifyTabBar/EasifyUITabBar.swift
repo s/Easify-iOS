@@ -39,8 +39,10 @@ public struct EasifyUITabBar {
         .anchorPreference(key: AnchorKey.self,
                           value: .bounds,
                           transform: { self.selectedIndex == index ? $0 : nil })
-        .accentColor(index == selectedIndex ? .primary : Color(.systemGray2))
-        .padding(EasifyUIDefines.tabItemPadding)
+        .accentColor(index == selectedIndex ?
+            EasifyUIDefines.EasifyTabBar.indicatorBackgroundColorSelected :
+            EasifyUIDefines.EasifyTabBar.indicatorBackgroundColorSelected)
+        .padding(EasifyUIDefines.EasifyTabBar.tabItemPadding)
     }
 
     private func indicator(_ bounds: Anchor<CGRect>?) -> some View {
@@ -62,17 +64,16 @@ extension EasifyUITabBar: View {
     public var body: some View {
         GeometryReader { geometry in
             ZStack {
+                EasifyUIDefines.EasifyTabBar.backmostBackgroundColor.edgesIgnoringSafeArea(.top)
                 VStack {
-                    Spacer()
                     self.items[self.selectedIndex].content
-                        .background(Color(UIColor.tertiarySystemBackground))
-                    Spacer()
+                    Spacer().background(EasifyUIDefines.EasifyTabBar.contentBackgroundColor)
                     ZStack {
                         VStack(spacing: .zero) {
                             Rectangle()
                                 .fill(Color(UIColor.tertiarySystemBackground))
                                 .frame(width: geometry.size.width, height: 1)
-                                .shadow(color: Color(UIColor.tertiarySystemBackground), radius: 2.0)
+                                .shadow(color: EasifyUIDefines.EasifyTabBar.contentBackgroundColor, radius: 2.0)
                             HStack {
                                 ForEach(self.items.indices, id: \.self) {
                                     self.item(at: $0)
@@ -81,13 +82,13 @@ extension EasifyUITabBar: View {
                                 self.indicator($0)
                             })
                             .frame(width: geometry.size.width, height: 92)
-                                .offset(x: 0, y: -EasifyUIDefines.Spacings.single)
-                            .background(Color(UIColor.tertiarySystemBackground))
+                            .offset(x: 0, y: -EasifyUIDefines.Spacings.single)
+                            .background(EasifyUIDefines.EasifyTabBar.contentBackgroundColor)
                         }
                     }
                 }
-            }.background(Color(UIColor.secondarySystemGroupedBackground))
-            .edgesIgnoringSafeArea(.all)
+            }
+            .edgesIgnoringSafeArea(.bottom)
         }
     }
 }
