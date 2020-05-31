@@ -22,10 +22,6 @@ extension SpotifyEndpoint {
     }
 
     public var additionalHeaders: [String: String] {
-        let key = EasifyDefines.StorageKeys.spotifyAccessToken
-        if let token = UserDefaults.standard.string(forKey: key) {
-            return ["Authorization": "Bearer \(token)"]
-        }
         return [:]
     }
 }
