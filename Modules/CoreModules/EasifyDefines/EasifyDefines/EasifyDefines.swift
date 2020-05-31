@@ -26,6 +26,12 @@ public struct EasifyDefines {
         public static let recentlyPlayed = "Recently Played"
         public static let loading = "Loading..."
         public static let settings = "Settings"
+        public static let userProfileHeadline = "Logged in as"
+        public static let logout = "Logout"
+        public static let loggingOut = "Logging Out"
+        public static let confirmLogoutText = "Are you sure you want to logout?"
+        public static let yes = "Yes"
+        public static let dismiss = "Dismiss"
     }
 
     /// `EasifyDefines.URLS` consists of number of hardcoded urls which are used in the application.

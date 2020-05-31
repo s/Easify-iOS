@@ -7,10 +7,10 @@
 //
 
 import SwiftUI
-import SpotifyLogin
 import EasifyUI
 
 // MARK: HomeView
+/// `HomeView` shows a list of tab items with its contents.
 struct HomeView {
     // MARK: - Properties
     private let contents: [EasifyUITabBarItem] = [
@@ -26,9 +26,11 @@ extension HomeView: View {
     }
 }
 
+#if DEBUG
 // MARK: - HomeView_Previews: PreviewProvider
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeView()
     }
 }
+#endif

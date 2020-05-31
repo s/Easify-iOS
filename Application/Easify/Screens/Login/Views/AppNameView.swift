@@ -10,7 +10,12 @@ import SwiftUI
 import EasifyCore
 import EasifyDefines
 
-struct AppNameView: View {
+// MARK: - AppNameView
+/// `AppNameView` shows a `Text` with UI configurations.
+struct AppNameView {}
+
+// MARK: - AppNameView: View
+extension AppNameView: View {
     var body: some View {
         Text(EasifyDefines.Copies.easify.uppercased())
             .kerning(1.0)
@@ -21,8 +26,11 @@ struct AppNameView: View {
     }
 }
 
+#if DEBUG
+// MARK: - AppNameView_Previews: PreviewProvider
 struct AppNameView_Previews: PreviewProvider {
     static var previews: some View {
         AppNameView().background(Color.green)
     }
 }
+#endif

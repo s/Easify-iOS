@@ -51,6 +51,7 @@ extension LoadingView: View {
     }
 }
 
+#if DEBUG
 // MARK: - LoadingView_Previews
 struct LoadingView_Previews: PreviewProvider {
     static var previews: some View {
@@ -63,3 +64,4 @@ struct LoadingView_Previews: PreviewProvider {
         }
     }
 }
+#endif

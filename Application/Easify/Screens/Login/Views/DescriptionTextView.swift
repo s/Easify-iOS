@@ -10,6 +10,7 @@ import SwiftUI
 import EasifyCore
 import EasifyDefines
 
+// MARK: 
 struct DescriptionTextView: View {
     var body: some View {
         Text(EasifyDefines.Copies.connectToSpotifyAccount)

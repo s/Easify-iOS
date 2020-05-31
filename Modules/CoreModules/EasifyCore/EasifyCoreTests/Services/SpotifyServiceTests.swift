@@ -38,7 +38,7 @@ class SpotifyServiceTests: XCTestCase {
         }
         XCTAssertNoThrow(try SpotifyService(plistReaderService: prService))
     }
-    
+
     func testSpotifyServiceLogin() {
         guard let spotifyService = spotifyService else {
             XCTFail("Found nil SpotifyService.")
