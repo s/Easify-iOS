@@ -10,7 +10,7 @@ import Foundation
 
 // MARK: - SpotifyContext
 /// Developer documentation: https://developer.spotify.com/documentation/web-api/reference/object-model/#context-object
-public struct SpotifyContext {
+public struct SpotifyContext: Equatable {
     public let type: String
     public let href: URL
     public let externalURLs: [String: URL]

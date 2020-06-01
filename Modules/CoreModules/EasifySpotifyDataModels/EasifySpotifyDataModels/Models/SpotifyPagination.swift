@@ -16,7 +16,7 @@ public struct SpotifyPagination <SpotifyItem: Decodable> {
     public let limit: Int
     public let next: String
     public let cursor: SpotifyCursor
-    public let total: Int
+    public let total: Int?
 }
 
 // MARK: - SpotifyPagination Coding Keys
@@ -41,6 +41,6 @@ extension SpotifyPagination: Decodable {
         limit = try container.decode(Int.self, forKey: .limit)
         next = try container.decode(String.self, forKey: .next)
         cursor = try container.decode(SpotifyCursor.self, forKey: .cursor)
-        total = try container.decode(Int.self, forKey: .total)
+        total = try container.decodeIfPresent(Int.self, forKey: .total)
     }
 }

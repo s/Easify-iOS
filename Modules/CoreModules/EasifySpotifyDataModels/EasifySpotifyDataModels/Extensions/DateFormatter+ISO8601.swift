@@ -9,10 +9,10 @@
 import Foundation
 
 public extension DateFormatter {
-    /// `iso8601Full` is a `DateFormatter` which uses `yyyy-MM-dd'T'HH:mm:ssZ` format for timestamps.
+    /// `iso8601Full` is a `DateFormatter` which uses `yyyy-MM-dd'T'HH:mm:ss.SSSZ` format for timestamps.
     static let iso8601Full: DateFormatter = {
         let formatter = DateFormatter()
-        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
         formatter.calendar = Calendar(identifier: .iso8601)
         formatter.timeZone = TimeZone(secondsFromGMT: 0)
         formatter.locale = Locale(identifier: "en_US_POSIX")
