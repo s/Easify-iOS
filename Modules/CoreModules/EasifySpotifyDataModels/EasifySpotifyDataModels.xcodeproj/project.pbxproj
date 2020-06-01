@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B30FDF192484B42800994A01 /* EasifyCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B30FDF162484B41900994A01 /* EasifyCore.framework */; };
+		B30FDF1A2484B42800994A01 /* EasifyCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B30FDF162484B41900994A01 /* EasifyCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B3170A902477349600E84587 /* EasifyDefines.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3E4B9B024762417001FD420 /* EasifyDefines.framework */; };
 		B3170A912477349600E84587 /* EasifyDefines.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3E4B9B024762417001FD420 /* EasifyDefines.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B3170A922477349600E84587 /* EasifyNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B309354F2476210800E95AA7 /* EasifyNetwork.framework */; };
@@ -44,6 +46,20 @@
 			remoteGlobalIDString = B3C4343D2474412100EC67C3;
 			remoteInfo = EasifyNetworkTests;
 		};
+		B30FDF152484B41900994A01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B30FDF102484B41900994A01 /* EasifyCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B384ADFB24733BCD00D9514A;
+			remoteInfo = EasifyCore;
+		};
+		B30FDF172484B41900994A01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B30FDF102484B41900994A01 /* EasifyCore.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B384AE0424733BCD00D9514A;
+			remoteInfo = EasifyCoreTests;
+		};
 		B3924B7E247610A0008821F9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B3924B6A2476109F008821F9 /* Project object */;
@@ -69,6 +85,7 @@
 			files = (
 				B3170A932477349600E84587 /* EasifyNetwork.framework in Embed Frameworks */,
 				B3170A912477349600E84587 /* EasifyDefines.framework in Embed Frameworks */,
+				B30FDF1A2484B42800994A01 /* EasifyCore.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -77,6 +94,7 @@
 
 /* Begin PBXFileReference section */
 		B30935492476210800E95AA7 /* EasifyNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EasifyNetwork.xcodeproj; path = ../EasifyNetwork/EasifyNetwork.xcodeproj; sourceTree = "<group>"; };
+		B30FDF102484B41900994A01 /* EasifyCore.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EasifyCore.xcodeproj; path = ../EasifyCore/EasifyCore.xcodeproj; sourceTree = "<group>"; };
 		B3924B732476109F008821F9 /* EasifySpotifyDataModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasifySpotifyDataModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3924B762476109F008821F9 /* EasifySpotifyDataModels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EasifySpotifyDataModels.h; sourceTree = "<group>"; };
 		B3924B772476109F008821F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -106,6 +124,7 @@
 			files = (
 				B3170A922477349600E84587 /* EasifyNetwork.framework in Frameworks */,
 				B3170A902477349600E84587 /* EasifyDefines.framework in Frameworks */,
+				B30FDF192484B42800994A01 /* EasifyCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +142,7 @@
 		B30935192476204300E95AA7 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				B30FDF102484B41900994A01 /* EasifyCore.xcodeproj */,
 				B3E4B9AB24762417001FD420 /* EasifyDefines.xcodeproj */,
 				B30935492476210800E95AA7 /* EasifyNetwork.xcodeproj */,
 			);
@@ -134,6 +154,15 @@
 			children = (
 				B309354F2476210800E95AA7 /* EasifyNetwork.framework */,
 				B30935512476210800E95AA7 /* EasifyNetworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B30FDF112484B41900994A01 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B30FDF162484B41900994A01 /* EasifyCore.framework */,
+				B30FDF182484B41900994A01 /* EasifyCoreTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -330,6 +359,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = B30FDF112484B41900994A01 /* Products */;
+					ProjectRef = B30FDF102484B41900994A01 /* EasifyCore.xcodeproj */;
+				},
+				{
 					ProductGroup = B3E4B9AC24762417001FD420 /* Products */;
 					ProjectRef = B3E4B9AB24762417001FD420 /* EasifyDefines.xcodeproj */;
 				},
@@ -359,6 +392,20 @@
 			fileType = wrapper.cfbundle;
 			path = EasifyNetworkTests.xctest;
 			remoteRef = B30935502476210800E95AA7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B30FDF162484B41900994A01 /* EasifyCore.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = EasifyCore.framework;
+			remoteRef = B30FDF152484B41900994A01 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B30FDF182484B41900994A01 /* EasifyCoreTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = EasifyCoreTests.xctest;
+			remoteRef = B30FDF172484B41900994A01 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		B3E4B9B024762417001FD420 /* EasifyDefines.framework */ = {

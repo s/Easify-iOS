@@ -23,7 +23,7 @@ public enum NetworkingError: Error {
 
     /// In case an error occures which is not identified
     case undefined(Error)
-    
+
     /// Indicates that there was an AFError. See error description for further information.
     case afError(AFError)
 }
