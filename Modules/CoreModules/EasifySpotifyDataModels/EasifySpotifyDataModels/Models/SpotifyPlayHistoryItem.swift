@@ -11,9 +11,9 @@ import Foundation
 // MARK: - SpotifyPlayHistoryItem
 /// Developer documentation: https://developer.spotify.com/documentation/web-api/reference/object-model/#play-history-object
 public struct SpotifyPlayHistoryItem {
-    public let track: [SpotifyTrack]
+    public let track: SpotifyTrack
     public let playedAt: Date
-    public let context: SpotifyContext
+    public let context: SpotifyContext?
 }
 
 // MARK: - SpotifyPlayHistoryItem Coding Keys
@@ -30,8 +30,15 @@ extension SpotifyPlayHistoryItem: Decodable {
     public init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: SpotifyPlayHistoryItem.CodingKeys.self)
 
-        track = try container.decode([SpotifyTrack].self, forKey: .track)
+        track = try container.decode(SpotifyTrack.self, forKey: .track)
         playedAt = try container.decodeDate(keyedBy: .playedAt)
-        context = try container.decode(SpotifyContext.self, forKey: .context)
+        context = try container.decodeIfPresent(SpotifyContext.self, forKey: .context)
+    }
+}
+
+// MARK: - SpotifyPlayHistoryItem: Equatable
+extension SpotifyPlayHistoryItem: Equatable {
+    public static func == (lhs: SpotifyPlayHistoryItem, rhs: SpotifyPlayHistoryItem) -> Bool {
+        return (lhs.context == rhs.context) && (lhs.playedAt == rhs.playedAt) && (lhs.track == rhs.track)
     }
 }

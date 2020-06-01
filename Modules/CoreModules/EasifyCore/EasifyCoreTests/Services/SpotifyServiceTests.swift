@@ -52,7 +52,7 @@ class SpotifyServiceTests: XCTestCase {
         wait(for: [exp], timeout: 2.0)
     }
 
-    func testSpotifyRecentlyPlayedTracksAPI() {
-        spotifyService?.fetchRecentlyPlayedTracks()
-    }
+//    func testSpotifyRecentlyPlayedTracksAPI() {
+//        spotifyService?.fetchRecentlyPlayedTracks()
+//    }
 }

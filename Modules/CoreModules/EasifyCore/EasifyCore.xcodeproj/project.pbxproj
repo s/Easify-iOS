@@ -10,13 +10,10 @@
 		B30223B6247755360061471A /* SpotifyServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30223B5247755360061471A /* SpotifyServiceTests.swift */; };
 		B30223B7247757BF0061471A /* SpotifyCredentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3C433C62473507C00EC67C3 /* SpotifyCredentials.plist */; };
 		B30223B9247758050061471A /* ServiceProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30223B8247758050061471A /* ServiceProviderTests.swift */; };
-		B30B2E5B247498FA00C6088F /* SpotifyService+API.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30B2E5A247498FA00C6088F /* SpotifyService+API.swift */; };
 		B3170A9A247734B100E84587 /* EasifyDefines.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3D4D8012476E3E600A7D906 /* EasifyDefines.framework */; };
 		B3170A9B247734B100E84587 /* EasifyDefines.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3D4D8012476E3E600A7D906 /* EasifyDefines.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B3170A9C247734B100E84587 /* EasifyNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B309353F2476208A00E95AA7 /* EasifyNetwork.framework */; };
 		B3170A9D247734B100E84587 /* EasifyNetwork.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B309353F2476208A00E95AA7 /* EasifyNetwork.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		B3170A9E247734B100E84587 /* EasifySpotifyDataModels.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3E4B99A24762326001FD420 /* EasifySpotifyDataModels.framework */; };
-		B3170A9F247734B100E84587 /* EasifySpotifyDataModels.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3E4B99A24762326001FD420 /* EasifySpotifyDataModels.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B3170AAA2477352F00E84587 /* SpotifyLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3170AA92477352200E84587 /* SpotifyLogin.framework */; };
 		B3170AAB2477352F00E84587 /* SpotifyLogin.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B3170AA92477352200E84587 /* SpotifyLogin.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		B384AE0524733BCD00D9514A /* EasifyCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B384ADFB24733BCD00D9514A /* EasifyCore.framework */; };
@@ -65,20 +62,6 @@
 			remoteGlobalIDString = B30B2EF62475EB5C00C6088F;
 			remoteInfo = EasifyDefines;
 		};
-		B3E4B99924762326001FD420 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B3E4B99424762326001FD420 /* EasifySpotifyDataModels.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = B3924B732476109F008821F9;
-			remoteInfo = EasifySpotifyDataModels;
-		};
-		B3E4B99B24762326001FD420 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B3E4B99424762326001FD420 /* EasifySpotifyDataModels.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = B3924B7C247610A0008821F9;
-			remoteInfo = EasifySpotifyDataModelsTests;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -88,7 +71,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B3170A9F247734B100E84587 /* EasifySpotifyDataModels.framework in Embed Frameworks */,
 				B3170AAB2477352F00E84587 /* SpotifyLogin.framework in Embed Frameworks */,
 				B3170A9D247734B100E84587 /* EasifyNetwork.framework in Embed Frameworks */,
 				B3170A9B247734B100E84587 /* EasifyDefines.framework in Embed Frameworks */,
@@ -102,7 +84,6 @@
 		B30223B5247755360061471A /* SpotifyServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyServiceTests.swift; sourceTree = "<group>"; };
 		B30223B8247758050061471A /* ServiceProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProviderTests.swift; sourceTree = "<group>"; };
 		B30935392476208A00E95AA7 /* EasifyNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EasifyNetwork.xcodeproj; path = ../EasifyNetwork/EasifyNetwork.xcodeproj; sourceTree = "<group>"; };
-		B30B2E5A247498FA00C6088F /* SpotifyService+API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SpotifyService+API.swift"; sourceTree = "<group>"; };
 		B30B2E7A2474A07C00C6088F /* EasifyNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EasifyNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3170AA12477350400E84587 /* SpotifyLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SpotifyLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3170AA42477352200E84587 /* SpotifyLogin.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SpotifyLogin.xcodeproj; path = ../SpotifyLogin/SpotifyLogin.xcodeproj; sourceTree = "<group>"; };
@@ -115,7 +96,6 @@
 		B3D4D7FC2476E3E600A7D906 /* EasifyDefines.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EasifyDefines.xcodeproj; path = ../EasifyDefines/EasifyDefines.xcodeproj; sourceTree = "<group>"; };
 		B3D4D8552476EE9800A7D906 /* SpotifyLogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SpotifyLogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3E4B986247622ED001FD420 /* EasifySpotifyDataModels.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EasifySpotifyDataModels.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3E4B99424762326001FD420 /* EasifySpotifyDataModels.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EasifySpotifyDataModels.xcodeproj; path = ../EasifySpotifyDataModels/EasifySpotifyDataModels.xcodeproj; sourceTree = "<group>"; };
 		B3F77A2524733F18004247A1 /* SpotifyService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyService.swift; sourceTree = "<group>"; };
 		B3F77A2624733F18004247A1 /* ServiceProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
 		B3F77A2724733F18004247A1 /* PlistReaderService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlistReaderService.swift; sourceTree = "<group>"; };
@@ -128,7 +108,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3170A9E247734B100E84587 /* EasifySpotifyDataModels.framework in Frameworks */,
 				B3170AAA2477352F00E84587 /* SpotifyLogin.framework in Frameworks */,
 				B3170A9C247734B100E84587 /* EasifyNetwork.framework in Frameworks */,
 				B3170A9A247734B100E84587 /* EasifyDefines.framework in Frameworks */,
@@ -162,7 +141,6 @@
 			children = (
 				B3D4D7FC2476E3E600A7D906 /* EasifyDefines.xcodeproj */,
 				B30935392476208A00E95AA7 /* EasifyNetwork.xcodeproj */,
-				B3E4B99424762326001FD420 /* EasifySpotifyDataModels.xcodeproj */,
 				B3170AA42477352200E84587 /* SpotifyLogin.xcodeproj */,
 			);
 			name = Dependencies;
@@ -227,7 +205,6 @@
 			isa = PBXGroup;
 			children = (
 				B3F77A2524733F18004247A1 /* SpotifyService.swift */,
-				B30B2E5A247498FA00C6088F /* SpotifyService+API.swift */,
 			);
 			path = Spotify;
 			sourceTree = "<group>";
@@ -236,15 +213,6 @@
 			isa = PBXGroup;
 			children = (
 				B3D4D8012476E3E600A7D906 /* EasifyDefines.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		B3E4B99524762326001FD420 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				B3E4B99A24762326001FD420 /* EasifySpotifyDataModels.framework */,
-				B3E4B99C24762326001FD420 /* EasifySpotifyDataModelsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -382,10 +350,6 @@
 					ProjectRef = B30935392476208A00E95AA7 /* EasifyNetwork.xcodeproj */;
 				},
 				{
-					ProductGroup = B3E4B99524762326001FD420 /* Products */;
-					ProjectRef = B3E4B99424762326001FD420 /* EasifySpotifyDataModels.xcodeproj */;
-				},
-				{
 					ProductGroup = B3170AA52477352200E84587 /* Products */;
 					ProjectRef = B3170AA42477352200E84587 /* SpotifyLogin.xcodeproj */;
 				},
@@ -425,20 +389,6 @@
 			fileType = wrapper.framework;
 			path = EasifyDefines.framework;
 			remoteRef = B3D4D8002476E3E600A7D906 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		B3E4B99A24762326001FD420 /* EasifySpotifyDataModels.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = EasifySpotifyDataModels.framework;
-			remoteRef = B3E4B99924762326001FD420 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		B3E4B99C24762326001FD420 /* EasifySpotifyDataModelsTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = EasifySpotifyDataModelsTests.xctest;
-			remoteRef = B3E4B99B24762326001FD420 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -546,7 +496,6 @@
 				B3F77A2D24733F18004247A1 /* ServiceProvider.swift in Sources */,
 				B3F77A2C24733F18004247A1 /* SpotifyService.swift in Sources */,
 				B3F77A2E24733F18004247A1 /* PlistReaderService.swift in Sources */,
-				B30B2E5B247498FA00C6088F /* SpotifyService+API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -6,22 +6,29 @@
 //  Copyright © 2020 Muhammed Said Özcan. All rights reserved.
 //
 
-import Foundation
+import Combine
+import EasifyCore
 import EasifyDefines
 import EasifyNetwork
 
 // MARK: - SpotifyEndpoint
-public protocol SpotifyEndpoint: Endpoint {}
+public protocol SpotifyEndpoint: Endpoint, AuthorizableEndpoint {}
 
 // MARK: - Endpoint Protocol Default Values
 extension SpotifyEndpoint {
-    /// This implementation will save us from implementing the same `api` variable
-    /// in every endpoint for Eventbrite
     public var api: API {
         return API(baseURL: BaseURL(scheme: "https", host: "api.spotify.com"))
     }
 
     public var additionalHeaders: [String: String] {
-        return [:]
+        var headers: [String: String] = [:]
+        _ = authTokenPromise().sink(receiveCompletion: {_ in }, receiveValue: { token in
+            headers["Authorization"] = "Bearer \(token)"
+        })
+        return headers
+    }
+
+    public var authTokenPromise: AuthorizableEndpointPromiseType {
+        return { SpotifyService.getAccessToken() }
     }
 }

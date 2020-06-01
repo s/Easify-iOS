@@ -10,7 +10,7 @@ import Foundation
 
 // MARK: - SpotifyTrack
 /// Developer documentation: https://developer.spotify.com/documentation/web-api/reference/object-model/#track-object-simplified
-public struct SpotifyTrack {
+public struct SpotifyTrack: Equatable {
     public let artists: [SpotifyArtist]
     public let duration: String
     public let isExplicit: Bool

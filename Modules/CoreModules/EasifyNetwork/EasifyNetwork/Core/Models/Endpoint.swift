@@ -8,6 +8,7 @@
 
 import Foundation
 import Alamofire
+import Combine
 
 /// Holds all the information to build a request
 public protocol Endpoint: URLRequestConvertible {
@@ -72,8 +73,10 @@ extension Endpoint {
 
 }
 
+// MARK: - Execution of Endpoint
 public extension Endpoint {
-    func execute() {
-        EasifyNetworkManager.shared.execute(request: self)
+    /// Executes the `self`
+    func execute() -> Future<Response, Error> {
+        return EasifyNetworkManager.shared.execute(request: self)
     }
 }

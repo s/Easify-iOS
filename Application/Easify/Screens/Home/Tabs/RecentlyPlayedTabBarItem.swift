@@ -7,11 +7,26 @@
 //
 
 import SwiftUI
+import Combine
 import EasifyUI
+import EasifyCore
+import SpotifyLogin
 import EasifyDefines
+import EasifySpotifyDataModels
 
 // MARK: - RecentlyPlayedTabBarItem
-struct RecentlyPlayedTabBarItem {}
+struct RecentlyPlayedTabBarItem {
+    // MARK: Properties
+    private let remoteDataSource: SpotifyRecentlyPlayedEndpoint
+    private let viewModel: RecentlyPlayedViewModel
+    @EnvironmentObject var spotifyService: SpotifyService
+
+    // MARK: - Lifecycle
+    init() {
+        remoteDataSource = SpotifyRecentlyPlayedEndpoint()
+        viewModel = RecentlyPlayedViewModel(remoteDataSource: remoteDataSource)
+    }
+}
 
 // MARK: RecentlyPlayedTabBarItem: EasifyUITabBarItem
 extension RecentlyPlayedTabBarItem: EasifyUITabBarItem {
@@ -24,6 +39,6 @@ extension RecentlyPlayedTabBarItem: EasifyUITabBarItem {
     }
 
     var content: AnyView {
-        return AnyView(RecentlyPlayedView())
+        return AnyView(RecentlyPlayedView(viewModel: viewModel))
     }
 }

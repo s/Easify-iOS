@@ -10,7 +10,7 @@ import Foundation
 
 // MARK: - SpotifyArtist
 /// Developer documentation: https://developer.spotify.com/documentation/web-api/reference/object-model/#artist-object-simplified
-public struct SpotifyArtist: Decodable {
+public struct SpotifyArtist: Decodable, Equatable {
     public let externalURLs: [String: String]
     public let href: URL?
     public let identifier: String

@@ -12,14 +12,7 @@ import EasifyDefines
 
 // MARK: - SettingsView
 /// `SettingsView` provides list of options user can select including logging out functionality.
-struct SettingsView {
-    // MARK: - Lifecycle
-    init() {
-        let appearance = EasifyUIService.navigationBarAppearance()
-        UINavigationBar.appearance().standardAppearance = appearance
-        UINavigationBar.appearance().scrollEdgeAppearance = appearance
-    }
-}
+struct SettingsView {}
 
 // MARK: - SettingsView: View
 extension SettingsView: View {

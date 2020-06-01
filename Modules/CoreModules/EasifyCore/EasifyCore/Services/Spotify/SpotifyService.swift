@@ -51,7 +51,8 @@ public class SpotifyService: ObservableObject {
         .playlistReadPrivate,
         .playlistReadCollaborative,
         .userFollowRead,
-        .userFollowModify
+        .userFollowModify,
+        .userReadRecentlyPlayed
     ]
     private static let accessTokenKey = "nl.saidozcan.SpotifyService.accessTokenKey"
     private let clientID: String
@@ -107,6 +108,18 @@ public class SpotifyService: ObservableObject {
         SpotifyLogin.shared.logout()
         self.isLoggedIn = false
         self.authenticatedUsername = nil
+    }
+
+    public static func getAccessToken() -> Future<String, Error> {
+        return Future<String, Error> { promise in
+            SpotifyLogin.shared.getAccessToken { (token, error) in
+                if let token = token {
+                    promise(.success(token))
+                } else if let error = error {
+                    promise(.failure(error))
+                }
+            }
+        }
     }
 
     // MARK: - Private
