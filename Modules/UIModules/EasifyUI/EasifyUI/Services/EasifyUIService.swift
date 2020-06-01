@@ -11,12 +11,14 @@ import UIKit
 // MARK: EasifyUIService
 public final class EasifyUIService {
     // MARK: - Public
-    public static func navigationBarAppearance() -> UINavigationBarAppearance {
-        let coloredAppearance = UINavigationBarAppearance()
-        coloredAppearance.configureWithOpaqueBackground()
-        coloredAppearance.backgroundColor = .secondarySystemBackground
-        coloredAppearance.titleTextAttributes = [.foregroundColor: UIColor.white]
-        coloredAppearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
-        return coloredAppearance
+    public static func configureNavigationBarApperance() {
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = .secondarySystemBackground
+        appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+
+        UINavigationBar.appearance().standardAppearance = appearance
+        UINavigationBar.appearance().scrollEdgeAppearance = appearance
     }
 }

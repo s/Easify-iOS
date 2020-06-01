@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftUI
+import EasifyUI
 import SpotifyLogin
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
@@ -22,6 +23,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         else {
             return
         }
+
+        EasifyUIService.configureNavigationBarApperance()
 
         let window = UIWindow(windowScene: scene)
         window.rootViewController = UIHostingController(rootView: ContainerView().environmentObject(spotifyService))
