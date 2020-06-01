@@ -28,23 +28,21 @@ extension RecentlyPlayedView: View {
     var body: some View {
         VStack(alignment: .leading) {
             NavigationView {
-              List {
-                if viewModel.recentlyPlayedTracks.isEmpty {
-                  Section {
-                    Text("No results").foregroundColor(.gray)
-                  }
-                } else {
-                  Section {
-                    ForEach(viewModel.recentlyPlayedTracks, content: RecentlyPlayedViewRow.init(viewModel:))
-                  }
+                List {
+                    if viewModel.recentlyPlayedTracks.isEmpty {
+                        Section {
+                            Text("No results").foregroundColor(.gray)
+                        }
+                    } else {
+                        Section(header: Text("Today"), footer: Text("")) {
+                            ForEach(viewModel.recentlyPlayedTracks, content: RecentlyPlayedViewRow.init(viewModel:))
+                        }
+                    }
                 }
-              }
-              .onAppear(perform: viewModel.refresh)
-              .listStyle(GroupedListStyle())
-              .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
-              .background(EasifyUIDefines.EasifyTabBar.backmostBackgroundColor)
-              .edgesIgnoringSafeArea(.bottom)
-              .navigationBarTitle(Text(EasifyDefines.Copies.recentlyPlayed))
+                .onAppear(perform: viewModel.refresh)
+                .listStyle(GroupedListStyle())
+                .edgesIgnoringSafeArea(.bottom)
+                .navigationBarTitle(Text(EasifyDefines.Copies.recentlyPlayed))
             }
         }
     }

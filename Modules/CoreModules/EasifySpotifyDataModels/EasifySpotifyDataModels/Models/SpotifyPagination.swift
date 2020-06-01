@@ -14,7 +14,7 @@ public struct SpotifyPagination <SpotifyItem: Decodable> {
     public let href: URL
     public let items: [SpotifyItem]
     public let limit: Int
-    public let next: String
+    public let next: URL
     public let cursor: SpotifyCursor
     public let total: Int?
 }
@@ -39,7 +39,7 @@ extension SpotifyPagination: Decodable {
         href = try container.decodeURL(keyedBy: .href)
         items = try container.decode([SpotifyItem].self, forKey: .items)
         limit = try container.decode(Int.self, forKey: .limit)
-        next = try container.decode(String.self, forKey: .next)
+        next = try container.decodeURL(keyedBy: .next)
         cursor = try container.decode(SpotifyCursor.self, forKey: .cursor)
         total = try container.decodeIfPresent(Int.self, forKey: .total)
     }

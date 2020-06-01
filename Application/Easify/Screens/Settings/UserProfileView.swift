@@ -47,7 +47,8 @@ extension UserProfileView: View {
                         self.spotifyService.logout()
                       }), secondaryButton: .cancel())
             }
-        }.padding()
+        }
+        .padding()
     }
 }
 

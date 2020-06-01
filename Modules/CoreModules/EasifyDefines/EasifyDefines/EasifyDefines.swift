@@ -23,7 +23,7 @@ public struct EasifyDefines {
         public static let connectCTA: String = "Connect"
         public static let easify: String = "Easify"
         public static let backgroundImageReference: String = "Image: Ron Smith on Unsplash"
-        public static let recentlyPlayed = "Recently Played"
+        public static let recentlyPlayed = "History"
         public static let loading = "Loading..."
         public static let settings = "Settings"
         public static let userProfileHeadline = "Logged in as"

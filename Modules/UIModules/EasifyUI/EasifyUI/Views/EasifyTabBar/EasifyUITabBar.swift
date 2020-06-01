@@ -41,7 +41,7 @@ public struct EasifyUITabBar {
                           transform: { self.selectedIndex == index ? $0 : nil })
         .accentColor(index == selectedIndex ?
             EasifyUIDefines.EasifyTabBar.indicatorBackgroundColorSelected :
-            EasifyUIDefines.EasifyTabBar.indicatorBackgroundColorSelected)
+            EasifyUIDefines.EasifyTabBar.indicatorBackgroundColorNotSelected)
         .padding(EasifyUIDefines.EasifyTabBar.tabItemPadding)
     }
 
@@ -65,16 +65,16 @@ extension EasifyUITabBar: View {
         GeometryReader { geometry in
             ZStack {
                 EasifyUIDefines.EasifyTabBar.backmostBackgroundColor.edgesIgnoringSafeArea(.top)
-                VStack {
+                VStack(spacing: .zero) {
                     self.items[self.selectedIndex].content
-                    Spacer().background(EasifyUIDefines.EasifyTabBar.contentBackgroundColor)
+
                     ZStack {
                         VStack(spacing: .zero) {
                             Rectangle()
                                 .fill(Color(UIColor.tertiarySystemBackground))
                                 .frame(width: geometry.size.width, height: 1)
-                                .shadow(color: EasifyUIDefines.EasifyTabBar.contentBackgroundColor, radius: 2.0)
-                            HStack {
+                                .shadow(color: .primary, radius: 2.0)
+                            HStack(spacing: EasifyUIDefines.Spacings.quadruple) {
                                 ForEach(self.items.indices, id: \.self) {
                                     self.item(at: $0)
                                 }
@@ -83,7 +83,7 @@ extension EasifyUITabBar: View {
                             })
                             .frame(width: geometry.size.width, height: 92)
                             .offset(x: 0, y: -EasifyUIDefines.Spacings.single)
-                            .background(EasifyUIDefines.EasifyTabBar.contentBackgroundColor)
+                            .background(EasifyUIDefines.EasifyTabBar.tabBarBackgroundColor)
                         }
                     }
                 }
