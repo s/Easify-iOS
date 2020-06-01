@@ -51,7 +51,8 @@ public class SpotifyService: ObservableObject {
         .playlistReadPrivate,
         .playlistReadCollaborative,
         .userFollowRead,
-        .userFollowModify
+        .userFollowModify,
+        .userReadRecentlyPlayed
     ]
     private static let accessTokenKey = "nl.saidozcan.SpotifyService.accessTokenKey"
     private let clientID: String
