@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 // MARK: EasifyUIService
 public final class EasifyUIService {
@@ -14,9 +15,9 @@ public final class EasifyUIService {
     public static func configureNavigationBarApperance() {
         let appearance = UINavigationBarAppearance()
         appearance.configureWithOpaqueBackground()
-        appearance.backgroundColor = .secondarySystemBackground
-        appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
-        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+        appearance.backgroundColor = .tertiarySystemBackground
+        appearance.titleTextAttributes = [.foregroundColor: UIColor.label]
+        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.label]
 
         UINavigationBar.appearance().standardAppearance = appearance
         UINavigationBar.appearance().scrollEdgeAppearance = appearance

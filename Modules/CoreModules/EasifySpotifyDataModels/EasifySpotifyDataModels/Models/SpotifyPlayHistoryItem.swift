@@ -39,6 +39,6 @@ extension SpotifyPlayHistoryItem: Decodable {
 // MARK: - SpotifyPlayHistoryItem: Equatable
 extension SpotifyPlayHistoryItem: Equatable {
     public static func == (lhs: SpotifyPlayHistoryItem, rhs: SpotifyPlayHistoryItem) -> Bool {
-        return (lhs.context == rhs.context) && (lhs.playedAt == rhs.playedAt) && (lhs.track == rhs.track)
+        return (lhs.context == rhs.context) && (lhs.track == rhs.track)
     }
 }

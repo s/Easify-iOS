@@ -24,9 +24,6 @@ extension SettingsView: View {
                         UserProfileView()
                         Spacer()
                     }
-                    .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
-                    .background(EasifyUIDefines.EasifyTabBar.backmostBackgroundColor)
-                    .edgesIgnoringSafeArea(.bottom)
                     .navigationBarTitle(Text(EasifyDefines.Copies.settings))
                 }
             }
