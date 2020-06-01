@@ -16,6 +16,8 @@ final class EasifyNetworkManager {
     // MARK: - Properties
     public static let shared = EasifyNetworkManager()
     private let session: Session
+    private static let successRange = (200..<299)
+    private static let contentType = "application/json"
 
     // MARK: - Lifecycle
     init() {
@@ -24,30 +26,27 @@ final class EasifyNetworkManager {
 
     // MARK: - Public
     /// Execute method accepts a parameter of type: `Endpoint(URLRequestConvertible)` and returns a `Future<Request.Response(Decodable), Error>`
-    func execute<Request: Endpoint>(request: Request) {//-> AnyPublisher<Request.Response.Type, NetworkingError> {}
-
-        self.session
-        .request(request)
-        .publishDecodable(type: Request.Response.self)
-        .tryMap { dataResponse in
-//            DataResponse<Decodable, AFError>
-            switch dataResponse.result {
-            case .success(let decodable):
-                print(decodable)
-            case .failure(let error):
-                print(error)
-            }
-            print(dataResponse)
-            return dataResponse.data ?? Data()
+    func execute<Request: Endpoint>(request: Request) -> Future<Request.Response, Error> {
+        return Future<Request.Response, Error> { promise in
+            self.session.request(request)
+                .validate(statusCode: EasifyNetworkManager.successRange)
+                .cURLDescription(calling: { print($0) })
+                .validate(contentType: [EasifyNetworkManager.contentType])
+                .responseData { response in
+                    switch response.result {
+                    case .success(let data):
+                        do {
+                            let model = try JSONDecoder().decode(Request.Response.self, from: data)
+                            promise(.success(model))
+                        } catch let error as DecodingError {
+                            promise(.failure(NetworkingError.decodingFailed(error)))
+                        } catch {
+                            promise(.failure(NetworkingError.undefined(error)))
+                        }
+                    case .failure(let error):
+                        promise(.failure(NetworkingError.afError(error)))
+                    }
+                }.resume()
         }
-        .sink(receiveCompletion: { (completion) in
-            switch completion {
-            case .finished: print("finished")
-            case .failure(let error): print(error)
-            }
-        }) { variable in
-            print(variable)
-        }
-
     }
 }
