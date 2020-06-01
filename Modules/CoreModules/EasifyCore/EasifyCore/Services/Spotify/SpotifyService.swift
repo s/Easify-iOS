@@ -110,6 +110,18 @@ public class SpotifyService: ObservableObject {
         self.authenticatedUsername = nil
     }
 
+    public static func getAccessToken() -> Future<String, Error> {
+        return Future<String, Error> { promise in
+            SpotifyLogin.shared.getAccessToken { (token, error) in
+                if let token = token {
+                    promise(.success(token))
+                } else if let error = error {
+                    promise(.failure(error))
+                }
+            }
+        }
+    }
+
     // MARK: - Private
     private func executePostLoginOperations(token: String?, error: Error?) {
         self.isLoggedIn = (token != nil)
