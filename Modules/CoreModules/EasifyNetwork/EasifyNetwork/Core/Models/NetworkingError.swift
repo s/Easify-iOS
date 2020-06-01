@@ -6,7 +6,7 @@
 //  Copyright © 2017 Ilter Cengiz. All rights reserved.
 //
 
-import Foundation
+import Alamofire
 
 /// Error type to be used in Networking module
 public enum NetworkingError: Error {
@@ -22,5 +22,8 @@ public enum NetworkingError: Error {
     case decodingFailed(DecodingError)
 
     /// In case an error occures which is not identified
-    case undefined
+    case undefined(Error)
+    
+    /// Indicates that there was an AFError. See error description for further information.
+    case afError(AFError)
 }
