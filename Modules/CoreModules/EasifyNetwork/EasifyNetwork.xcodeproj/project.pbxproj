@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		B30B2E5324748E3D00C6088F /* EasifyNetworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30B2E5224748E3D00C6088F /* EasifyNetworkTests.swift */; };
-		B30B2EB32474AC4C00C6088F /* Publisher+ValidateDataTaskResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30B2EB22474AC4C00C6088F /* Publisher+ValidateDataTaskResult.swift */; };
 		B3C4343E2474412100EC67C3 /* EasifyNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B3C434342474412100EC67C3 /* EasifyNetwork.framework */; };
 		B3C4345B2474426F00EC67C3 /* EasifyNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = B3C434592474426F00EC67C3 /* EasifyNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B3C434672474489700EC67C3 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3C434662474489700EC67C3 /* HTTPMethod.swift */; };
@@ -33,7 +32,6 @@
 
 /* Begin PBXFileReference section */
 		B30B2E5224748E3D00C6088F /* EasifyNetworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EasifyNetworkTests.swift; sourceTree = "<group>"; };
-		B30B2EB22474AC4C00C6088F /* Publisher+ValidateDataTaskResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+ValidateDataTaskResult.swift"; sourceTree = "<group>"; };
 		B3C434342474412100EC67C3 /* EasifyNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasifyNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3C4343D2474412100EC67C3 /* EasifyNetworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasifyNetworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B3C43451247441BF00EC67C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = Info.plist; path = "EasifyNetworkTests/Supporting Files/Info.plist"; sourceTree = SOURCE_ROOT; };
@@ -73,14 +71,6 @@
 			children = (
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B30B2EA32474A3C700C6088F /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				B30B2EB22474AC4C00C6088F /* Publisher+ValidateDataTaskResult.swift */,
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		B3C4342A2474412100EC67C3 = {
@@ -123,7 +113,6 @@
 			isa = PBXGroup;
 			children = (
 				B3C434642474487300EC67C3 /* Core */,
-				B30B2EA32474A3C700C6088F /* Extensions */,
 				B3C434582474426F00EC67C3 /* Supporting Files */,
 			);
 			path = EasifyNetwork;
@@ -360,7 +349,6 @@
 				B3C43469247448C200EC67C3 /* BaseURL.swift in Sources */,
 				B3C4346F2474498200EC67C3 /* Endpoint.swift in Sources */,
 				B3C434702474498200EC67C3 /* NetworkingError.swift in Sources */,
-				B30B2EB32474AC4C00C6088F /* Publisher+ValidateDataTaskResult.swift in Sources */,
 				B3C434672474489700EC67C3 /* HTTPMethod.swift in Sources */,
 				B3C434712474498200EC67C3 /* API.swift in Sources */,
 				B3C434732474498200EC67C3 /* Response.swift in Sources */,
