@@ -198,8 +198,8 @@
 		B3924BA124761175008821F9 /* Endpoints */ = {
 			isa = PBXGroup;
 			children = (
-				B3924BA224761175008821F9 /* SpotifyRecentlyPlayedEndpoint.swift */,
 				B3924BA324761175008821F9 /* SpotifyEndpoint.swift */,
+				B3924BA224761175008821F9 /* SpotifyRecentlyPlayedEndpoint.swift */,
 			);
 			path = Endpoints;
 			sourceTree = "<group>";
