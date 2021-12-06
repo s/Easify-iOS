@@ -2,7 +2,7 @@
 
 [![Github Actions Status](https://github.com/s/Easify-iOS/workflows/CI/badge.svg)](https://github.com/s/Easify-iOS/actions)
 
-Easify-iOS is an iOS application to discover new songs based on your preferences. Mainly, it uses modularization to have the project scalable for future developments and it takes advantage of latest frameworks such as Combine and SwiftUI.
+An iOS application which shows top Spotify artists and tracks of the users. Mainly, it uses modularization to have the project scalable for future developments and it takes advantage of latest frameworks such as Combine and SwiftUI.
 
 It uses a copy of [SpotifyLogin SDK](https://github.com/spotify/SpotifyLogin) to handle the login process with Spotify. 
 
